@@ -1,0 +1,24 @@
+:root {
+    --color-primary: #088406;
+    --color-secondary: #4b7f52;
+    --font-base: 'Roboto', sans-serif;
+    --spacing-base: 1rem;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-secondary)
+}
+
+* {
+    font-family: 'Cardo', sans-serif;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+}
