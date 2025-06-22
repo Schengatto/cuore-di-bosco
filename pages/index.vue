@@ -13,7 +13,7 @@
                     <h1 class="landing-title">
                         Ritrova il tuo tempo,<br />
                         riscopri la pace.</h1>
-                    <Button label="PRENOTA SUBITO" :onClick="() => console.log('ciao')">
+                    <Button label="PRENOTA SUBITO" :onClick="goToBooking">
                     </Button>
                 </div>
             </div>
@@ -40,7 +40,7 @@
                     autentica. Qui, ogni angolo racconta una storia di semplicità e amore per la montagna.
                 </p>
                 <div>
-                    <Button label="PRENOTA ORA IL TUO SOGGIORNO!" :onClick="() => console.log('ciao')" />
+                    <Button label="PRENOTA ORA IL TUO SOGGIORNO!" :onClick="goToBooking" />
                 </div>
             </section>
 
@@ -88,6 +88,7 @@
 </template>
 
 <script setup lang="ts">
+import { useRoute, useRouter } from 'vue-router';
 useHead({
     title: 'Cuore di Bosco B&B',
     meta: [
@@ -128,6 +129,12 @@ useHead({
         { rel: 'canonical', href: 'https://cuoredibosco.altervista.org' }
     ]
 });
+
+const router = useRouter();
+
+const goToBooking = () => {
+    router.push("/booking");
+}
 </script>
 
 <style scoped>
@@ -174,7 +181,7 @@ section {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 18pt;
+    font-size: 16pt;
     max-width: 700px;
 }
 
@@ -205,12 +212,12 @@ section {
 
 .text-content {
     flex: 1 1 45%;
-    font-family: Georgia, serif;
+    font-size: 16pt;
     color: #333;
 }
 
 .text-content h2 {
-    font-size: 2rem;
+    font-size: 18pt;
 }
 
 .separator-wrapper {
@@ -226,7 +233,6 @@ section {
 }
 
 .text-content p {
-    font-size: 1.05rem;
     line-height: 1.7;
     margin-bottom: 1rem;
 }
