@@ -131,6 +131,7 @@ onUnmounted(() => {
     display: flex;
     align-items: center;
     height: 120px;
+    gap: 1em;
 }
 
 .mobile-header {

@@ -13,8 +13,7 @@
                     <h1 class="landing-title">
                         Ritrova il tuo tempo,<br />
                         riscopri la pace.</h1>
-                    <Button label="PRENOTA SUBITO" :onClick="goToBooking">
-                    </Button>
+                    <Button label="PRENOTA SUBITO" :onClick="goToBooking" />
                 </div>
             </div>
 

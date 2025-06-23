@@ -95,9 +95,5 @@ header {
     #page {
         margin-top: 50px;
     }
-
-    main {
-        margin-bottom: 10px;
-    }
 }
 </style>
