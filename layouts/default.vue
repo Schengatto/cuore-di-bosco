@@ -67,12 +67,12 @@ header {
     gap: 1.5em;
     position: fixed;
     z-index: 1;
-    background-color: #f6eedc;
+    background-color: var(--color-background);
     width: 100%;
 }
 
 .footer-content {
-    background-color: #f6eedc;
+    background-color: var(--color-background);
     padding: 2em;
     text-align: center;
 }

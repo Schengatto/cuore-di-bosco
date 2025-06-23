@@ -4,6 +4,9 @@
       <img decoding="async" width="1400" height="800" class="landing-image" alt="casa"
         src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/CASA.jpg" data-object-fit="cover"
         sizes="(max-width: 1200px) 100vw, 1200px"><span aria-hidden="true" style="background-color:#526a71"></span>
+      <div class="landing-text">
+        <h1 class="page-title text-white">LA NOSTRA CASA</h1>
+      </div>
     </div>
 
     <section class="intro">
@@ -71,7 +74,7 @@
         class="wp-block-cover__background has-background-dim-30 has-background-dim"
         style="background-color:#526a71"></span>
       <div class="landing-text">
-        <h2 class="landing-title">Hai bisogno di informazioni?</h2>
+        <h2 class="landing-title text-black">Hai bisogno di informazioni?</h2>
         <img class="separator" src="https://im.altervista.org/wordpress/media/demo-content/agritourism/sep-07c.png"
           alt="separator" />
         <h3>Contattaci!</h3>
@@ -94,11 +97,15 @@ section {
   padding: 2rem;
 }
 
+.page-title {
+  font-size: 42pt;
+}
+
 .landing-image {
   width: 100%;
   height: 400px;
   object-fit: cover;
-  object-position: center 26%;
+  object-position: center 50%;
   display: block;
 }
 

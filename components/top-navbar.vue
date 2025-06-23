@@ -163,12 +163,13 @@ onUnmounted(() => {
 }
 
 .page-link {
-    text-decoration: underline;
     cursor: pointer;
+    border-bottom: 1px solid var(--color-primary);
+    font-weight: bold;
 }
 
 .page-link:hover {
-    color: var(--color-primary)
+    color: var(--color-primary);
 }
 
 .menu-toggle {

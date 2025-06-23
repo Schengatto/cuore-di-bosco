@@ -1,6 +1,7 @@
 :root {
     --color-primary: #088406;
     --color-secondary: #4b7f52;
+    --color-background: #f6eedc;
     --font-base: 'Roboto', sans-serif;
     --spacing-base: 1rem;
 }
@@ -25,4 +26,12 @@ body {
 
 .link {
     cursor: pointer;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-black {
+    color: black;
 }
