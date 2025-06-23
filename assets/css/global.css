@@ -1,6 +1,6 @@
 :root {
-    --color-primary: #088406;
-    --color-secondary: #4b7f52;
+    --color-primary: #4C6B4C;
+    --color-secondary: #088406;
     --color-background: #f6eedc;
     --font-base: 'Roboto', sans-serif;
     --spacing-base: 1rem;
@@ -12,7 +12,8 @@ a {
 }
 
 a:hover {
-    color: var(--color-secondary)
+    color: var(--color-secondary);
+    transition: color 0.2s ease-in-out;
 }
 
 * {
