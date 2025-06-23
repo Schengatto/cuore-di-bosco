@@ -164,12 +164,13 @@ onUnmounted(() => {
 
 .page-link {
     cursor: pointer;
-    border-bottom: 1px solid var(--color-primary);
     font-weight: bold;
+    border-bottom: 1px solid transparent;
 }
 
 .page-link:hover {
     color: var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
 }
 
 .menu-toggle {
@@ -270,18 +271,20 @@ onUnmounted(() => {
 
     .page-link {
         margin: 1.5em 0.5em;
-        border-bottom: 1px lightgray solid;
         text-decoration: none;
+        border-bottom: none;
     }
 
     .page-link a {
         text-decoration: none;
         color: black;
+        border-bottom: none;
     }
 
     .page-link a:hover {
         text-decoration: none;
         color: var(--color-primary);
+        /* border-bottom: 1px lightgray solid; */
     }
 }
 

@@ -196,6 +196,7 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1em;
+  justify-content: center;
 }
 
 .card {
