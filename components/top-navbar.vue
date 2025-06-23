@@ -9,7 +9,7 @@
             <div class="subtitle">B&B CUORE DI BOSCO CIN 000000000000000000000</div>
             <div class="site-menu">
                 <div v-for="page in pageLinks" :key="page.label" class="page-link">
-                    <RouterLink :to="page.path" @click="closeMenuAndScroll">{{ page.label }}</RouterLink>
+                    <RouterLink :to="page.path" @click="closeMenuAndScroll" activeClass="link-active">{{ page.label }}</RouterLink>
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@ const openSubMenus = ref<Set<string>>(new Set());
 const lastScrollPosition = ref(0);
 
 const pageLinks = computed(() => {
-    return routes.filter(r => !r.hidden);
+    return routes;
 });
 
 const currentPageTitle = computed(() => {
@@ -223,6 +223,10 @@ onUnmounted(() => {
 .menu-toggle.open span:nth-child(3) {
     top: 10px;
     transform: rotate(-135deg);
+}
+
+.link-active {
+    color: var(--color-secondary);
 }
 
 @media (max-width: 1024px) {
