@@ -3,7 +3,6 @@ export const routes = [
         group: "",
         label: "BENVENUTI",
         path: '/',
-        hidden: true
     },
     {
         group: "",
