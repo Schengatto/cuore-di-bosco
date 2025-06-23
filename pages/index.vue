@@ -87,7 +87,7 @@
 </template>
 
 <script setup lang="ts">
-import { useRoute, useRouter } from 'vue-router';
+import { useRouter } from 'vue-router';
 useHead({
     title: 'Cuore di Bosco B&B',
     meta: [

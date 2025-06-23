@@ -226,7 +226,7 @@ onUnmounted(() => {
 }
 
 .link-active {
-    color: var(--color-secondary);
+    color: var(--color-success);
 }
 
 @media (max-width: 1024px) {

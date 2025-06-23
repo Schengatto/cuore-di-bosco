@@ -90,10 +90,6 @@ const contactUs = () => {
   transition: transform 0.2s;
 }
 
-.card:hover {
-  transform: scale(1.02);
-}
-
 figure {
   margin: 0;
 }
@@ -252,6 +248,7 @@ section {
   flex-wrap: wrap;
   gap: 1em;
   justify-content: center;
+  margin-bottom: 1em;
 }
 
 .card {
