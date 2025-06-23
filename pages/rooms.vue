@@ -11,20 +11,11 @@
     </div>
 
     <section class="intro">
-      <p>Scopri le nostre tre camere, ispirate ai frutti del bosco:​</p>
-      <div class="room-list">
+      <h2 class="intro-title">Scopri le nostre tre camere</h2>
+      <blockquote class="intro-text">
         <p>Tre stanze, tre atmosfere. Ogni dimora ha il suo profumo, il suo ritmo, il suo calore.
           Qui, tra legno, silenzio e natura, si riposa il corpo e la mente.</p>
-        <div>
-          <strong>Mora</strong>: intima e avvolgente, ideale per coppie in cerca di relax.​
-        </div>
-        <div>
-          <strong>Mirtillo</strong>: spaziosa e accogliente, adatta a famiglie che desiderano comfort e tranquillità.​
-        </div>
-        <div>
-          <strong>Lampone</strong>: fresca e luminosa, perfetta per chi ama la natura.​
-        </div>
-      </div>
+      </blockquote>
     </section>
 
     <section class="rooms">
@@ -35,6 +26,7 @@
         </figure>
         <div class="room-info">
           <h2>MORA</h2>
+          <p class="room-short">Intima e avvolgente, ideale per coppie in cerca di relax.</p>
           <p>Ampia camera da 25 mq con letto matrimoniale, armadio, cassettiera, zona relax con divano, frigobar,
             macchina del caffè e bollitore. Bagno con doccia, lavabo e bidet. Prodotti per igiene personale, pulizia e
             biancheria inclusi.
@@ -50,6 +42,7 @@
         </figure>
         <div class="room-info">
           <h2>MIRTILLO</h2>
+          <p class="room-short">Spaziosa e accogliente, adatta a famiglie che desiderano comfort e tranquillità.</p>
           <p>Camera doppia con camera matrimoniale da 23 mq e seconda camera con letto a castello. A richiesta kit bimbo
             con lettino con materasso, lenzuola e coperte, fasciatoio e scalda biberon. Prodotti per igiene personale,
             pulizia e biancheria inclusi. Per famiglie con bambini tutto lo spazio e le comodità necessarie!</p>
@@ -64,6 +57,7 @@
         </figure>
         <div class="room-info">
           <h2>LAMPONE</h2>
+          <p class="room-short">Fresca e luminosa, perfetta per chi ama la natura.</p>
           <p>Ampia camera matrimoniale o tripla da 30 mq con letto matrimoniale ed eventuale terzo letto, armadio,
             cassettiera, zona relax con divano, frigobar, macchina del caffè e bollitore. Bagno con doccia, lavabo e
             bidet. Prodotti per igiene personale, pulizia e biancheria inclusi. Per famiglia o tra amici, con vista
@@ -73,6 +67,7 @@
       </div>
     </section>
   </div>
+
 </template>
 
 <script lang="ts" setup>
@@ -82,10 +77,71 @@ const contactUs = () => {
 </script>
 
 <style scoped>
+.card {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+figure {
+  margin: 0;
+}
+
+.room-info h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #526a71;
+}
+
+.room-info h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.room-short {
+  font-weight: 500;
+  font-style: italic;
+  color: #526a71;
+  margin: 0.5rem 0 1rem;
+}
+
+@media (max-width: 600px) {
+  .rooms {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .landing-text {
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+}
+
 section {
-  margin: 1em auto;
+  margin: 0.25em auto;
   max-width: 1200px;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .page-title {
@@ -140,7 +196,6 @@ section {
   flex-direction: column;
   text-align: center;
   font-size: 16pt;
-  max-width: 700px;
 }
 
 .content-wrapper {
