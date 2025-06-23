@@ -97,8 +97,6 @@ header {
     }
 
     main {
-        max-width: 96%;
-        margin: auto;
         margin-bottom: 10px;
     }
 }

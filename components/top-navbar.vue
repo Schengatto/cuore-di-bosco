@@ -14,7 +14,7 @@
             </div>
         </div>
     </div>
-    <div class="mobile-header">
+    <div v-if="isMobile" class="mobile-header">
         <div class="menu-toggle" @click="toggleMenu" :class="{ 'open': isMenuVisible }">
             <span></span>
             <span></span>
@@ -28,7 +28,7 @@
             srcset="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/cropped-logo_sfondo.png 1000w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/cropped-logo_sfondo-320x316.png 320w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/cropped-logo_sfondo-960x947.png 960w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/cropped-logo_sfondo-768x757.png 768w"
             sizes="(max-width: 1000px) 100vw, 1000px" loading="eager">
     </div>
-    <div v-if="isMenuVisible" class="mobile-menu">
+    <div v-if="isMobile && isMenuVisible" class="mobile-menu">
         <div v-for="page in pageLinks" :key="page.label" class="page-link">
             <RouterLink :to="page.path" @click="closeMenuAndScroll">{{ page.label }}</RouterLink>
         </div>
@@ -62,27 +62,6 @@ const currentPageTitle = computed(() => {
 
 const toggleMenu = () => {
     isMenuVisible.value = !isMenuVisible.value;
-};
-
-const toggleSubMenu = (group: string) => {
-    if (isMobile.value) {
-        if (openSubMenus.value.has(group)) {
-            openSubMenus.value.delete(group);
-        } else {
-            openSubMenus.value.add(group);
-        }
-    }
-};
-
-const openSubMenu = (group: string) => {
-    if (!isMobile.value) {
-        openSubMenus.value.clear();
-        openSubMenus.value.add(group);
-    }
-};
-
-const isSubMenuOpen = (group: string) => {
-    return isMobile.value || openSubMenus.value.has(group);
 };
 
 const desktopLeaveMenu = () => {
@@ -121,11 +100,9 @@ const closeMenuAndScroll = () => {
 };
 
 const checkMobile = () => {
-    isMobile.value = window.innerWidth <= 768;
-    if (isMobile.value) {
-        // openSubMenus.value = new Set(menuGroups.value);
-    } else {
-        openSubMenus.value.clear();
+    isMobile.value = window.innerWidth <= 1024;
+    if (!isMobile.value) {
+        desktopLeaveMenu();
     }
 };
 
@@ -247,12 +224,10 @@ onUnmounted(() => {
 
 @media (max-width: 1024px) {
     #page {
-        margin-top: 50px;
+        margin: 50px 0 0 0;
     }
 
     main {
-        max-width: 96%;
-        margin: auto;
         margin-bottom: 10px;
     }
 
@@ -286,7 +261,7 @@ onUnmounted(() => {
         position: absolute;
         width: 100%;
         height: calc(100vh - 50px);
-        left:0;
+        left: 0;
         top: 50px;
         background-color: white;
     }
@@ -297,12 +272,12 @@ onUnmounted(() => {
         text-decoration: none;
     }
 
-    .page-link a{
+    .page-link a {
         text-decoration: none;
         color: black;
     }
 
-    .page-link a:hover{
+    .page-link a:hover {
         text-decoration: none;
         color: var(--color-primary);
     }

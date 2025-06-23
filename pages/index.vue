@@ -229,7 +229,7 @@ section {
     display: block;
     margin: 1rem 0;
     max-width: 100%;
-    min-width: 200px;
+    min-width: 500px;
 }
 
 .text-content p {
@@ -240,6 +240,22 @@ section {
 @media (max-width: 1024px) {
     .landing-title {
         font-size: 24px;
+    }
+}
+
+@media (max-width: 800px) {
+    .landing-title {
+        font-size: 24px;
+    }
+
+    .separator {
+        min-width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    .separator {
+        min-width: 200px;
     }
 }
 </style>
