@@ -15,7 +15,7 @@
         </div>
     </div>
     <div class="mobile-header">
-        <div class="menu-toggle" @click="toggleMenu" :class="{ 'open': showMenu }">
+        <div class="menu-toggle" @click="toggleMenu" :class="{ 'open': isMenuVisible }">
             <span></span>
             <span></span>
             <span></span>
@@ -27,6 +27,11 @@
             class="custom-logo" alt="B&amp;B CUORE DI BOSCO PRADA BRENTONICO" decoding="async" fetchpriority="high"
             srcset="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/cropped-logo_sfondo.png 1000w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/cropped-logo_sfondo-320x316.png 320w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/cropped-logo_sfondo-960x947.png 960w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/cropped-logo_sfondo-768x757.png 768w"
             sizes="(max-width: 1000px) 100vw, 1000px" loading="eager">
+    </div>
+    <div v-if="isMenuVisible" class="mobile-menu">
+        <div v-for="page in pageLinks" :key="page.label" class="page-link">
+            <RouterLink :to="page.path" @click="closeMenuAndScroll">{{ page.label }}</RouterLink>
+        </div>
     </div>
 </template>
 
@@ -42,7 +47,7 @@ interface NavLink {
 const router = useRouter();
 const route = useRoute();
 const isMobile = ref(false);
-const showMenu = ref(false);
+const isMenuVisible = ref(false);
 const openSubMenus = ref<Set<string>>(new Set());
 const lastScrollPosition = ref(0);
 
@@ -56,7 +61,7 @@ const currentPageTitle = computed(() => {
 });
 
 const toggleMenu = () => {
-    showMenu.value = !showMenu.value;
+    isMenuVisible.value = !isMenuVisible.value;
 };
 
 const toggleSubMenu = (group: string) => {
@@ -87,7 +92,7 @@ const desktopLeaveMenu = () => {
 }
 
 const closeMenu = () => {
-    showMenu.value = false;
+    isMenuVisible.value = false;
     if (!isMobile.value) {
         openSubMenus.value.clear();
     }
@@ -276,6 +281,31 @@ onUnmounted(() => {
         padding: 0.25rem;
         color: var(--gray-900);
     }
+
+    .mobile-menu {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        left:0;
+        top: 50px;
+        background-color: white;
+    }
+
+    .page-link {
+        margin: 1.5em 0.5em;
+        border-bottom: 1px lightgray solid;
+        text-decoration: none;
+    }
+
+    .page-link a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .page-link a:hover{
+        text-decoration: none;
+        color: var(--color-primary);
+    }
 }
 
 @media (max-width: 800px) {
@@ -289,7 +319,6 @@ onUnmounted(() => {
         justify-content: start;
         gap: 1em;
     }
-
 
     .title {
         font-size: 10pt;

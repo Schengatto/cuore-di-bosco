@@ -17,7 +17,7 @@
                     whatsapp o telegram al <a href="tel:+39340000000">340 0000000</a>, ti risponderemo al più presto!
                 </p>
                 <div class="footer-cards">
-                    <div class="card link" :onclick="openGmaps">
+                    <a href="https://maps.app.goo.gl/eWviFC8GAjJaqzSU6" target="_blank" class="card link">
                         <h3>Come raggiungerci</h3>
                         <img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/icon-circle-1.png"
                             width="64" />
@@ -25,7 +25,7 @@
                         <p><strong>B&B Cuore di Bosco</strong><br />
                             Via Gardesani, 15<br />
                             Brentonico – fraz. Prada (TN)</p>
-                    </div>
+                    </a>
                     <div class="card">
                         <h3>Orari di apertura</h3>
                         <img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/cropped-accomodation.png"
@@ -55,11 +55,6 @@
 
 
 <script setup lang="ts">
-const openGmaps = () => {
-    if (window) {
-        window.open("https://maps.app.goo.gl/eWviFC8GAjJaqzSU6", "_blank");
-    }
-};
 </script>
 
 <style scoped>
@@ -91,6 +86,8 @@ header {
 }
 
 .card {
+    text-decoration: none;
+    color: black;
     width: 400px;
 }
 
