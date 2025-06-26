@@ -2,8 +2,9 @@
   <div>
     <div class="welcome">
       <img decoding="async" width="1400" height="800" class="landing-image" alt="casa"
-        src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/4.jpg" data-object-fit="cover"
-        sizes="(max-width: 1200px) 100vw, 1200px"><span aria-hidden="true" style="background-color:#526a71"></span>
+        src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/INGRESSO_CAMERE.jpeg"
+        data-object-fit="cover" sizes="(max-width: 1200px) 100vw, 1200px"><span aria-hidden="true"
+        style="background-color:#526a71"></span>
       <div class="landing-text">
         <h1 class="page-title text-white">PRENOTA</h1>
         <h3>ATTENZIONE SITO IN CONSTRUZIONE NON ANCORA ATTIVO</h3>
@@ -32,28 +33,24 @@
         per la montagna.</p>
     </section>
 
-    <section>
+    <!-- <section>
       <iframe src="https://www.bed-and-breakfast.it/booking-engine/widget.cfm?id_struttura=TUO_ID_STRUTTURA"
         width="100%" height="600" frameborder="0" scrolling="auto" style="border: none;">
       </iframe>
-    </section>
+    </section> -->
 
     <section>
-      <div>
+      <div class="photos">
         <figure>
           <img decoding="async" width="960" height="639"
-            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/CASA-1-960x639.jpg" alt=""
-            class="wp-image-624"
-            srcset="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/CASA-1-960x639.jpg 960w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/CASA-1-320x213.jpg 320w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/CASA-1-768x512.jpg 768w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/CASA-1-1536x1023.jpg 1536w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/CASA-1.jpg 1716w"
-            sizes="(max-width: 960px) 100vw, 960px">
+            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/ESTERNO2.jpeg" alt=""
+            class="wp-image-624" sizes="(max-width: 960px) 100vw, 960px">
         </figure>
 
         <figure>
           <img decoding="async" width="960" height="410"
-            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/balcone-e1745437082414-960x410.jpg"
-            alt="" class="wp-image-588"
-            srcset="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/balcone-e1745437082414-960x410.jpg 960w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/balcone-e1745437082414-320x137.jpg 320w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/balcone-e1745437082414-768x328.jpg 768w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/balcone-e1745437082414.jpg 1534w"
-            sizes="(max-width: 960px) 100vw, 960px">
+            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/TERRAZZA.jpeg" alt=""
+            class="wp-image-588" sizes="(max-width: 960px) 100vw, 960px">
         </figure>
       </div>
     </section>
@@ -172,9 +169,35 @@ section {
   margin-bottom: 1rem;
 }
 
+.photos {
+  display: flex;
+  gap: 1em;
+}
+
+.photos img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+
 @media (max-width: 1024px) {
+  p {
+    font-size: 14pt;
+  }
+
+  h1,
+  .page-title,
   .landing-title {
-    font-size: 24px;
+    font-size: 24pt;
+  }
+
+  h2 {
+    font-size: 18pt;
+  }
+
+  h3 {
+    font-size: 16pt;
   }
 }
 
@@ -185,6 +208,12 @@ section {
 
   .separator {
     min-width: 400px;
+  }
+
+  .photos {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
   }
 }
 

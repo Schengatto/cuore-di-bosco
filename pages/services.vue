@@ -2,8 +2,8 @@
   <div>
     <div class="welcome">
       <img decoding="async" width="1400" height="800" class="landing-image" alt="casa"
-        src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/3.jpg" data-object-fit="cover"
-        sizes="(max-width: 1200px) 100vw, 1200px" />
+        src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/SALA_COLAZIONI-5-960x720.jpeg"
+        data-object-fit="cover" sizes="(max-width: 1200px) 100vw, 1200px" />
       <div class="landing-text">
         <h1 class="page-title">I NOSTRI SERVIZI</h1>
         <button @click="goToBooking">PRENOTA SUBITO</button>
@@ -181,8 +181,22 @@ button:hover {
 }
 
 @media (max-width: 1024px) {
-  .page-title {
-    font-size: 2.5rem;
+  p {
+    font-size: 14pt;
+  }
+
+  h1,
+  .page-title,
+  .landing-title {
+    font-size: 24pt;
+  }
+
+  h2 {
+    font-size: 18pt;
+  }
+
+  h3 {
+    font-size: 16pt;
   }
 }
 

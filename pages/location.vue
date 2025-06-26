@@ -2,7 +2,7 @@
   <div>
     <div class="welcome">
       <img decoding="async" width="1400" height="800" class="landing-image" alt="casa"
-        src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/CASA.jpg" data-object-fit="cover"
+        src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/ESTERNO3.jpeg" data-object-fit="cover"
         sizes="(max-width: 1200px) 100vw, 1200px"><span aria-hidden="true" style="background-color:#526a71"></span>
       <div class="landing-text">
         <h1 class="page-title text-white">LA NOSTRA CASA</h1>
@@ -105,7 +105,7 @@ section {
   width: 100%;
   height: 400px;
   object-fit: cover;
-  object-position: center 50%;
+  object-position: center 45%;
   display: block;
 }
 
@@ -199,8 +199,22 @@ section {
 }
 
 @media (max-width: 1024px) {
+  p {
+    font-size: 14pt;
+  }
+
+  h1,
+  .page-title,
   .landing-title {
-    font-size: 24px;
+    font-size: 24pt;
+  }
+
+  h2 {
+    font-size: 18pt;
+  }
+
+  h3 {
+    font-size: 16pt;
   }
 }
 

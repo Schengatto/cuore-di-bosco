@@ -201,8 +201,22 @@ section {
 }
 
 @media (max-width: 1024px) {
+  p {
+    font-size: 14pt;
+  }
+
+  h1,
+  .page-title,
   .landing-title {
-    font-size: 24px;
+    font-size: 24pt;
+  }
+
+  h2 {
+    font-size: 18pt;
+  }
+
+  h3 {
+    font-size: 16pt;
   }
 }
 

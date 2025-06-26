@@ -224,4 +224,28 @@ a {
 .footer {
   max-width: 800px;
 }
+
+@media (max-width: 1024px) {
+  #page {
+    margin-top: 50px;
+  }
+
+  p {
+    font-size: 14pt;
+  }
+
+  h1,
+  .page-title,
+  .landing-title {
+    font-size: 24pt;
+  }
+
+  h2 {
+    font-size: 18pt;
+  }
+
+  h3 {
+    font-size: 16pt;
+  }
+}
 </style>

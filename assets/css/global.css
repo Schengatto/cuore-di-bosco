@@ -65,3 +65,21 @@ h3 {
 p {
     font-size: 16pt;
 }
+
+@media (max-width: 1024px) {
+    p {
+        font-size: 14pt;
+    }
+
+    h1, .page-title {
+        font-size: 20pt;
+    }
+
+    h2 {
+        font-size: 18pt;
+    }
+
+    h3 {
+        font-size: 16pt;
+    }
+}
