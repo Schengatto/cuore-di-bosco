@@ -85,6 +85,23 @@ const router = useRouter();
 const goToBooking = () => {
   router.push("/booking");
 };
+
+useHead({
+  title: 'Servizi | Cuore di Bosco - Prada di Brentonico',
+  meta: [
+    {
+      name: 'description',
+      content: 'Scopri i servizi offerti dal B&B Cuore di Bosco: colazione, Wi-Fi, attività e tanto altro.'
+    },
+    {
+      name: 'keywords',
+      content: 'servizi Cuore di Bosco, B&B con colazione, Wi-Fi Brentonico, comfort bed and breakfast, ospitalità Trentino'
+    }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://www.cuoredibosco.it/services' }
+  ]
+});
 </script>
 
 <style scoped>

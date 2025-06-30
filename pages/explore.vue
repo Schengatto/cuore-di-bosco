@@ -203,7 +203,22 @@
 </template>
 
 <script lang="ts" setup>
-
+useHead({
+  title: 'Cosa vedere nei dintorni | Cuore di Bosco - Prada di Brentonico',
+  meta: [
+    {
+      name: 'description',
+      content: 'Esplora la natura, i sentieri e le attrazioni vicino al B&B Cuore di Bosco. Attività outdoor e cultura nel cuore del Trentino.'
+    },
+    {
+      name: 'keywords',
+      content: 'cose da fare Prada di Brentonico, escursioni, natura Trentino, attività vicino al B&B, cosa vedere Brentonico'
+    }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://www.cuoredibosco.it/explore' }
+  ]
+});
 </script>
 
 <style scoped>

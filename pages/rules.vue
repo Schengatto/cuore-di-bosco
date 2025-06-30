@@ -103,6 +103,23 @@ const sections = [
     `
   }
 ];
+
+useHead({
+  title: 'Regole della casa | Cuore di Bosco - Prada di Brentonico',
+  meta: [
+    {
+      name: 'description',
+      content: 'Leggi le regole della casa del B&B Cuore di Bosco per garantire a tutti un soggiorno sereno e rispettoso.'
+    },
+    {
+      name: 'keywords',
+      content: 'regole B&B, soggiorno responsabile, regole Cuore di Bosco, norme casa vacanza'
+    }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://www.cuoredibosco.it/rules' }
+  ]
+});
 </script>
 
 <style scoped>
@@ -114,7 +131,8 @@ const sections = [
 }
 
 .hero {
-  background-image: url('/images/hero-montagna.jpg'); /* Cambia con il tuo percorso */
+  background-image: url('/images/hero-montagna.jpg');
+  /* Cambia con il tuo percorso */
   background-size: cover;
   background-position: center;
   height: 240px;

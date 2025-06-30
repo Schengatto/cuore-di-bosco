@@ -83,7 +83,22 @@
 </template>
 
 <script lang="ts" setup>
-
+useHead({
+  title: 'Come arrivare | Cuore di Bosco - Prada di Brentonico',
+  meta: [
+    {
+      name: 'description',
+      content: 'Scopri come raggiungere il B&B Cuore di Bosco a Prada di Brentonico. Indicazioni stradali, parcheggio e trasporti per un arrivo semplice.'
+    },
+    {
+      name: 'keywords',
+      content: 'come arrivare Cuore di Bosco, indicazioni B&B Trentino, strada per Prada di Brentonico, mappa, parcheggio'
+    }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://www.cuoredibosco.it/get-here' }
+  ]
+});
 </script>
 
 <style scoped>

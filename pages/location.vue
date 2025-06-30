@@ -88,6 +88,23 @@
 const contactUs = () => {
 
 }
+
+useHead({
+  title: 'Dove siamo | Cuore di Bosco - Prada di Brentonico',
+  meta: [
+    {
+      name: 'description',
+      content: 'Il B&B Cuore di Bosco si trova a Prada di Brentonico, nel cuore del Monte Baldo. Scopri la nostra posizione su mappa.'
+    },
+    {
+      name: 'keywords',
+      content: 'dove siamo Cuore di Bosco, posizione B&B, Prada di Brentonico mappa, Monte Baldo alloggi'
+    }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://www.cuoredibosco.it/location' }
+  ]
+});
 </script>
 
 <style scoped>

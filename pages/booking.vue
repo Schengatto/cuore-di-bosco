@@ -58,7 +58,25 @@
 </template>
 
 <script lang="ts" setup>
-
+useHead({
+  title: 'Prenota il tuo soggiorno | Cuore di Bosco - Prada di Brentonico',
+  meta: [
+    {
+      name: 'description',
+      content: 'Prenota il tuo soggiorno al B&B Cuore di Bosco, immerso nella natura di Prada di Brentonico. Comfort, relax e autenticità nel cuore del Trentino.'
+    },
+    {
+      name: 'keywords',
+      content: 'B&B Cuore di Bosco, Prada di Brentonico, bed and breakfast Trentino, soggiorno in montagna, prenotazione B&B, vacanza natura'
+    },
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://www.cuoredibosco.it/booking'
+    }
+  ]
+});
 </script>
 
 <style scoped>

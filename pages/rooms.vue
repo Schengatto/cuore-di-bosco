@@ -73,7 +73,25 @@
 <script lang="ts" setup>
 const contactUs = () => {
 
-}
+};
+
+useHead({
+  title: 'Camere | Cuore di Bosco - Prada di Brentonico',
+  meta: [
+    {
+      name: 'description',
+      content: 'Scopri le camere del B&B Cuore di Bosco: accoglienti, confortevoli e arredate con gusto, ideali per il tuo soggiorno in Trentino.'
+    },
+    {
+      name: 'keywords',
+      content: 'camere B&B Cuore di Bosco, alloggi Trentino, stanza in montagna, dormire a Brentonico'
+    }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://www.cuoredibosco.it/rooms' }
+  ]
+});
+
 </script>
 
 <style scoped>
