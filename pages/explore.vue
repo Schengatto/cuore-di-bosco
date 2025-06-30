@@ -1,5 +1,15 @@
 <template>
   <div>
+    <div class="welcome">
+      <img decoding="async" width="1400" height="800" class="landing-image" alt="bosco" 
+          src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/bosco_delle_farfalle-scaled-e1751303953846.jpg"
+        data-object-fit="cover" sizes="(max-width: 1200px) 100vw, 1200px"><span aria-hidden="true"
+        style="background-color:#526a71"></span>
+      <div class="landing-text">
+        <h1 class="page-title text-white">ESPLORA I DINTORNI</h1>
+      </div>
+    </div>
+    
     <section class="text-center">
       <p>A pochi minuti da Brentonico, <strong>Prada</strong> è una piccola frazione di montagna nel cuore del
         <strong>Parco Naturale del Monte Baldo</strong>, un luogo tranquillo ma facile da raggiungere, ottimo punto
@@ -19,7 +29,7 @@
         programma!
       </p>
 
-      <figure class="wp-block-image aligncenter size-large is-resized"><a href="https://www.parcomontebaldo.tn.it/it"
+      <figure class="image-wrapper aligncenter size-large is-resized"><a href="https://www.parcomontebaldo.tn.it/it"
           target="_blank" rel="noopener noreferrer nofollow"><img decoding="async"
             src="https://www.parcomontebaldo.tn.it/sites/default/files/logo-parcomontebaldo.jpg" alt=""
             style="width:132px;height:auto"></a></figure>
@@ -60,10 +70,10 @@
       </p>
     </section>
 
-    <section class="text-center">
+    <section class="text-center rovereto-inview">
       <figure
         class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex">
-        <figure class="wp-block-image size-large">
+        <figure class="image-wrapper">
           <a href="https://www.visitrovereto.it/" target="_blank" rel="noopener noreferrer nofollow">
             <img decoding="async" width="850" height="371" data-id="601"
               src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/apt_brentonico.jpg" alt=""
@@ -84,22 +94,22 @@
     <section class="text-center">
       <h1>Brentonico, il fiore del Baldo</h1>
 
-      <figure class="wp-block-image"><img decoding="async"
+      <figure class="image-wrapper"><img decoding="async"
           src="https://www.visitrovereto.it/wp-content/uploads/2019/11/paesaggio-inverno-monte-baldo-foto-valentino-azzolini-1.jpg"
           alt="paesaggio invernale"></figure>
-      <figure class="wp-block-image"><img decoding="async"
+      <figure class="image-wrapper"><img decoding="async"
           src="https://www.visitrovereto.it/wp-content/uploads/2023/07/palazzo-eccheli-baisi-giardino-botanico-brentonico-luca-matassoni-2023-3.jpg"
           alt="palazzo-eccheli-baisi-giardino-botanico-brentonico-luca-matassoni-2023 (3)"></figure>
-      <figure class="wp-block-image"><img decoding="async"
+      <figure class="image-wrapper"><img decoding="async"
           src="https://www.visitrovereto.it/wp-content/uploads/2023/06/Giardino-Botanico-ph-lucamatassoni-web.png"
           alt="Giardino Botanico-ph-lucamatassoni-web"></figure>
-      <figure class="wp-block-image"><img decoding="async"
+      <figure class="image-wrapper"><img decoding="async"
           src="https://www.visitrovereto.it/wp-content/uploads/2019/10/paesaggio-inverno-monte-baldo-foto-tommaso-prugnola-3.jpg"
           alt="paesaggio inverno"></figure>
-      <figure class="wp-block-image"><img decoding="async"
+      <figure class="image-wrapper"><img decoding="async"
           src="https://www.visitrovereto.it/wp-content/uploads/2024/10/Brentonico-il-fiore-del-Baldo-Graziano-Galvagni.jpg"
           alt="Brentonico, il fiore del Baldo - Graziano Galvagni"></figure>
-      <figure class="wp-block-image"><img decoding="async"
+      <figure class="image-wrapper"><img decoding="async"
           src="https://www.visitrovereto.it/wp-content/uploads/2019/11/paesaggio-inverno-monte-baldo-foto-valentino-azzolini-1.jpg"
           alt="paesaggio invernale"></figure>
     </section>
@@ -235,9 +245,37 @@ section {
 a {
   font-weight: bold;
 }
+.welcome {
+  position: relative;
+  overflow: hidden;
+}
+.landing-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center 50%;
+  display: block;
+  }
+
+.landing-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
 
 .footer {
   max-width: 800px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 1024px) {
@@ -261,6 +299,16 @@ a {
 
   h3 {
     font-size: 16pt;
+  }
+
+  .rovereto-inview {
+    margin: 0;
+    padding: 0;
+  }
+
+   .rovereto-inview figure{
+    margin: 0;
+    padding: 0;
   }
 }
 </style>
