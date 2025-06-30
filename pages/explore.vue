@@ -40,7 +40,7 @@
         (20 minuti), con piste per ogni età e parchi per bambini, ideali per le prime discese sulla neve, imparare a
         sciare con scuole sci riconosciute o per divertirsi con lo slittino in famiglia, o partecipare alle tante
         attività di giorno e di notte. Per tutte gli eventi aggiornati e le informazioni puoi visitare
-        <a href="www.brentonicoski.com" target="_blank">www.brentonicoski.com</a>.
+        <a href="https://www.brentonicoski.com" target="_blank">www.brentonicoski.com</a>.
       </p>
 
       <p>
@@ -62,7 +62,7 @@
       <p>
         Siamo all’interno della <strong>Vallagarina</strong>: dove natura, cultura e
         gusto si incontrano. <br>In struttura troverete un ampio display con mappe e materiale informativo e in nostri
-        consigli, per ogni informazione e materiale è possibile visitare il sito <a href="http://www.visitrovereto.it"
+        consigli, per ogni informazione e materiale è possibile visitare il sito <a href="https://www.visitrovereto.it"
           target="_blank" rel="noopener noreferrer nofollow">www.visitrovereto.it</a> e l’accogliente punto di
         informazioni turistiche accanto al comune di Brentonico, proprio accanto ad un ampio e curato parco giochi e
         la piazza alberata principale del paese, <strong>Piazza Cesare Battisti</strong>, dove si svolgono eventi e
@@ -203,11 +203,11 @@
 
     <section class="text-center footer">
       <p><strong>Per scoprire tutti gli eventi in corso ti consigliamo il sito
-          <a href="www.visitrovereto.it" target="_blank">www.visitrovereto.it</a> e l’<a
+          <a href="https://www.visitrovereto.it" target="_blank">www.visitrovereto.it</a> e l’<a
             href="https://www.visitrovereto.it/info/uffici-turistici-rovereto-vallagarina/">apt di Brentonico</a>,
           inoltre troverai un display in struttura con mappe e depliant
           aggiornati della zona a tua disposizione!</strong></p>
-      <p><strong>FONTE TESTO <a href="www.visitrovereto.it" target="_blank">WWW.VISITROVERETO.IT</a></strong></p>
+      <p><strong>FONTE TESTO <a href="https://www.visitrovereto.it" target="_blank">WWW.VISITROVERETO.IT</a></strong></p>
     </section>
   </div>
 </template>
