@@ -1,38 +1,49 @@
 <template>
   <div>
     <div class="welcome">
-      <img decoding="async" width="1400" height="800" class="landing-image" alt="casa"
-        src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/ESTERNO3.jpeg" data-object-fit="cover"
-        sizes="(max-width: 1200px) 100vw, 1200px"><span aria-hidden="true" style="background-color:#526a71"></span>
+      <img
+        decoding="async"
+        width="1400"
+        height="800"
+        class="landing-image"
+        alt="casa"
+        src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/ESTERNO3.jpeg"
+        data-object-fit="cover"
+        sizes="(max-width: 1200px) 100vw, 1200px"
+      /><span aria-hidden="true" style="background-color: #526a71"></span>
       <div class="landing-text">
         <h1 class="page-title text-white">LA NOSTRA CASA</h1>
       </div>
     </div>
 
     <section class="intro">
-      <p>B&B Cuore di Bosco è la nostra e la vostra casa in montagna, un rifugio di pace e quiete dove
-        riposare mente e cuore.</p>
+      <p>
+        B&B Cuore di Bosco è la nostra e la vostra casa in montagna, un rifugio
+        di pace e quiete dove riposare mente e cuore.
+      </p>
     </section>
 
     <section class="overview">
       <div class="content-wrapper">
         <figure class="image-container">
-          <img decoding="async" width="960" height="641"
+          <img
+            decoding="async"
+            width="960"
+            height="641"
             src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico-960x640.jpg"
-            alt="panorama" />
+            alt="panorama"
+          />
         </figure>
 
         <div class="text-content">
           <h2>Tutti i progetti nascono da un sogno</h2>
 
-          <img class="separator" src="https://im.altervista.org/wordpress/media/demo-content/agritourism/sep-07c.png"
-            alt="separator" />
-
           <p>
-            La volontà di una vita più serena e meno di fretta per noi e per la nostra famiglia ci ha portato ad un
-            cambio di vita completo, dalla brulicante ed asfaltata pianura padana all’Altopiano di Brentonico.
-            E’ stato amore a prima vista. Il nostro posto. Noi ci siamo ripresi il nostro tempo tempo lento e la nostra
-            pace, unitevi anche voi!
+            La volontà di una vita più serena e meno di fretta per noi e per la
+            nostra famiglia ci ha portato ad un cambio di vita completo, dalla
+            brulicante ed asfaltata pianura padana all’Altopiano di Brentonico.
+            E’ stato amore a prima vista. Il nostro posto. Noi ci siamo ripresi
+            il nostro tempo tempo lento e la nostra pace, unitevi anche voi!
           </p>
         </div>
       </div>
@@ -43,41 +54,60 @@
         <div class="text-content">
           <h2>Esperienze speciali</h2>
 
-          <img class="separator" src="https://im.altervista.org/wordpress/media/demo-content/agritourism/sep-07c.png"
-            alt="separator" />
           <p>
-            Di b&b ce ne sono tanti, ma noi speriamo di offrirvi un mix di esperienze speciali: la bellezza delle
-            montagne intorno, la passione per la cucina e l’ospitalità e tutto l’entusiasmo che mettiamo nel nostro
-            lavoro! Ci siamo organizzati per pensare alle esigenze di coppie e famiglie con bambini, ma vogliamo fare
-            del nostro meglio per accogliere tutti!
+            Di b&b ce ne sono tanti, ma noi speriamo di offrirvi un mix di
+            esperienze speciali: la bellezza delle montagne intorno, la passione
+            per la cucina e l’ospitalità e tutto l’entusiasmo che mettiamo nel
+            nostro lavoro! Ci siamo organizzati per pensare alle esigenze di
+            coppie e famiglie con bambini, ma vogliamo fare del nostro meglio
+            per accogliere tutti!
           </p>
           <p>
-            Per esigenze alimentari particolari come vegetariano, vegano, no glutine, no lattosio e altre siamo a tua
-            disposizione, ti chiediamo di avvisarci prima dell’arrivo per poterci organizzare al meglio!</p>
+            Per esigenze alimentari particolari come vegetariano, vegano, no
+            glutine, no lattosio e altre siamo a tua disposizione, ti chiediamo
+            di avvisarci prima dell’arrivo per poterci organizzare al meglio!
+          </p>
 
-          <p>Ci vediamo presto!
-          </p>
+          <p>Ci vediamo presto!</p>
         </div>
-        <figure class="image-container">
-          <img decoding="async" width="960" height="641"
-            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/cropped-logo_sfondo-960x947.png"
-            alt="logo" />
-        </figure>
+        <div class="logo-container">
+          <figure>
+            <img
+              decoding="async"
+              width="200"
+              height="200"
+              src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/cropped-logo_sfondo-1-e1750933971677.png"
+              alt="logo"
+            />
+          </figure>
+        </div>
       </div>
     </section>
 
     <div class="contact-us">
-      <img decoding="async" width="1400" height="800" class="landing-image opacity50" alt=""
-        src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico.jpg" data-object-fit="cover"
-        srcset="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico.jpg 1200w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico-320x213.jpg 320w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico-960x640.jpg 960w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico-768x512.jpg 768w"
-        sizes="(max-width: 1200px) 100vw, 1200px"><span aria-hidden="true"
+      <img
+        decoding="async"
+        width="1400"
+        height="800"
+        class="landing-image opacity50"
+        alt=""
+        src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico.jpg"
+        data-object-fit="cover"
+        srcset="
+          https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico.jpg         1200w,
+          https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico-320x213.jpg  320w,
+          https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico-960x640.jpg  960w,
+          https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico-768x512.jpg  768w
+        "
+        sizes="(max-width: 1200px) 100vw, 1200px"
+      /><span
+        aria-hidden="true"
         class="wp-block-cover__background has-background-dim-30 has-background-dim"
-        style="background-color:#526a71"></span>
+        style="background-color: #526a71"
+      ></span>
       <div class="landing-text">
         <h2 class="landing-title text-black">Hai bisogno di informazioni?</h2>
-        <img class="separator" src="https://im.altervista.org/wordpress/media/demo-content/agritourism/sep-07c.png"
-          alt="separator" />
-        <h3>Contattaci!</h3>
+
         <Button label="CONTATTACI" :onClick="contactUs" />
       </div>
     </div>
@@ -85,25 +115,23 @@
 </template>
 
 <script lang="ts" setup>
-const contactUs = () => {
-
-}
+const contactUs = () => {};
 
 useHead({
-  title: 'Dove siamo | Cuore di Bosco - Prada di Brentonico',
+  title: "Dove siamo | Cuore di Bosco - Prada di Brentonico",
   meta: [
     {
-      name: 'description',
-      content: 'Il B&B Cuore di Bosco si trova a Prada di Brentonico, nel cuore del Monte Baldo. Scopri la nostra posizione su mappa.'
+      name: "description",
+      content:
+        "Il B&B Cuore di Bosco si trova a Prada di Brentonico, nel cuore del Monte Baldo. Scopri la nostra posizione su mappa.",
     },
     {
-      name: 'keywords',
-      content: 'dove siamo Cuore di Bosco, posizione B&B, Prada di Brentonico mappa, Monte Baldo alloggi'
-    }
+      name: "keywords",
+      content:
+        "dove siamo Cuore di Bosco, posizione B&B, Prada di Brentonico mappa, Monte Baldo alloggi",
+    },
   ],
-  link: [
-    { rel: 'canonical', href: 'https://www.cuoredibosco.it/location' }
-  ]
+  link: [{ rel: "canonical", href: "https://www.cuoredibosco.it/location" }],
 });
 </script>
 
@@ -174,9 +202,9 @@ section {
   align-items: center;
 }
 
-.image-container {
-  flex: 1 1 45%;
-  margin: 0;
+.logo-container {
+  display: flex;
+  margin: auto;
 }
 
 .image-container img {
@@ -207,7 +235,7 @@ section {
   display: block;
   margin: 1rem 0;
   max-width: 100%;
-  min-width: 500px;
+  min-width: 200px;
 }
 
 .text-content p {

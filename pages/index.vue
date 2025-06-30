@@ -33,7 +33,7 @@
 
       <section class="overview">
         <p>
-          B&B Cuore di Bosco è la nostra e la vostra casa in montagna, un
+          B&B Cuore di Bosco è la nostra e la vostra casa in montagna,<br />un
           rifugio di pace e quiete dove riposare mente e cuore.
         </p>
 
@@ -107,7 +107,7 @@
 
         <p>
           Teniamo moltissimo alla qualità dei nostri ingredienti, e per questo
-          ci riforniamo principalmente da produttori locali.
+          ci riforniamo il più possibile da produttori locali.
         </p>
       </section>
     </div>
@@ -275,7 +275,7 @@ section {
 }
 
 .image {
-    max-width: 120px;
+    width: 64px;
 }
 
 @media (max-width: 1024px) {
