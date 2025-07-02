@@ -71,7 +71,6 @@
                             o una mail a <a href="mailto:info@cuoredibosco.it">info@cuoredibosco.it</a></p>
                     </div>
                     <div>
-
                     </div>
                 </div>
             </div>
@@ -85,7 +84,7 @@
 
 <style scoped>
 #page {
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 header {

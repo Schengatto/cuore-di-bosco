@@ -4,24 +4,24 @@ export const routes = [
         label: "BENVENUTI",
         path: '/',
     },
+    // {
+    //     group: "",
+    //     label: "LA NOSTRA CASA",
+    //     path: '/location',
+    // },
+    // {
+    //     group: "",
+    //     label: "DIMORE DEL BOSCO",
+    //     path: '/rooms',
+    // },
+    // {
+    //     group: "",
+    //     label: "RAGGIUNGICI",
+    //     path: '/get-here',
+    // },
     {
         group: "",
-        label: "LA NOSTRA CASA",
-        path: '/location',
-    },
-    {
-        group: "",
-        label: "DIMORE DEL BOSCO",
-        path: '/rooms',
-    },
-    {
-        group: "",
-        label: "RAGGIUNGICI",
-        path: '/get-here',
-    },
-    {
-        group: "",
-        label: "PRENOTA E CONTATTI",
+        label: "PRENOTA",
         path: '/booking',
     },
     {
@@ -29,11 +29,11 @@ export const routes = [
         label: "ESPLORA",
         path: '/explore',
     },
-    {
-        group: "",
-        label: "I NOSTRI SERVIZI",
-        path: '/services',
-    },
+    // {
+    //     group: "",
+    //     label: "I NOSTRI SERVIZI",
+    //     path: '/services',
+    // },
     {
         group: "",
         label: "REGOLAMENTO",

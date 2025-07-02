@@ -2,26 +2,16 @@
   <div class="container">
     <div>
       <div class="welcome">
-        <img
-          decoding="async"
-          width="1400"
-          height="800"
-          class="landing-image"
-          alt=""
-          src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico.jpg"
-          data-object-fit="cover"
+        <img decoding="async" width="1400" height="800" class="landing-image" alt=""
+          src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico.jpg" data-object-fit="cover"
           srcset="
             https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico.jpg         1200w,
             https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico-320x213.jpg  320w,
             https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico-960x640.jpg  960w,
             https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico-768x512.jpg  768w
-          "
-          sizes="(max-width: 1200px) 100vw, 1200px"
-        /><span
-          aria-hidden="true"
+          " sizes="(max-width: 1200px) 100vw, 1200px" /><span aria-hidden="true"
           class="wp-block-cover__background has-background-dim-30 has-background-dim"
-          style="background-color: #526a71"
-        ></span>
+          style="background-color: #526a71"></span>
         <div class="landing-text">
           <h1 class="landing-title">
             Ritrova il tuo tempo,<br />
@@ -38,20 +28,15 @@
         </p>
 
         <figure class="separator-wrapper">
-          <img
-            decoding="async"
-            class="separator"
-            src="https://im.altervista.org/wordpress/media/demo-content/agritourism/sep-03c.png"
-            alt="separator"
-          />
+          <img decoding="async" class="separator"
+            src="https://im.altervista.org/wordpress/media/demo-content/agritourism/sep-03c.png" alt="separator" />
         </figure>
 
         <p>
           Benvenuti al <strong>B&B Cuore di Bosco</strong>,<br />
           un rifugio immerso nella natura della
           <strong>Vallagarina</strong>,<br />
-          sull’<strong>Altopiano di Brentonico, il giardino d’Europa</strong
-          >.<br />
+          sull’<strong>Altopiano di Brentonico, il giardino d’Europa</strong>.<br />
           Circondati da rigogliose montagne, il tempo rallenta<br />
           e la tranquillità regna sovrana.
         </p>
@@ -61,21 +46,59 @@
           storia di semplicità e amore per la montagna.
         </p>
         <div>
-          <Button
-            label="PRENOTA ORA IL TUO SOGGIORNO!"
-            :onClick="goToBooking"
-          />
+          <Button label="PRENOTA ORA IL TUO SOGGIORNO!" :onClick="goToBooking" />
+        </div>
+      </section>
+
+      <section class="text-center">
+        <p><em>Cuore di Bosco</em> si trova a Prada di Brentonico,
+          facilmente raggiungibile in auto dall’uscita di Rovereto dell’autostrada A22. </p>
+        <p>Vi consigliamo di passare da Mori e salire seguendo le
+          indicazioni per Brentonico. Da Brentonico la SP3 vi porterà in pochi minuti a Prada. Parcheggiate nel
+          parcheggio
+          libero accanto alla chiesa e al parco giochi, siamo a pochi passi! </p>
+        <p>Se hai bisogno di aiuto chiamaci e arriviamo!</p>
+        <p>Una volta arrivati, vi accoglierà il silenzio e la bellezza
+          dell’Altopiano di Brentonico, con la sua cornice di verdi montagne.</p>
+      </section>
+
+      <div class="text-center">
+        <figure class="separator-wrapper">
+          <img decoding="async" class="separator"
+            src="https://im.altervista.org/wordpress/media/demo-content/agritourism/sep-03c.png" alt="separator" />
+        </figure>
+      </div>
+
+      <section class="text-center">
+        <h2 class="wp-block-heading has-text-align-center">Trovaci con Maps!</h2>
+        <p style="font-family: 'Cardo', serif; font-size: 24px; text-align: center;">Scrivi su maps:<br> B&amp;B Cuore
+          di
+          Bosco <br>
+          Via Gardesani, 15 – Prada (TN)<br>
+          o clicca sulla mappa per aprirla in Google Maps<br> e ottenere il percorso.</p>
+        <a href="https://www.google.com/maps/place/Via+Gardesani,+15,+38060+Prada+TN" target="_blank"
+          rel="noopener noreferrer nofollow" style="display: block; margin-bottom: 10px; font-family: 'Cardo', serif;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4628.566893163929!2d10.95615487755049!3d45.80152017108149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4782051cad11ec19%3A0x135a8894e1f97c2d!2sVia%20Gardesani%2C%2015%2C%2038060%20Prada%20TN!5e1!3m2!1sit!2sit!4v1749392711552!5m2!1sit!2sit"
+            width="100%" height="500" style="border:0; border-radius: 10px;" allowfullscreen="true" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </a>
+      </section>
+
+      <section class="text-center">
+        <h2 class="wp-block-heading has-text-align-center">Hai bisogno di parlare con noi?</h2>
+        <p class="has-text-align-center">Scrivici via mail, whatsapp o chiamaci!</p>
+        <div class="row-buttons">
+          <Button label="Chiama +39 3494960228" />
+          <Button label="Scrivi una mail a info@cuoredibosco.it" />
         </div>
       </section>
 
       <section class="breakfast">
         <figure class="separator-wrapper">
-          <img
-            decoding="async"
-            class="separator"
-            src="https://im.altervista.org/wordpress/media/demo-content/agritourism/sep-03c.png"
-            alt="separator"
-          />
+          <img decoding="async" class="separator"
+            src="https://im.altervista.org/wordpress/media/demo-content/agritourism/sep-03c.png" alt="separator" />
         </figure>
         <h2>A colazione da noi</h2>
 
@@ -87,12 +110,8 @@
           giornata col sorriso.
         </p>
         <figure class="separator-wrapper">
-          <img
-            decoding="async"
-            class="image"
-            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/breakfast.png"
-            alt="breakfast"
-          />
+          <img decoding="async" class="image"
+            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/breakfast.png" alt="breakfast" />
         </figure>
         <p>
           Preferisci il dolce o il salato?<br />
@@ -214,6 +233,12 @@ section {
   max-width: 700px;
 }
 
+.row-buttons {
+  justify-content: center;
+  display: flex;
+  gap: 1em;
+}
+
 .breakfast {
   padding: 2em;
   margin: auto;
@@ -275,7 +300,7 @@ section {
 }
 
 .image {
-    width: 64px;
+  width: 64px;
 }
 
 @media (max-width: 1024px) {

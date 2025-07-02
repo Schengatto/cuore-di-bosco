@@ -95,6 +95,10 @@ useHead({
 </script>
 
 <style scoped>
+figure {
+  margin: 0;
+}
+
 .card {
   flex: 1 1 300px;
   display: flex;
@@ -106,10 +110,6 @@ useHead({
   background-color: #fff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
-}
-
-figure {
-  margin: 0;
 }
 
 .room-info h2 {

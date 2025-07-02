@@ -19,7 +19,6 @@
       <p>Se hai bisogno di aiuto chiamaci e arriviamo!</p>
       <p>Una volta arrivati, vi accoglierà il silenzio e la bellezza
         dell’Altopiano di Brentonico, con la sua cornice di verdi montagne.</p>
-
     </section>
 
     <div class="text-center">

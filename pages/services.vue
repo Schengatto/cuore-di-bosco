@@ -111,7 +111,7 @@ section {
   max-width: 1200px;
 }
 
-.landing-image {
+.service-image {
   width: 100%;
   height: 400px;
   object-fit: cover;

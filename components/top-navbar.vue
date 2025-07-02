@@ -1,15 +1,14 @@
 <template>
     <div class="desktop-header">
-        <img height="120" src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/cropped-logo_sfondo.png"
+        <img height="100" :src="logo"
             class="custom-logo link" alt="B&amp;B CUORE DI BOSCO PRADA BRENTONICO" decoding="async" fetchpriority="high"
-            srcset="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/cropped-logo_sfondo.png 1000w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/cropped-logo_sfondo-320x316.png 320w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/cropped-logo_sfondo-960x947.png 960w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/cropped-logo_sfondo-768x757.png 768w"
             :onClick="goToHome" loading="eager">
         <div class="site-name">
-            <div class="title">B&B CUORE DI BOSCO PRADA BRENTONICO</div>
-            <div class="subtitle">B&B CUORE DI BOSCO CIN 000000000000000000000</div>
+            <div class="title">B&B CUORE DI BOSCO</div>
             <div class="site-menu">
                 <div v-for="page in pageLinks" :key="page.label" class="page-link">
-                    <RouterLink :to="page.path" @click="closeMenuAndScroll" activeClass="link-active">{{ page.label }}</RouterLink>
+                    <RouterLink :to="page.path" @click="closeMenuAndScroll" activeClass="link-active">{{ page.label }}
+                    </RouterLink>
                 </div>
             </div>
         </div>
@@ -20,12 +19,11 @@
             <span></span>
             <span></span>
         </div>
-        <div class="site-name">
+        <div class="site-name-mobile">
             <div class="title">B&B CUORE DI BOSCO PRADA BRENTONICO</div>
         </div>
-        <img height="50" src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/cropped-logo_sfondo.png"
+        <img height="50" :src=logo
             class="custom-logo" alt="B&amp;B CUORE DI BOSCO PRADA BRENTONICO" decoding="async" fetchpriority="high"
-            srcset="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/cropped-logo_sfondo.png 1000w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/cropped-logo_sfondo-320x316.png 320w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/cropped-logo_sfondo-960x947.png 960w, https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/cropped-logo_sfondo-768x757.png 768w"
             sizes="(max-width: 1000px) 100vw, 1000px" loading="eager">
     </div>
     <div v-if="isMobile && isMenuVisible" class="mobile-menu">
@@ -38,6 +36,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
+import logo from '~/assets/small-logo.png';
 
 interface NavLink {
     text: string;
@@ -124,13 +123,13 @@ onUnmounted(() => {
 
 <style scoped>
 #page {
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 .desktop-header {
     display: flex;
     align-items: center;
-    height: 120px;
+    height: 100px;
     gap: 1em;
 }
 
@@ -140,7 +139,15 @@ onUnmounted(() => {
 
 .site-name {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1em;
+}
+
+.site-name-mobile {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .title {
