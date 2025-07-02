@@ -447,7 +447,6 @@ figcaption {
 
   .landing-text {
     bottom: 1rem;
-    left: 1rem;
   }
 
   .page-title {

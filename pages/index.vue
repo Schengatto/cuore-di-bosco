@@ -87,11 +87,14 @@
       </section>
 
       <section class="text-center">
-        <h2 class="wp-block-heading has-text-align-center">Hai bisogno di parlare con noi?</h2>
-        <p class="has-text-align-center">Scrivici via mail, whatsapp o chiamaci!</p>
+        <h2 class="wp-block-heading has-text-align-center">Hai bisogno di contattarci?</h2>
+        <p class="has-text-align-center">Siamo a tua disposizione! Puoi scriverci, chiamarci o inviarci un messaggio su
+          WhatsApp.</p>
         <div class="row-buttons">
-          <Button label="Chiama +39 3494960228" />
-          <Button label="Scrivi una mail a info@cuoredibosco.it" />
+          <p>
+            Contattaci al <a href="tel:+393494960228">+39 349 496 0228</a><br />
+            oppure scrivici a <a href="mailto:info@cuoredibosco.it">info@cuoredibosco.it</a>
+          </p>
         </div>
       </section>
 
