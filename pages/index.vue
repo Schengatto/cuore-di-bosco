@@ -72,7 +72,7 @@
           rel="noopener noreferrer nofollow" style="display: block; margin-bottom: 10px; font-family: 'Cardo', serif;">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4628.566893163929!2d10.95615487755049!3d45.80152017108149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4782051cad11ec19%3A0x135a8894e1f97c2d!2sVia%20Gardesani%2C%2015%2C%2038060%20Prada%20TN!5e1!3m2!1sit!2sit!4v1749392711552!5m2!1sit!2sit"
-            width="100%" height="500" style="border:0; border-radius: 10px;" allowfullscreen="true" loading="lazy"
+            width="100%" height="500" style="border:0;" allowfullscreen="true" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </a>
