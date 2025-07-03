@@ -76,13 +76,6 @@ const closeMenu = () => {
     }
 };
 
-const scrollToTop = () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-};
-
 const handleScroll = () => {
     if (isMobile.value) return;
 
@@ -94,7 +87,6 @@ const handleScroll = () => {
 const closeMenuAndScroll = () => {
     closeMenu();
     router.afterEach(() => {
-        setTimeout(scrollToTop, 100);
     });
 };
 

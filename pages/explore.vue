@@ -286,7 +286,7 @@ a {
 }
 
 .page-title {
-  font-size: 64px;
+  font-size: 64pt;
   font-variant: small-caps;
 }
 

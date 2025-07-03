@@ -11,9 +11,7 @@
     </div>
 
     <section class="text-center">
-      <p class="has-text-align-center has-large-font-size">B&amp;B Cuore di Bosco è la nostra e la vostra casa in
-        montagna, un rifugio di pace e quiete dove riposare mente e cuore.</p>
-    </section>
+          </section>
 
     <div class="text-center">
       <figure class="separator-wrapper">
@@ -22,15 +20,14 @@
     </div>
 
     <section class="text-center">
-      <p>Benvenuti al&nbsp;<strong>B&amp;B&nbsp;<em>Cuore di
-            Bosco</em></strong>,<br>un rifugio immerso nella natura
-        della&nbsp;<strong>Vallagarina</strong>,<br>sull’A<strong>ltopiano di Brentonico</strong>,&nbsp;<strong>il
+      <p>Benvenuti al&nbsp;<strong>B&amp;B&nbsp;<em>Cuore di Bosco</em></strong>,<br>un rifugio immerso nella natura
+          della&nbsp;<strong>Vallagarina</strong>,<br>sull’A<strong>ltopiano di Brentonico</strong>,&nbsp;<strong>il
           giardino d’Europa</strong>.<br>Circondati da rigogliose montagne, il tempo rallenta<br>e la tranquillità regna
-        sovrana.</p>
-
-      <p>La nostra casa in pietra, con arredi in legno e dettagli
-        curati, offre un’accoglienza calorosa e autentica. Qui, ogni angolo racconta una storia di semplicità e amore
-        per la montagna.</p>
+          sovrana.</p>
+          <p>Di b&b ce ne sono tanti, ma noi speriamo di offrirvi<br> un mix di esperienze speciali: la bellezza delle montagne intorno,<br> 
+          la passione per la cucina e l’ospitalità e tutto l’entusiasmo<br> che mettiamo nel nostro lavoro!</p>
+          <p>Per esigenze alimentari particolari come vegetariano,<br> vegano, no glutine, no lattosio e altre siamo a tua disposizione,<br> ti chiediamo di avvisarci prima dell’arrivo <br>per poterci organizzare al meglio!</p>
+          <p> Ci vediamo presto!</p>
     </section>
 
     <!-- <section>
@@ -40,31 +37,16 @@
     </section> -->
 
     <section class="intro">
-      <h2 class="intro-title">Scopri le nostre tre camere</h2>
+      <h2 class="intro-title">Scopri le nostre camere</h2>
       <blockquote class="intro-text">
-        <p>Tre stanze, tre atmosfere. Ogni dimora ha il suo profumo, il suo ritmo, il suo calore.
-          Qui, tra legno, silenzio e natura, si riposa il corpo e la mente.</p>
+        <p>B&amp;B Cuore di Bosco è la nostra e la vostra casa in
+        montagna, un rifugio di pace e quiete dove riposare mente e cuore</p>
+        <p>A richiesta kit bimbo con lettino con materasso, lenzuola e coperte, fasciatoio e scalda biberon.</p>
       </blockquote>
     </section>
 
     <section class="rooms">
-      <div class="card">
-        <figure>
-          <img decoding="async" width="128" height="128"
-            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/blackberry.png" alt="mora">
-        </figure>
-        <div class="room-info">
-          <h2>MORA</h2>
-          <p class="room-short">Intima e avvolgente, ideale per coppie in cerca di relax.</p>
-          <p>Ampia camera da 25 mq con letto matrimoniale, armadio, cassettiera, zona relax con divano, frigobar,
-            macchina del caffè e bollitore. Bagno con doccia, lavabo e bidet. Prodotti per igiene personale, pulizia e
-            biancheria inclusi.
-            Per un relax di coppia o qualche giorno di detox tra amiche!</p>
-          <h3>€ 85 a notte a dimora</h3>
-        </div>
-      </div>
-
-      <div class="card">
+         <div class="card text-center">
         <figure>
           <img decoding="async" width="128" height="128"
             src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/blueberry.png" alt="mirtillo">
@@ -72,14 +54,14 @@
         <div class="room-info">
           <h2>MIRTILLO</h2>
           <p class="room-short">Spaziosa e accogliente, adatta a famiglie che desiderano comfort e tranquillità.</p>
-          <p>Camera doppia con camera matrimoniale da 23 mq e seconda camera con letto a castello. A richiesta kit bimbo
-            con lettino con materasso, lenzuola e coperte, fasciatoio e scalda biberon. Prodotti per igiene personale,
+          <p>Camera doppia con camera matrimoniale da 23 mq e seconda camera con letto a castello. Armadio,
+            cassettiera, zona relax con poltrona, frigobar, macchina del caffè e bollitore. Prodotti per igiene personale,
             pulizia e biancheria inclusi. Per famiglie con bambini tutto lo spazio e le comodità necessarie!</p>
           <h3>€ 100 a notte a dimora</h3>
         </div>
       </div>
 
-      <div class="card">
+      <div class="card text-center">
         <figure>
           <img decoding="async" width="128" height="128"
             src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/raspberry.png" alt="lampone">
@@ -170,6 +152,42 @@
       </div>
     </section>
 
+ <section class="text-left">
+        <p><b>Servizi per famiglie</b></p> 
+
+          <p>Sappiamo bene quanto è complicato spostarsi e rilassarsi con uno o più figli!<br>
+            Per questo abbiamo cercato di rendere la vita più facile e la vacanza più rilassata ai genitori! Da noi troverete:</p>
+          <p>BABY KIT: Abbiamo tutto quello che serve! Fasciatoio con vaschetta per bagno o vasino, seggiolone, scaldabiberon o microonde a disposizione in sala colazione,
+          frigobar in camera, passeggino, marsupio 6/36 mesi o preschool 3-6 anni o fasce (con cauzione), scaletta o gradino per il bagno, piattini, posate e bicchieri da bimbi,
+          libreria ed angolo giochi attrezzato (in realizzazione).</p>
+          <p>SCRIVICI! A colazione preferiscono qualcosa di particolare? Informateci e ci attrezziamo! <br> Giornata grigia? Organizziamo la merenda insieme! Merenda per i piccoli e aperitivo relax per i grandi!</p>
+          <p>NOLEGGIO BICI: le nostre bici per grandi e piccoli (con casco!) sono a vostra disposizione (con cauzione)</p>
+          <p>PIC NIC DAY: Gita nel bosco? Prepariamo noi il cestino, preavvisateci 1-2 giorni prima con le vostre preferenze e l’orario e provvediamo al cesto pronto da portare via. (servizio a pagamento)</p>
+        <p></p> 
+
+        <p><b>Servizi in camera</b></p> 
+<p>Nelle nostre stanze attrezzate troverai:</p>
+<p>Bagno con doccia, bidet, wc <br>
+Kit asciugamani per ogni ospite<br>
+Pulizia regolare ogni 3 giorni<br>
+Prodotti ecologici ricaricabili per l’igiene personale<br>
+<br>
+Omaggio di benvenuto<br>
+Frigobar silenzioso<br>
+Bicchieri<br>
+<br>
+Materiale ecologico per pulizie, scopa e paletta<br>
+Stendino e mollette in balcone (clima permettendo)</p>
+
+<p><b>Altri servizi per te!</b></p>
+<p>Wi-fi gratuita <br> Servizio deposito bici / scarponi / sci e altro materiale <br>
+Servizio a richiesta di lavanderia express con prodotti ecologici, biodegradabili certificati (a pagamento)<br>
+Angolo libreria e relax (orario 15-18) con ampia terrazza (clima permettendo)<br>
+Nell’apposito stand inoltre troverei tutte le mappe e i depliant informativi di APT Rovereto e Vallagarina.
+</p>
+        </section>
+    
+
     <!-- <section>
       <div class="photos">
         <figure>
@@ -189,28 +207,30 @@
 </template>
 
 <script lang="ts" setup>
-import camere from '~/assets/images/camere.webp';
-import colazioni from '~/assets/images/colazioni.webp';
-import separator from '~/assets/images/separator.webp';
+import camere from "~/assets/images/camere.webp";
+import colazioni from "~/assets/images/colazioni.webp";
+import separator from "~/assets/images/separator.webp";
 
 useHead({
-  title: 'Prenota il tuo soggiorno | Cuore di Bosco - Prada di Brentonico',
+  title: "Prenota il tuo soggiorno | Cuore di Bosco - Prada di Brentonico",
   meta: [
     {
-      name: 'description',
-      content: 'Prenota il tuo soggiorno al B&B Cuore di Bosco, immerso nella natura di Prada di Brentonico. Comfort, relax e autenticità nel cuore del Trentino.'
+      name: "description",
+      content:
+        "Prenota il tuo soggiorno al B&B Cuore di Bosco, immerso nella natura di Prada di Brentonico. Comfort, relax e autenticità nel cuore del Trentino.",
     },
     {
-      name: 'keywords',
-      content: 'B&B Cuore di Bosco, Prada di Brentonico, bed and breakfast Trentino, soggiorno in montagna, prenotazione B&B, vacanza natura'
+      name: "keywords",
+      content:
+        "B&B Cuore di Bosco, Prada di Brentonico, bed and breakfast Trentino, soggiorno in montagna, prenotazione B&B, vacanza natura",
     },
   ],
   link: [
     {
-      rel: 'canonical',
-      href: 'https://www.cuoredibosco.it/booking'
-    }
-  ]
+      rel: "canonical",
+      href: "https://www.cuoredibosco.it/booking",
+    },
+  ],
 });
 </script>
 

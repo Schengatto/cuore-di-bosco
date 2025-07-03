@@ -45,11 +45,10 @@
 
       <section class="text-center">
         <p><em>Cuore di Bosco</em> si trova a Prada di Brentonico,
-          facilmente raggiungibile in auto dall’uscita di Rovereto dell’autostrada A22. </p>
-        <p>Vi consigliamo di passare da Mori e salire seguendo le
-          indicazioni per Brentonico. Da Brentonico la SP3 vi porterà in pochi minuti a Prada. Parcheggiate nel
-          parcheggio
-          libero accanto alla chiesa e al parco giochi, siamo a pochi passi! </p>
+          facilmente raggiungibile in auto dall’<b>uscita di Rovereto dell’autostrada A22</b>. </p>
+        <p>Vi consigliamo di passare da <b>Mori</b> e salire seguendo le indicazioni per l'<b>Altopiano di Brentonico</b> (cartelli marroni).
+          Da Brentonico la SP3 vi porterà in pochi minuti a Prada, fate attenzione al bivio per Prada sulla sinistra in curva.
+          Parcheggiate nel parcheggio libero accanto alla chiesa e al parco giochi, siamo a pochi passi sulla sinistra! </p>
         <p>Se hai bisogno di aiuto chiamaci e arriviamo!</p>
         <p>Una volta arrivati, vi accoglierà il silenzio e la bellezza
           dell’Altopiano di Brentonico, con la sua cornice di verdi montagne.</p>
@@ -108,7 +107,7 @@
             src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/breakfast.png" alt="breakfast" />
         </figure>
         <p>
-          Preferisci il dolce o il salato?<br />
+          Preferisci il dolce o il salato? Hai intolleranze o preferenze alimentari?<br />
           Basta farcelo sapere il giorno prima: pensiamo noi a tutto.
         </p>
 
@@ -122,7 +121,27 @@
           Teniamo moltissimo alla qualità dei nostri ingredienti, e per questo
           ci riforniamo il più possibile da produttori locali.
         </p>
-      </section>
+              <figure class="separator-wrapper">
+          <img decoding="async" class="separator" :src="separator" alt="separator" />
+        </figure>
+        <h2>Tutti i progetti nascono da un sogno</h2>
+        <p>
+          La volontà di una vita più serena e meno di fretta per noi e per la nostra famiglia ci ha portato ad un cambio di vita completo,
+           dalla brulicante ed asfaltata pianura padana all’Altopiano di Brentonico.</p> 
+           <p> E’ stato amore a prima vista. Il nostro posto.
+           Noi ci siamo ripresi il nostro tempo lento e la nostra pace, unitevi anche voi!
+        </p>
+       <figure class="separator-wrapper">
+          <img decoding="async" class="separator" :src="separator" alt="separator" />
+        </figure>
+         <h2>Esperienze speciali</h2>
+         <p>
+          Di b&b ce ne sono tanti, ma noi speriamo di offrirvi un mix di esperienze speciali: la bellezza delle montagne intorno, 
+          la passione per la cucina e l’ospitalità e tutto l’entusiasmo che mettiamo nel nostro lavoro!</p>
+          <p>Ci siamo organizzati per pensare alle esigenze di coppie e famiglie con bambini, ma vogliamo fare del nostro meglio per accogliere tutti!</p>
+          <p>Per esigenze alimentari particolari come vegetariano, vegano, no glutine, no lattosio e altre siamo a tua disposizione, ti chiediamo di avvisarci prima dell’arrivo per poterci organizzare al meglio! Ci vediamo presto!
+        </p>
+</section>
     </div>
   </div>
 </template>
