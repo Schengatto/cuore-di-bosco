@@ -1,15 +1,14 @@
 <template>
   <div>
     <div class="welcome">
-      <img decoding="async" width="1400" height="800" class="landing-image" alt="bosco" 
-          src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/bosco_delle_farfalle-scaled-e1751303953846.jpg"
+      <img decoding="async" width="1400" height="800" class="landing-image" alt="bosco" :src="bosco"
         data-object-fit="cover" sizes="(max-width: 1200px) 100vw, 1200px"><span aria-hidden="true"
         style="background-color:#526a71"></span>
       <div class="landing-text">
         <h1 class="page-title text-white">ESPLORA I DINTORNI</h1>
       </div>
     </div>
-    
+
     <section class="text-center">
       <p>A pochi minuti da Brentonico, <strong>Prada</strong> è una piccola frazione di montagna nel cuore del
         <strong>Parco Naturale del Monte Baldo</strong>, un luogo tranquillo ma facile da raggiungere, ottimo punto
@@ -207,12 +206,15 @@
             href="https://www.visitrovereto.it/info/uffici-turistici-rovereto-vallagarina/">apt di Brentonico</a>,
           inoltre troverai un display in struttura con mappe e depliant
           aggiornati della zona a tua disposizione!</strong></p>
-      <p><strong>FONTE TESTO <a href="https://www.visitrovereto.it" target="_blank">WWW.VISITROVERETO.IT</a></strong></p>
+      <p><strong>FONTE TESTO <a href="https://www.visitrovereto.it" target="_blank">WWW.VISITROVERETO.IT</a></strong>
+      </p>
     </section>
   </div>
 </template>
 
 <script lang="ts" setup>
+import bosco from '~/assets/images/bosco.webp';
+
 useHead({
   title: 'Cosa vedere nei dintorni | Cuore di Bosco - Prada di Brentonico',
   meta: [
@@ -245,17 +247,19 @@ section {
 a {
   font-weight: bold;
 }
+
 .welcome {
   position: relative;
   overflow: hidden;
 }
+
 .landing-image {
   width: 100%;
   height: 400px;
   object-fit: cover;
   object-position: center 50%;
   display: block;
-  }
+}
 
 .landing-text {
   position: absolute;
@@ -267,7 +271,10 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- }
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
 
 .footer {
   max-width: 800px;
@@ -276,6 +283,11 @@ a {
 .image-wrapper img {
   width: 100%;
   height: auto;
+}
+
+.page-title {
+  font-size: 64px;
+  font-variant: small-caps;
 }
 
 @media (max-width: 1024px) {
@@ -306,7 +318,7 @@ a {
     padding: 0;
   }
 
-   .rovereto-inview figure{
+  .rovereto-inview figure {
     margin: 0;
     padding: 0;
   }

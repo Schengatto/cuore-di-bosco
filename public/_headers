@@ -1,0 +1,14 @@
+# Cache immagini per 1 anno
+/*.(jpg|jpeg|png|svg|webp|gif|ico)
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache font
+/*.(woff2|woff|ttf|otf)
+  Cache-Control: public, max-age=31536000, immutable
+
+# JS e CSS (puoi variare se vuoi cache più corta durante lo sviluppo)
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.css
+  Cache-Control: public, max-age=31536000, immutable

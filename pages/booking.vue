@@ -1,13 +1,12 @@
 <template>
   <div>
     <div class="welcome">
-      <img decoding="async" width="1400" height="800" class="landing-image" alt="casa"
-        src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/INGRESSO_CAMERE.jpeg"
+      <img decoding="async" width="1400" height="800" class="landing-image" alt="casa" :src="camere"
         data-object-fit="cover" sizes="(max-width: 1200px) 100vw, 1200px"><span aria-hidden="true"
         style="background-color:#526a71"></span>
       <div class="landing-text">
         <h1 class="page-title text-white">PRENOTA</h1>
-        <h3>ATTENZIONE SITO IN CONSTRUZIONE NON ANCORA ATTIVO</h3>
+        <h3 class="bg-red">ATTENZIONE SITO IN CONSTRUZIONE NON ANCORA ATTIVO</h3>
       </div>
     </div>
 
@@ -17,8 +16,9 @@
     </section>
 
     <div class="text-center">
-      <figure><img decoding="async" src="https://im.altervista.org/wordpress/media/demo-content/agritourism/sep-03c.png"
-          alt="" style="width:220px;height:36px"></figure>
+      <figure class="separator-wrapper">
+        <img decoding="async" class="separator" :src="separator" alt="separator" />
+      </figure>
     </div>
 
     <section class="text-center">
@@ -97,8 +97,7 @@
     </section>
 
     <div class="welcome">
-      <img decoding="async" width="1400" height="800" class="service-image" alt="casa"
-        src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/SALA_COLAZIONI-5-960x720.jpeg"
+      <img decoding="async" width="1400" height="800" class="service-image" alt="casa" :src="colazioni"
         data-object-fit="cover" sizes="(max-width: 1200px) 100vw, 1200px" />
       <div class="landing-text">
         <h1 class="page-title">I NOSTRI SERVIZI</h1>
@@ -190,6 +189,10 @@
 </template>
 
 <script lang="ts" setup>
+import camere from '~/assets/images/camere.webp';
+import colazioni from '~/assets/images/colazioni.webp';
+import separator from '~/assets/images/separator.webp';
+
 useHead({
   title: 'Prenota il tuo soggiorno | Cuore di Bosco - Prada di Brentonico',
   meta: [
@@ -218,8 +221,15 @@ section {
   padding: 2rem;
 }
 
+.bg-red {
+  background-color: red;
+}
+
 .page-title {
   font-size: 42pt;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .landing-image {
@@ -237,6 +247,9 @@ section {
 .landing-title {
   line-height: 1.25;
   font-size: 28pt;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .welcome {
@@ -304,14 +317,16 @@ section {
 
 .separator-wrapper {
   display: flex;
+  margin: 0px;
   justify-content: center;
 }
 
 .separator {
   display: block;
-  margin: 1rem 0;
-  max-width: 100%;
-  min-width: 500px;
+  margin: 0.5rem 0;
+  /* max-width: 100%; */
+  min-width: 100px;
+  width: 200px;
 }
 
 .text-content p {

@@ -71,6 +71,8 @@
 </template>
 
 <script lang="ts" setup>
+import camere from '~/assets/images/camere.webp';
+
 const contactUs = () => {
 
 };

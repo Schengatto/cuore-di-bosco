@@ -1,8 +1,7 @@
 <template>
     <div class="desktop-header">
-        <img height="100" :src="logo"
-            class="custom-logo link" alt="B&amp;B CUORE DI BOSCO PRADA BRENTONICO" decoding="async" fetchpriority="high"
-            :onClick="goToHome" loading="eager">
+        <img height="100" :src="logo" class="custom-logo link" alt="B&amp;B CUORE DI BOSCO PRADA BRENTONICO"
+            decoding="async" fetchpriority="high" :onClick="goToHome" loading="eager">
         <div class="site-name">
             <div class="title">B&B CUORE DI BOSCO</div>
             <div class="site-menu">
@@ -22,13 +21,14 @@
         <div class="site-name-mobile">
             <div class="title">B&B CUORE DI BOSCO PRADA BRENTONICO</div>
         </div>
-        <img height="50" :src=logo
-            class="custom-logo" alt="B&amp;B CUORE DI BOSCO PRADA BRENTONICO" decoding="async" fetchpriority="high"
-            sizes="(max-width: 1000px) 100vw, 1000px" loading="eager">
+        <img height="50" :src=logo class="custom-logo" alt="B&amp;B CUORE DI BOSCO PRADA BRENTONICO" decoding="async"
+            fetchpriority="high" sizes="(max-width: 1000px) 100vw, 1000px" loading="eager">
     </div>
     <div v-if="isMobile && isMenuVisible" class="mobile-menu">
-        <div v-for="page in pageLinks" :key="page.label" class="page-link">
-            <RouterLink :to="page.path" @click="closeMenuAndScroll">{{ page.label }}</RouterLink>
+        <div v-for="page in pageLinks" :key="page.label">
+            <RouterLink :to="page.path" @click="closeMenuAndScroll">
+                <div class="page-link">{{ page.label }}</div>
+            </RouterLink>
         </div>
     </div>
 </template>
@@ -36,7 +36,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-import logo from '~/assets/small-logo.png';
+import logo from '~/assets/images/small-logo.webp';
 
 interface NavLink {
     text: string;
@@ -123,13 +123,13 @@ onUnmounted(() => {
 
 <style scoped>
 #page {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .desktop-header {
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 80px;
     gap: 1em;
 }
 
@@ -172,12 +172,12 @@ onUnmounted(() => {
 .page-link {
     cursor: pointer;
     font-weight: bold;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid transparent !important;
 }
 
 .page-link:hover {
     color: var(--color-primary);
-    border-bottom: 1px solid var(--color-primary);
+    border-bottom: 1px solid var(--color-primary) !important;
 }
 
 .menu-toggle {

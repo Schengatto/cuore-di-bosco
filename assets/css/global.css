@@ -1,8 +1,8 @@
 :root {
-    --color-primary: #4C6B4C;
+    --color-primary: #1ca81c;
     --color-secondary: #088406;
-    --color-success: #84c678;
-    --color-background: #f6eedc;
+    --color-success: #1b650d;
+    --color-background: #f5f1e8;
     --font-base: 'Roboto', sans-serif;
     --spacing-base: 1rem;
 }
@@ -52,6 +52,7 @@ body {
 
 h1 {
     font-size: 26pt;
+    font-variant: small-caps;
 }
 
 h2 {

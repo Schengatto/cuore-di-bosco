@@ -2,14 +2,8 @@
   <div class="container">
     <div>
       <div class="welcome">
-        <img decoding="async" width="1400" height="800" class="landing-image" alt=""
-          src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico.jpg" data-object-fit="cover"
-          srcset="
-            https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico.jpg         1200w,
-            https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico-320x213.jpg  320w,
-            https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico-960x640.jpg  960w,
-            https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/brentonico-768x512.jpg  768w
-          " sizes="(max-width: 1200px) 100vw, 1200px" /><span aria-hidden="true"
+        <img decoding="async" width="1400" height="800" class="landing-image" alt="panorama" :src="brentonico"
+          data-object-fit="cover" loading="lazy" /><span aria-hidden="true"
           class="wp-block-cover__background has-background-dim-30 has-background-dim"
           style="background-color: #526a71"></span>
         <div class="landing-text">
@@ -28,8 +22,7 @@
         </p>
 
         <figure class="separator-wrapper">
-          <img decoding="async" class="separator"
-            src="https://im.altervista.org/wordpress/media/demo-content/agritourism/sep-03c.png" alt="separator" />
+          <img decoding="async" class="separator" :src="separator" alt="separator" />
         </figure>
 
         <p>
@@ -64,8 +57,7 @@
 
       <div class="text-center">
         <figure class="separator-wrapper">
-          <img decoding="async" class="separator"
-            src="https://im.altervista.org/wordpress/media/demo-content/agritourism/sep-03c.png" alt="separator" />
+          <img decoding="async" class="separator" :src="separator" alt="separator" />
         </figure>
       </div>
 
@@ -100,8 +92,7 @@
 
       <section class="breakfast">
         <figure class="separator-wrapper">
-          <img decoding="async" class="separator"
-            src="https://im.altervista.org/wordpress/media/demo-content/agritourism/sep-03c.png" alt="separator" />
+          <img decoding="async" class="separator" :src="separator" alt="separator" />
         </figure>
         <h2>A colazione da noi</h2>
 
@@ -138,6 +129,9 @@
 
 <script setup lang="ts">
 import { useRouter } from "vue-router";
+import brentonico from '~/assets/images/brentonico.webp';
+import separator from '~/assets/images/separator.webp';
+
 useHead({
   title: "Cuore di Bosco B&B",
   meta: [
@@ -210,6 +204,13 @@ section {
   color: white;
   line-height: 1.25;
   font-size: 64px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.landing-title strong {
+  font-weight: 15555;
 }
 
 .welcome {

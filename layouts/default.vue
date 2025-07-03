@@ -48,7 +48,7 @@
                     <a href="https://maps.app.goo.gl/eWviFC8GAjJaqzSU6" target="_blank" class="card link">
                         <h3>Come raggiungerci</h3>
                         <img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/localization.png"
-                            width="64" />
+                            alt="point" width="64" />
                         <p>Imposta su Google Maps questo indirizzo: ti porterà subito da noi!</p>
                         <p><strong>B&B Cuore di Bosco</strong><br />
                             Via Gardesani, 15<br />
@@ -56,7 +56,8 @@
                     </a>
                     <div class="card">
                         <h3>Orari di apertura</h3>
-                        <img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/home.png" width="64" />
+                        <img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/home.png" alt="home"
+                            width="64" />
                         <p>Check in 15.00 – 18.00<br />
                             Check out 9 – 10.30</p>
                         <p><strong>B&B Cuore di Bosco</strong><br />
@@ -66,7 +67,7 @@
                     <div class="card">
                         <h3>Contatti</h3>
                         <img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/phone-call.png"
-                            width="64" />
+                            alt="phone" width="64" />
                         <p>Puoi scriverci al numero <a href="tel:+393494960228">+39 3494960228</a><br />
                             o una mail a <a href="mailto:info@cuoredibosco.it">info@cuoredibosco.it</a></p>
                     </div>
@@ -84,7 +85,7 @@
 
 <style scoped>
 #page {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 header {
