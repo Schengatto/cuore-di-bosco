@@ -41,6 +41,7 @@ import logo from '~/assets/images/small-logo.webp';
 interface NavLink {
     text: string;
     url: string;
+    hidden: boolean;
 }
 
 const router = useRouter();
@@ -51,7 +52,7 @@ const openSubMenus = ref<Set<string>>(new Set());
 const lastScrollPosition = ref(0);
 
 const pageLinks = computed(() => {
-    return routes;
+    return routes.filter(r => !r.hidden);
 });
 
 const currentPageTitle = computed(() => {

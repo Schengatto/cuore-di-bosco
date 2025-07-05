@@ -7,12 +7,14 @@
     --spacing-base: 1rem;
 }
 
-a {
+a,
+.link {
     color: var(--color-primary);
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+.link:hover {
     color: var(--color-secondary);
     transition: color 0.2s ease-in-out;
 }
@@ -67,12 +69,24 @@ p {
     font-size: 16pt;
 }
 
+li {
+    font-size: 16pt;
+    margin: 0.5em 0;
+}
+
+section {
+    padding: 0.5em 2em;
+    margin: 1em auto;
+    max-width: 700px;
+}
+
 @media (max-width: 1024px) {
     p {
         font-size: 14pt;
     }
 
-    h1, .page-title {
+    h1,
+    .page-title {
         font-size: 20pt;
     }
 

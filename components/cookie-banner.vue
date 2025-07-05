@@ -1,11 +1,11 @@
 <template>
     <div v-if="!consentGiven" class="cookie-banner">
-        <p class="cookie-text">
+        <div class="cookie-text">
             Utilizziamo cookie per analisi statistiche (Google Analytics). Acconsenti all'utilizzo?
-            <a href="/privacy-policy" target="_blank" style="color: #007BFF; text-decoration: underline;">
+            <div @click="goToPrivacyPolicy" class="link">
                 Leggi la nostra Privacy Policy
-            </a>
-        </p>
+            </div>
+        </div>
         <div class="cookie-buttons">
             <button @click="acceptCookies" class="accept-button">Accetta</button>
             <button @click="declineCookies" class="decline-button">Rifiuta</button>
@@ -16,25 +16,31 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-const consentGiven = ref(true)
+const consentGiven = ref(true);
+
+const router = useRouter();
+
+const goToPrivacyPolicy = () => {
+    router.push("/privacy-policy");
+};
 
 onMounted(() => {
     const cookie = useCookie('cookie_consent')
     consentGiven.value = cookie.value === 'accepted' || cookie.value === 'declined'
-})
+});
 
 const acceptCookies = () => {
-    const cookie = useCookie('cookie_consent')
-    cookie.value = 'accepted'
-    consentGiven.value = true
-    location.reload() // ricarica per attivare GA
-}
+    const cookie = useCookie('cookie_consent');
+    cookie.value = 'accepted';
+    consentGiven.value = true;
+    location.reload();
+};
 
 const declineCookies = () => {
-    const cookie = useCookie('cookie_consent')
-    cookie.value = 'declined'
-    consentGiven.value = true
-}
+    const cookie = useCookie('cookie_consent');
+    cookie.value = 'declined';
+    consentGiven.value = true;
+};
 </script>
 
 <style scoped>

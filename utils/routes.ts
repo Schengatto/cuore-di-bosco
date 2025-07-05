@@ -39,4 +39,10 @@ export const routes = [
         label: "REGOLAMENTO",
         path: '/rules',
     },
+    {
+        group: "",
+        label: "PRIVACY POLICY",
+        path: '/privacy-policy',
+        hidden: true,
+    },
 ];
