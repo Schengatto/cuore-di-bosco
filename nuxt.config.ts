@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     families: {
       Cardo: true,
     },
-    display: 'swap' // Optional for performance
+    display: 'swap',
+    preconnect: true,
   }
 })

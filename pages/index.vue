@@ -3,9 +3,8 @@
     <div>
       <div class="welcome">
         <img decoding="async" width="1400" height="800" class="landing-image" alt="panorama" :src="brentonico"
-          data-object-fit="cover" loading="lazy" /><span aria-hidden="true"
-          class="wp-block-cover__background has-background-dim-30 has-background-dim"
-          style="background-color: #526a71"></span>
+          data-object-fit="cover" loading="eager" fetchpriority="high" />
+        <span aria-hidden="true"></span>
         <div class="landing-text">
           <h1 class="landing-title">
             Ritrova il tuo tempo,<br />
