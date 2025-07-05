@@ -59,7 +59,7 @@ const declineCookies = () => {
 
 .cookie-text {
     margin-bottom: 12px;
-    font-size: 14px;
+    font-size: 24px;
     color: #333;
 }
 
@@ -76,7 +76,7 @@ const declineCookies = () => {
     padding: 8px 16px;
     cursor: pointer;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .accept-button:hover {
@@ -90,7 +90,7 @@ const declineCookies = () => {
     padding: 8px 16px;
     cursor: pointer;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .decline-button:hover {
