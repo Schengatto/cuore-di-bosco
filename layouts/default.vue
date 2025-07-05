@@ -42,7 +42,7 @@
                 <p class="footer-actions">
                     Prenotare è molto semplice: puoi scriverci una mail a <a
                         href="mailto:info@cuoredibosco.it">info@cuoredibosco.it</a> o un messaggio
-                    whatsapp o telegram al <a href="tel:+39340000000">340 0000000</a>, ti risponderemo al più presto!
+                    whatsapp o telegram al <a href="tel:+3934960228">349 4960228</a>, ti risponderemo al più presto!
                 </p>
                 <div class="footer-cards">
                     <a href="https://maps.app.goo.gl/eWviFC8GAjJaqzSU6" target="_blank" class="card link">
