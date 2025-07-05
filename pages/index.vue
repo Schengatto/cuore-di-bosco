@@ -131,16 +131,7 @@
            <p> E’ stato amore a prima vista. Il nostro posto.
            Noi ci siamo ripresi il nostro tempo lento e la nostra pace, unitevi anche voi!
         </p>
-       <figure class="separator-wrapper">
-          <img decoding="async" class="separator" :src="separator" alt="separator" />
-        </figure>
-         <h2>Esperienze speciali</h2>
-         <p>
-          Di b&b ce ne sono tanti, ma noi speriamo di offrirvi un mix di esperienze speciali: la bellezza delle montagne intorno, 
-          la passione per la cucina e l’ospitalità e tutto l’entusiasmo che mettiamo nel nostro lavoro!</p>
-          <p>Ci siamo organizzati per pensare alle esigenze di coppie e famiglie con bambini, ma vogliamo fare del nostro meglio per accogliere tutti!</p>
-          <p>Per esigenze alimentari particolari come vegetariano, vegano, no glutine, no lattosio e altre siamo a tua disposizione, ti chiediamo di avvisarci prima dell’arrivo per poterci organizzare al meglio! Ci vediamo presto!
-        </p>
+       
 </section>
     </div>
   </div>

@@ -67,7 +67,7 @@ const sections = [
     title: "CHECK-IN E DOCUMENTI",
     content: `
       <p>All’arrivo dovrete presentare un documento d’identità valido. Senza documenti validi non sarà possibile procedere con la registrazione. Trattiamo tutti i dati personali nel rispetto delle normative sulla privacy vigenti.</p>
-      <p>Dopo la registrazione e il saldo, vi consegneremo le chiavi dell’ingresso principale e della vostra camera.</p>
+      <p>Dopo la registrazione e il saldo, vi consegneremo le chiavi dell’ingresso principale e della vostra camera. Per velocizzare il check in alternativa potete inviarci i documenti, ben leggibili, via whatsapp o mail il giorno prima dell'arrivo.</p>
     `,
   },
   {
@@ -80,7 +80,7 @@ const sections = [
   {
     title: "PULIZIE E MANUTENZIONE",
     content: `
-      <p>Il servizio di pulizia è incluso all’arrivo e ogni tre giorni. Pulizie straordinarie su richiesta. Vi chiediamo di liberare la camera per le 10:30. Lasciate gli asciugamani da sostituire sul pavimento del bagno.</p>
+      <p>Il servizio di pulizia è incluso all’arrivo e ogni tre giorni. Pulizie straordinarie su richiesta. Vi chiediamo di liberare la camera per le 10:30 se non diversamente concordato.<br> Lasciate gli asciugamani da sostituire nella doccia o nell'apposita cesta.</p>
     `,
   },
   {

@@ -35,7 +35,7 @@
 
       <p>
         In inverno si raggiungono le <strong>località scistiche</strong> di <strong>Polsa</strong> (10 minuti),
-        <strong>San Giacomo</strong> (15 minuti) e <string>San Valentino</string>
+        <strong>San Giacomo</strong> (15 minuti) e <strong>San Valentino</strong>
         (20 minuti), con piste per ogni età e parchi per bambini, ideali per le prime discese sulla neve, imparare a
         sciare con scuole sci riconosciute o per divertirsi con lo slittino in famiglia, o partecipare alle tante
         attività di giorno e di notte. Per tutte gli eventi aggiornati e le informazioni puoi visitare
@@ -44,8 +44,7 @@
 
       <p>
         Anche <strong>Rovereto</strong> è vicina a 25 minuti, con i suoi musei, il centro storico e le attività
-        culturali per tutte le
-        età con i suoi rinomati musei tra arte, storia e scienza come il MART e l’innovativo museo di scienza ed
+        culturali per tutte le età con i suoi rinomati musei tra arte, storia e scienza come il MART e l’innovativo museo di scienza ed
         archeologia.
         Per scoprire nel dettaglio <a href="https://www.visitrovereto.it/scopri/territorio/rovereto-citta-di-culture/"
           target="_blank">Cosa vedere a Rovereto</a>.
@@ -53,14 +52,13 @@
 
       <p>
         E se volete completare la vostra vacanza con una giornata sul <strong>Lago di Garda</strong>, in circa 30
-        minuti si può
-        raggiungere la cima del Lago di Garda con Torbole e Riva del Garda, con acqua pulita e panorami unici.
+        minuti si può raggiungere la cima del Lago di Garda con Torbole e Riva del Garda, con acqua pulita e panorami unici.
         <a href="https://www.gardatrentino.it/it" target="_blank">Per saperne di più</a>.
       </p>
 
       <p>
         Siamo all’interno della <strong>Vallagarina</strong>: dove natura, cultura e
-        gusto si incontrano. <br>In struttura troverete un ampio display con mappe e materiale informativo e in nostri
+        gusto si incontrano. <br>In struttura troverete un display con mappe e materiale informativo e in nostri
         consigli, per ogni informazione e materiale è possibile visitare il sito <a href="https://www.visitrovereto.it"
           target="_blank" rel="noopener noreferrer nofollow">www.visitrovereto.it</a> e l’accogliente punto di
         informazioni turistiche accanto al comune di Brentonico, proprio accanto ad un ampio e curato parco giochi e
