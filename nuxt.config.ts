@@ -6,9 +6,11 @@ export default defineNuxtConfig({
   css: ['@/assets/css/global.css'],
   googleFonts: {
     families: {
-      Cardo: true,
+      Cardo: [400, 700],
     },
     display: 'swap',
     preconnect: true,
+    download: true,
+    inject: true,
   }
 })
