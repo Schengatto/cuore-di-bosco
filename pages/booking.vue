@@ -169,7 +169,7 @@
 <p>Nelle nostre stanze attrezzate troverai:</p>
 <p>Bagno con doccia, bidet, wc <br>
 Kit asciugamani per ogni ospite<br>
-Pulizia regolare ogni 3 giorni<br>
+Pulizia regolare<br>
 Prodotti ecologici ricaricabili per l’igiene personale<br>
 <br>
 Omaggio di benvenuto<br>

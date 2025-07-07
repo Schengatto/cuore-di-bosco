@@ -80,7 +80,7 @@ const sections = [
   {
     title: "PULIZIE E MANUTENZIONE",
     content: `
-      <p>Il servizio di pulizia è incluso all’arrivo e ogni tre giorni. Pulizie straordinarie su richiesta. Vi chiediamo di liberare la camera per le 10:30 se non diversamente concordato.<br> Lasciate gli asciugamani da sostituire nella doccia o nell'apposita cesta.</p>
+      <p>Il servizio di pulizia è incluso all’arrivo e su base regolare. Pulizie straordinarie su richiesta. Vi chiediamo di liberare la camera per le 10:30 se non diversamente concordato.<br> Lasciate gli asciugamani da sostituire nella doccia o nell'apposita cesta.</p>
     `,
   },
   {
