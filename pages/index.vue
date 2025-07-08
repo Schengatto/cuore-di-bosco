@@ -162,7 +162,6 @@
 import { useRouter } from "vue-router";
 import brentonico from "~/assets/images/brentonico.webp";
 import separator from "~/assets/images/separator.webp";
-import Callout from "~/components/toast.vue";
 
 useHead({
   title: "Cuore di Bosco B&B",
@@ -204,7 +203,7 @@ useHead({
         "Rilassati nel nostro B&B tra i boschi del Trentino. Esperienza autentica, natura, e colazioni fatte in casa.",
     },
   ],
-  link: [{ rel: "canonical", href: "https://cuoredibosco.altervista.org" }],
+  link: [{ rel: "canonical", href: "https://www.cuoredibosco.it" }],
 });
 
 const router = useRouter();
