@@ -10,7 +10,7 @@
             Ritrova il tuo tempo,<br />
             riscopri la pace.
           </h1>
-          <Button label="PRENOTA SUBITO" :onClick="goToBooking" disabled />
+          <Button label="PRENOTA SUBITO" :onClick="goToBooking" />
         </div>
       </div>
 
