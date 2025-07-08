@@ -225,6 +225,10 @@ onUnmounted(() => {
     transform: rotate(-135deg);
 }
 
+.mobile-menu {
+    z-index: 10;
+}
+
 .link-active {
     color: var(--color-success);
 }

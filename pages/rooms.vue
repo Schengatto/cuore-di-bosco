@@ -136,7 +136,6 @@ figure {
 
 @media (max-width: 600px) {
   .rooms {
-    flex-direction: column;
     align-items: center;
   }
 

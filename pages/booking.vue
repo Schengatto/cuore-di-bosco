@@ -6,7 +6,6 @@
         style="background-color:#526a71"></span>
       <div class="landing-text">
         <h1 class="page-title text-white">PRENOTA</h1>
-        <h3 class="bg-red">ATTENZIONE SITO IN CONSTRUZIONE NON ANCORA ATTIVO</h3>
       </div>
     </div>
 

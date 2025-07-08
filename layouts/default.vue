@@ -5,6 +5,7 @@
 
     <div id="page">
         <main>
+            <Toast message="Il B&B Cuore di Bosco è attualmente chiuso e aprirà in autunno 2025. A presto!" type="warning" />
             <slot />
             <a href="https://wa.me/393494960228" target="_blank" class="whatsapp">
                 <div class="whatsapp-btn" data-nb_top="-10px" data-nb_right="-10px">
@@ -81,6 +82,8 @@
 
 
 <script setup lang="ts">
+import Toast from '~/components/toast.vue';
+
 </script>
 
 <style scoped>
@@ -92,7 +95,7 @@ header {
     top: 0;
     gap: 1.5em;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     background-color: var(--color-background);
     width: 100%;
 }
