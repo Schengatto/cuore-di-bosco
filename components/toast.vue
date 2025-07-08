@@ -27,7 +27,7 @@ onMounted(() => {
 <style scoped>
 .toast {
     position: fixed;
-    top: 50px;
+    top: 80px;
     left: 50%;
     transform: translateX(-50%);
     min-width: 100%;
@@ -63,6 +63,12 @@ onMounted(() => {
     to {
         opacity: 1;
         transform: translate(-50%, 0);
+    }
+}
+
+@media (max-width: 800px) {
+    .toast {
+        top: 50px;
     }
 }
 </style>
