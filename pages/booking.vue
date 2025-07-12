@@ -56,9 +56,8 @@
           <h2>MIRTILLO</h2>
           <p class="room-short">Spaziosa e accogliente, adatta a famiglie che desiderano comfort e tranquillità.</p>
           <p>Camera doppia con camera matrimoniale da 23 mq e seconda camera con letto a castello. Armadio,
-            cassettiera, zona relax con poltrona, frigobar, macchina del caffè e bollitore. Prodotti per igiene
-            personale,
-            pulizia e biancheria inclusi. Per famiglie con bambini tutto lo spazio e le comodità necessarie!</p>
+            cassettiera, zona relax con poltrona, frigobar, macchina del caffè e bollitore. Bagno con doccia, lavabo e bidet.
+            Prodotti per igiene personale, pulizia e biancheria inclusi. Per famiglie con bambini tutto lo spazio e le comodità necessarie!</p>
           <h3>€ 100 a notte a dimora</h3>
         </div>
       </div>
