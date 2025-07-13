@@ -47,7 +47,7 @@
         <ul>
             <li><a href="https://support.google.com/chrome/answer/95647?hl=it" target="_blank" rel="noopener">Google
                     Chrome</a></li>
-            <li><a href="https://support.mozilla.org/it/kb/gestione-dei-cookie" target="_blank" rel="noopener">Mozilla
+            <li><a href="https://support.mozilla.org/it/kb/Gestione%20dei%20cookie" target="_blank" rel="noopener">Mozilla
                     Firefox</a></li>
             <li><a href="https://support.microsoft.com/it-it/microsoft-edge/eliminare-i-cookie-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
                     target="_blank" rel="noopener">Microsoft Edge</a></li>

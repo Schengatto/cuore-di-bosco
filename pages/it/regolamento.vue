@@ -17,7 +17,6 @@
     </div>
 
     <main class="content">
-      <!-- Tutte le sezioni -->
       <section v-for="(block, index) in sections" :key="index" class="rule-box">
         <h2>{{ block.title }}</h2>
         <div v-html="block.content"></div>
@@ -34,8 +33,6 @@
 </template>
 
 <script lang="ts" setup>
-import bosco from "~/assets/images/bosco.webp";
-// Ogni sezione come titolo + HTML (p o ul)
 const sections = [
   {
     title: "TARIFFE E SERVIZI INCLUSI",
@@ -130,7 +127,7 @@ useHead({
         "regole B&B, soggiorno responsabile, regole Cuore di Bosco, norme casa vacanza",
     },
   ],
-  link: [{ rel: "canonical", href: "https://www.cuoredibosco.it/rules" }],
+  link: [{ rel: "canonical", href: "https://www.cuoredibosco.it/it/regolamento" }],
 });
 </script>
 

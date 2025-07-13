@@ -1,48 +1,82 @@
-export const routes = [
+export type LanguageCode = "it" | "en";
+
+const italianRoutes = [
     {
+        id: "welcome",
         group: "",
         label: "BENVENUTI",
-        path: '/',
+        path: `/it`,
     },
-    // {
-    //     group: "",
-    //     label: "LA NOSTRA CASA",
-    //     path: '/location',
-    // },
-    // {
-    //     group: "",
-    //     label: "DIMORE DEL BOSCO",
-    //     path: '/rooms',
-    // },
-    // {
-    //     group: "",
-    //     label: "RAGGIUNGICI",
-    //     path: '/get-here',
-    // },
     {
+        id: "booking",
         group: "",
         label: "PRENOTA",
-        path: '/booking',
+        path: `/it/prenota`,
     },
     {
+        id: "explore",
         group: "",
         label: "ESPLORA",
-        path: '/explore',
+        path: `/it/esplora`,
     },
-    // {
-    //     group: "",
-    //     label: "I NOSTRI SERVIZI",
-    //     path: '/services',
-    // },
     {
+        id: "rules",
         group: "",
         label: "REGOLAMENTO",
-        path: '/rules',
+        path: `/it/regolamento`,
     },
     {
+        id: "privacy-policy",
         group: "",
         label: "PRIVACY POLICY",
-        path: '/privacy-policy',
+        path: `/it/privacy-policy`,
         hidden: true,
     },
 ];
+
+
+const englishRoutes = [
+    {
+        id: "welcome",
+        group: "",
+        label: "WELCOME",
+        path: `/en`,
+    },
+    {
+        id: "booking",
+        group: "",
+        label: "BOOK",
+        path: `/en/booking`,
+    },
+    {
+        id: "explore",
+        group: "",
+        label: "EXPLORE",
+        path: `/en/explore`,
+    },
+    {
+        id: "rules",
+        group: "",
+        label: "RULES",
+        path: `/en/rules`,
+    },
+    {
+        id: "privacy-policy",
+        group: "",
+        label: "PRIVACY POLICY",
+        path: `/en/privacy-policy`,
+        hidden: true,
+    },
+];
+
+
+export const routes = (languageCode: LanguageCode) => {
+    switch (languageCode) {
+        case "en":
+            return englishRoutes;
+        case "it":
+        default:
+            return italianRoutes;
+
+    }
+};

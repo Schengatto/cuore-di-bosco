@@ -5,7 +5,8 @@
 
     <div id="page">
         <main>
-            <Toast message="Il B&B Cuore di Bosco è attualmente chiuso e aprirà in autunno 2025. A presto!" type="warning" />
+            <Toast message="Il B&B Cuore di Bosco è attualmente chiuso e aprirà in autunno 2025. A presto!"
+                type="warning" />
             <slot />
             <a href="https://wa.me/393494960228" target="_blank" class="whatsapp">
                 <div class="whatsapp-btn" data-nb_top="-10px" data-nb_right="-10px">
@@ -84,6 +85,8 @@
 <script setup lang="ts">
 import Toast from '~/components/toast.vue';
 
+const { setLocale } = useI18n();
+setLocale("it");
 </script>
 
 <style scoped>

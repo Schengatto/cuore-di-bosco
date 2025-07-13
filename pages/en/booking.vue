@@ -1,16 +1,29 @@
 <template>
   <div>
     <div class="welcome">
-      <img decoding="async" width="1400" height="800" class="landing-image" alt="casa" :src="camere"
+      <img decoding="async" width="1400" height="800" class="landing-image" alt="house" :src="camere"
         data-object-fit="cover" sizes="(max-width: 1200px) 100vw, 1200px"><span aria-hidden="true"
         style="background-color:#526a71"></span>
       <div class="landing-text">
-        <h1 class="page-title text-white">PRENOTA</h1>
+        <h1 class="page-title text-white">BOOK NOW</h1>
       </div>
     </div>
 
     <section class="text-center">
+      <p>Welcome to <strong>B&amp;B <em>Cuore di Bosco</em></strong>,<br>a haven immersed in the nature of the
+        <strong>Vallagarina</strong>,<br>on the <strong>Brentonico Plateau</strong>, <strong>Europe’s Garden</strong>.
+        <br>Surrounded by lush mountains, time slows down<br>and tranquility reigns supreme.
+      </p>
+      <p>There are many B&amp;Bs, but we hope to offer you<br> a mix of special experiences: the beauty of the
+        surrounding mountains,<br>
+        our passion for cooking and hospitality, and all the enthusiasm<br> we put into our work!</p>
+      <p>For special dietary needs like vegetarian,<br> vegan, gluten-free, lactose-free, or others—we’re here for you!
+        <br> Just let us know before your arrival<br> so we can prepare accordingly!
+      </p>
+      <p> See you soon!</p>
     </section>
+
+    <!-- Booking widget placeholder -->
 
     <div class="text-center">
       <figure class="separator-wrapper">
@@ -18,31 +31,13 @@
       </figure>
     </div>
 
-    <section class="text-center">
-      <p>Benvenuti al&nbsp;<strong>B&amp;B&nbsp;<em>Cuore di Bosco</em></strong>,<br>un rifugio immerso nella natura
-        della&nbsp;<strong>Vallagarina</strong>,<br>sull’A<strong>ltopiano di Brentonico</strong>,&nbsp;<strong>il
-          giardino d’Europa</strong>.<br>Circondati da rigogliose montagne, il tempo rallenta<br>e la tranquillità regna
-        sovrana.</p>
-      <p>Di b&b ce ne sono tanti, ma noi speriamo di offrirvi<br> un mix di esperienze speciali: la bellezza delle
-        montagne intorno,<br>
-        la passione per la cucina e l’ospitalità e tutto l’entusiasmo<br> che mettiamo nel nostro lavoro!</p>
-      <p>Per esigenze alimentari particolari come vegetariano,<br> vegano, no glutine, no lattosio e altre siamo a tua
-        disposizione,<br> ti chiediamo di avvisarci prima dell’arrivo <br>per poterci organizzare al meglio!</p>
-      <p> Ci vediamo presto!</p>
-    </section>
-
-    <!-- <section>
-      <iframe src="https://www.bed-and-breakfast.it/booking-engine/widget.cfm?id_struttura=TUO_ID_STRUTTURA"
-        width="100%" height="600" frameborder="0" scrolling="auto" style="border: none;">
-      </iframe>
-    </section> -->
-
     <section class="intro">
-      <h2 class="intro-title">Scopri le nostre camere</h2>
+      <h2 class="intro-title">Discover our rooms</h2>
       <blockquote class="intro-text">
-        <p>B&amp;B Cuore di Bosco è la nostra e la vostra casa in
-          montagna, un rifugio di pace e quiete dove riposare mente e cuore</p>
-        <p>A richiesta kit bimbo con lettino con materasso, lenzuola e coperte, fasciatoio e scalda biberon.</p>
+        <p>B&amp;B Cuore di Bosco is our home and yours in the
+          mountains—a peaceful refuge to rest your mind and heart.</p>
+        <p>Upon request, baby kit including crib with mattress, sheets and blankets, changing table, and bottle warmer.
+        </p>
       </blockquote>
     </section>
 
@@ -50,40 +45,41 @@
       <div class="card text-center">
         <figure>
           <img decoding="async" width="128" height="128"
-            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/blueberry.png" alt="mirtillo">
+            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/blueberry.png" alt="blueberry">
         </figure>
         <div class="room-info">
-          <h2>MIRTILLO</h2>
-          <p class="room-short">Spaziosa e accogliente, adatta a famiglie che desiderano comfort e tranquillità.</p>
-          <p>Camera doppia con camera matrimoniale da 23 mq e seconda camera con letto a castello. Armadio,
-            cassettiera, zona relax con poltrona, frigobar, macchina del caffè e bollitore. Bagno con doccia, lavabo e bidet.
-            Prodotti per igiene personale, pulizia e biancheria inclusi. Per famiglie con bambini tutto lo spazio e le comodità necessarie!</p>
-          <h3>€ 100 a notte a dimora</h3>
+          <h2>BLUEBERRY</h2>
+          <p class="room-short">Spacious and welcoming, ideal for families seeking comfort and tranquility.</p>
+          <p>Double room with 23 sqm master bedroom and a second room with bunk beds. Wardrobe, chest of drawers,
+            relaxation area with armchair, minibar, coffee machine, and kettle. Bathroom with shower, sink, and bidet.
+            Personal hygiene products, cleaning, and linens included. Perfect for families with kids, offering all the
+            space and comfort you need!</p>
+          <h3>€ 100 per night per stay</h3>
         </div>
       </div>
 
       <div class="card text-center">
         <figure>
           <img decoding="async" width="128" height="128"
-            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/raspberry.png" alt="lampone">
+            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/raspberry.png" alt="raspberry">
         </figure>
         <div class="room-info">
-          <h2>LAMPONE</h2>
-          <p class="room-short">Fresca e luminosa, perfetta per chi ama la natura.</p>
-          <p>Ampia camera matrimoniale o tripla da 30 mq con letto matrimoniale ed eventuale terzo letto, armadio,
-            cassettiera, zona relax con divano, frigobar, macchina del caffè e bollitore. Bagno con doccia, lavabo e
-            bidet. Prodotti per igiene personale, pulizia e biancheria inclusi. Per famiglia o tra amici, con vista
-            panoramica e pace!</p>
-          <h3>€ 90 a notte a dimora </h3>
+          <h2>RASPBERRY</h2>
+          <p class="room-short">Fresh and bright, perfect for nature lovers.</p>
+          <p>Spacious 30 sqm double or triple room with double bed and optional third bed, wardrobe, chest of drawers,
+            relaxation area with sofa, minibar, coffee machine, and kettle. Bathroom with shower, sink, and bidet.
+            Personal hygiene products, cleaning, and linens included. Great for families or friends, with panoramic
+            views and peace!</p>
+          <h3>€ 90 per night per stay</h3>
         </div>
       </div>
     </section>
 
     <div class="welcome">
-      <img decoding="async" width="1400" height="800" class="service-image" alt="casa" :src="colazioni"
+      <img decoding="async" width="1400" height="800" class="service-image" alt="house" :src="colazioni"
         data-object-fit="cover" sizes="(max-width: 1200px) 100vw, 1200px" />
       <div class="landing-text">
-        <h1 class="page-title">I NOSTRI SERVIZI</h1>
+        <h1 class="page-title">OUR SERVICES</h1>
       </div>
     </div>
 
@@ -94,148 +90,133 @@
           <figcaption>FREE WIFI</figcaption>
         </figure>
         <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/towels-1.png"
-            alt="ASCIUGAMANI E BIANCHERIA INCLUSI" />
-          <figcaption>ASCIUGAMANI E BIANCHERIA INCLUSI</figcaption>
+            alt="TOWELS AND LINENS INCLUDED" />
+          <figcaption>TOWELS AND LINENS INCLUDED</figcaption>
         </figure>
         <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/products.png"
-            alt="DOTAZIONI DI CORTESIA PER GLI OSPITI" />
-          <figcaption>DOTAZIONI DI CORTESIA PER GLI OSPITI</figcaption>
+            alt="COMPLIMENTARY AMENITIES" />
+          <figcaption>COMPLIMENTARY AMENITIES</figcaption>
         </figure>
         <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/shower.png"
-            alt="DOCCIA E BAGNO PRIVATI" />
-          <figcaption>DOCCIA E BAGNO PRIVATI</figcaption>
+            alt="PRIVATE SHOWER AND BATHROOM" />
+          <figcaption>PRIVATE SHOWER AND BATHROOM</figcaption>
         </figure>
         <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/breakfast.png"
-            alt="COLAZIONE DOLCE E SALATA" />
-          <figcaption>COLAZIONE DOLCE E SALATA</figcaption>
+            alt="SWEET AND SAVOURY BREAKFAST" />
+          <figcaption>SWEET AND SAVOURY BREAKFAST</figcaption>
         </figure>
         <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/kettle.png"
-            alt="SET BOLLITORE" />
-          <figcaption>SET BOLLITORE</figcaption>
+            alt="KETTLE SET" />
+          <figcaption>KETTLE SET</figcaption>
         </figure>
         <figure class="icon"><img
             src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/laundry-machine.png"
-            alt="SERVIZIO LAVANDERIA" />
-          <figcaption>SERVIZIO LAVANDERIA</figcaption>
+            alt="LAUNDRY SERVICE" />
+          <figcaption>LAUNDRY SERVICE</figcaption>
         </figure>
         <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/bicycle.png"
-            alt="BICICLETTE A DISPOSIZIONE" />
-          <figcaption>BICICLETTE A DISPOSIZIONE</figcaption>
+            alt="BICYCLES AVAILABLE" />
+          <figcaption>BICYCLES AVAILABLE</figcaption>
         </figure>
         <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/toys.png"
-            alt="GIOCHI PER BAMBINI" />
-          <figcaption>GIOCHI PER BAMBINI</figcaption>
+            alt="TOYS FOR CHILDREN" />
+          <figcaption>TOYS FOR CHILDREN</figcaption>
         </figure>
         <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/pencils.png"
-            alt="DOTAZIONI PER BAMBINI" />
-          <figcaption>DOTAZIONI PER BAMBINI</figcaption>
+            alt="CHILDREN’S SUPPLIES" />
+          <figcaption>CHILDREN’S SUPPLIES</figcaption>
         </figure>
         <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/crib.png"
-            alt="CULLA PER BAMBINI" />
-          <figcaption>CULLA PER BAMBINI</figcaption>
+            alt="BABY CRIB" />
+          <figcaption>BABY CRIB</figcaption>
         </figure>
         <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/coloring.png"
-            alt="MATERIALI PER BAMBINI" />
-          <figcaption>MATERIALI PER BAMBINI</figcaption>
+            alt="MATERIALS FOR CHILDREN" />
+          <figcaption>MATERIALS FOR CHILDREN</figcaption>
         </figure>
         <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/baby-carrier.png"
-            alt="SUPPORTI PER PORTARE" />
-          <figcaption>SUPPORTI PER PORTARE</figcaption>
+            alt="BABY CARRIERS" />
+          <figcaption>BABY CARRIERS</figcaption>
         </figure>
         <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/bookshelf.png"
-            alt="LIBRERIA PER ADULTI E BAMBINI" />
-          <figcaption>LIBRERIA PER ADULTI E BAMBINI</figcaption>
+            alt="LIBRARY FOR ADULTS AND CHILDREN" />
+          <figcaption>LIBRARY FOR ADULTS AND CHILDREN</figcaption>
         </figure>
         <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/picnic-basket.png"
-            alt="SERVIZIO PIC-NIC" />
-          <figcaption>SERVIZIO PIC-NIC</figcaption>
+            alt="PICNIC SERVICE" />
+          <figcaption>PICNIC SERVICE</figcaption>
         </figure>
       </div>
     </section>
 
     <section class="text-left">
-      <p><b>Servizi per famiglie</b></p>
+      <p><b>Family Services</b></p>
 
-      <p>Sappiamo bene quanto è complicato spostarsi e rilassarsi con uno o più figli!<br>
-        Per questo abbiamo cercato di rendere la vita più facile e la vacanza più rilassata ai genitori! Da noi
-        troverete:</p>
-      <p>BABY KIT: Abbiamo tutto quello che serve! Fasciatoio con vaschetta per bagno o vasino, seggiolone,
-        scaldabiberon o microonde a disposizione in sala colazione,
-        frigobar in camera, passeggino, marsupio 6/36 mesi o preschool 3-6 anni o fasce (con cauzione), scaletta o
-        gradino per il bagno, piattini, posate e bicchieri da bimbi,
-        libreria ed angolo giochi attrezzato (in realizzazione).</p>
-      <p>SCRIVICI! A colazione preferiscono qualcosa di particolare? Informateci e ci attrezziamo! <br> Giornata grigia?
-        Organizziamo la merenda insieme! Merenda per i piccoli e aperitivo relax per i grandi!</p>
-      <p>NOLEGGIO BICI: le nostre bici per grandi e piccoli (con casco!) sono a vostra disposizione (con cauzione)</p>
-      <p>PIC NIC DAY: Gita nel bosco? Prepariamo noi il cestino, preavvisateci 1-2 giorni prima con le vostre preferenze
-        e l’orario e provvediamo al cesto pronto da portare via. (servizio a pagamento)</p>
-      <p></p>
+      <p>We know how tricky it can be to travel and relax with one or more kids!<br>
+        That’s why we’ve tried to make life easier and vacations more relaxing for parents! Here you’ll find:</p>
+      <p>BABY KIT: We have everything you need! Changing table with tub or potty, high chair, bottle warmer or microwave
+        in the breakfast room,
+        in-room minibar, stroller, baby carrier (6–36 months or preschool 3–6 years, or wraps with deposit), bathroom
+        step stool, children’s plates, cutlery, and cups,
+        library and play area (under development).</p>
+      <p>WRITE TO US! Do they have breakfast preferences? Let us know and we’ll get ready!<br> Gray day?
+        Let’s organize a snack together! Treats for the kids and a relaxing aperitif for the grown-ups!</p>
+      <p>BIKE RENTAL: Our bikes for adults and children (with helmets!) are at your disposal (with deposit)</p>
+      <p>PICNIC DAY: Heading into the woods? We’ll prepare the basket—just let us know 1–2 days in advance with your
+        preferences and time and we’ll have it ready to go. (paid service)</p>
 
-      <p><b>Servizi in camera</b></p>
-      <p>Nelle nostre stanze attrezzate troverai:</p>
-      <p>Bagno con doccia, bidet, wc <br>
-        Kit asciugamani per ogni ospite<br>
-        Pulizia regolare<br>
-        Prodotti ecologici ricaricabili per l’igiene personale<br>
-        <br>
-        Omaggio di benvenuto<br>
-        Frigobar silenzioso<br>
-        Bicchieri<br>
-        <br>
-        Materiale ecologico per pulizie, scopa e paletta<br>
-        Stendino e mollette in balcone (clima permettendo)
+      <p><b>In-Room Services</b></p>
+      <p>In our well-equipped rooms you’ll find:</p>
+      <p>Bathroom with shower, bidet, toilet<br>
+        Towel kit for each guest<br>
+        Regular cleaning<br>
+        Refillable eco-friendly hygiene products<br><br>
+        Welcome gift<br>
+        Silent minibar<br>
+        Glasses<br><br>
+        Eco-friendly cleaning products, broom and dustpan<br>
+        Clothes rack and pegs on the balcony (weather permitting)
       </p>
 
-      <p><b>Altri servizi per te!</b></p>
-      <p>Wi-fi gratuita <br> Servizio deposito bici / scarponi / sci e altro materiale <br>
-        Servizio a richiesta di lavanderia express con prodotti ecologici, biodegradabili certificati (a pagamento)<br>
-        Angolo libreria e relax (orario 15-18) con ampia terrazza (clima permettendo)<br>
-        Nell’apposito stand inoltre troverei tutte le mappe e i depliant informativi di APT Rovereto e Vallagarina.
+      <p><b>Other services for you!</b></p>
+      <p>Free Wi-Fi<br>
+        Storage for bikes / boots / skis and other gear<br>
+        Express laundry service on request with certified ecological, biodegradable products (paid service)<br>
+        Reading and relaxation corner (open 3–6 pm) with a large terrace (weather permitting)<br>
+        You’ll also find all maps and brochures from APT Rovereto and Vallagarina at the dedicated stand.
       </p>
     </section>
-
-
-    <!-- <section>
-      <div class="photos">
-        <figure>
-          <img decoding="async" width="960" height="639"
-            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/ESTERNO2.jpeg" alt=""
-            class="wp-image-624" sizes="(max-width: 960px) 100vw, 960px">
-        </figure>
-
-        <figure>
-          <img decoding="async" width="960" height="410"
-            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/TERRAZZA.jpeg" alt=""
-            class="wp-image-588" sizes="(max-width: 960px) 100vw, 960px">
-        </figure>
-      </div>
-    </section> -->
   </div>
 </template>
+
 
 <script lang="ts" setup>
 import camere from "~/assets/images/camere.webp";
 import colazioni from "~/assets/images/colazioni.webp";
 import separator from "~/assets/images/separator.webp";
 
+definePageMeta({
+  layout: 'english'
+});
+
 useHead({
-  title: "Prenota il tuo soggiorno | Cuore di Bosco - Prada di Brentonico",
+  title: "Book Your Stay | Cuore di Bosco - Prada di Brentonico",
   meta: [
     {
       name: "description",
       content:
-        "Prenota il tuo soggiorno al B&B Cuore di Bosco, immerso nella natura di Prada di Brentonico. Comfort, relax e autenticità nel cuore del Trentino.",
+        "Book your stay at B&B Cuore di Bosco, surrounded by nature in Prada di Brentonico. Comfort, relaxation, and authenticity in the heart of Trentino.",
     },
     {
       name: "keywords",
       content:
-        "B&B Cuore di Bosco, Prada di Brentonico, bed and breakfast Trentino, soggiorno in montagna, prenotazione B&B, vacanza natura",
+        "B&B Cuore di Bosco, Prada di Brentonico, bed and breakfast Trentino, mountain stay, B&B booking, nature vacation",
     },
   ],
   link: [
     {
       rel: "canonical",
-      href: "https://www.cuoredibosco.it/booking",
+      href: "https://www.cuoredibosco.it/en/booking",
     },
   ],
 });

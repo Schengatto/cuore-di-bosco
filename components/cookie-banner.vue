@@ -1,14 +1,14 @@
 <template>
     <div v-if="!consentGiven" class="cookie-banner">
         <div class="cookie-text">
-            Utilizziamo cookie per analisi statistiche (Google Analytics). Acconsenti all'utilizzo?
+            {{ $t("cookies-banner-message") }}
             <div @click="goToPrivacyPolicy" class="link">
-                Leggi la nostra Privacy Policy
+                {{ $t("cookies-banner-read-policy") }}
             </div>
         </div>
         <div class="cookie-buttons">
-            <button @click="acceptCookies" class="accept-button">Accetta</button>
-            <button @click="declineCookies" class="decline-button">Rifiuta</button>
+            <button @click="acceptCookies" class="accept-button">{{ $t("common.accept") }}</button>
+            <button @click="declineCookies" class="decline-button">{{ $t("common.reject") }}</button>
         </div>
     </div>
 </template>
@@ -16,12 +16,15 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-const consentGiven = ref(true);
-
+const route = useRoute();
 const router = useRouter();
 
+const consentGiven = ref(true);
+const currentLocale = computed(() => route?.path?.split('/')[1]);
+const privacyPolicyPage = computed(() => `${currentLocale.value}/privacy-policy`);
+
 const goToPrivacyPolicy = () => {
-    router.push("/privacy-policy");
+    router.push(privacyPolicyPage.value);
 };
 
 onMounted(() => {

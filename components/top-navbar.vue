@@ -4,6 +4,9 @@
             decoding="async" fetchpriority="high" :onClick="goToHome" loading="eager">
         <div class="site-name">
             <div class="title">B&B CUORE DI BOSCO</div>
+            <div>
+                <LanguageSwitcher />
+            </div>
             <div class="site-menu">
                 <div v-for="page in pageLinks" :key="page.label" class="page-link">
                     <RouterLink :to="page.path" @click="closeMenuAndScroll" activeClass="link-active">{{ page.label }}
@@ -30,13 +33,17 @@
                 <div class="page-link">{{ page.label }}</div>
             </RouterLink>
         </div>
+        <div class="mobile-language-switcher">
+            <LanguageSwitcher />
+        </div>
     </div>
 </template>
 
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
+import { useRouter } from 'vue-router';
 import logo from '~/assets/images/small-logo.webp';
+import type { LanguageCode } from '~/utils/routes';
 
 interface NavLink {
     text: string;
@@ -44,20 +51,18 @@ interface NavLink {
     hidden: boolean;
 }
 
-const router = useRouter();
 const route = useRoute();
+const router = useRouter();
 const isMobile = ref(false);
 const isMenuVisible = ref(false);
 const openSubMenus = ref<Set<string>>(new Set());
 const lastScrollPosition = ref(0);
 
-const pageLinks = computed(() => {
-    return routes.filter(r => !r.hidden);
-});
+const currentLocale = computed<LanguageCode>(() => route?.path?.split('/')[1] as LanguageCode);
 
-const currentPageTitle = computed(() => {
-    const currentRoute = routes.find(r => r.path === route.path);
-    return currentRoute ? currentRoute.label : '';
+
+const pageLinks = computed(() => {
+    return routes(currentLocale.value || "it").filter(r => !r.hidden);
 });
 
 const toggleMenu = () => {
@@ -293,6 +298,10 @@ onUnmounted(() => {
         text-decoration: none;
         color: var(--color-primary);
         /* border-bottom: 1px lightgray solid; */
+    }
+
+    .mobile-language-switcher {
+        padding: 0 0.5rem;
     }
 }
 
