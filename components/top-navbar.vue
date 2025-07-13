@@ -4,7 +4,7 @@
             decoding="async" fetchpriority="high" :onClick="goToHome" loading="eager">
         <div class="site-name">
             <div class="title">B&B CUORE DI BOSCO</div>
-            <div>
+            <div class="desktop-language-switcher">
                 <LanguageSwitcher />
             </div>
             <div class="site-menu">
@@ -137,7 +137,7 @@ onUnmounted(() => {
 
 .site-name {
     display: flex;
-    justify-content: space-between;
+    justify-content: baseline;
     width: 100%;
     padding: 0 1em;
 }
@@ -159,12 +159,14 @@ onUnmounted(() => {
 }
 
 .site-menu {
+    flex-grow: 1;
+    align-items: right;
     margin-top: 1em;
     display: flex;
     font-size: 14px;
     gap: 1.2em;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    width: auto;
 }
 
 .page-link {
@@ -236,6 +238,12 @@ onUnmounted(() => {
 
 .link-active {
     color: var(--color-success);
+}
+
+.desktop-language-switcher {
+    display: flex;
+    justify-content: right;
+    flex-grow: 1;
 }
 
 @media (max-width: 1024px) {

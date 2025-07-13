@@ -26,14 +26,30 @@ function getFlagCode(code) {
   return map[code] || 'un'
 }
 
-function setLocale(newLocale) {
+const setLocale = (newLocale) => {
   const segments = route.path.split('/');
-  if (segments[1] === newLocale) return;
+  const currentLocale = segments[1];
 
-  segments[1] = newLocale;
-  const newPath = segments.join('/') || '/';
-  console.log(newPath)
-  router.push(newPath);
+  if (currentLocale === newLocale) return;
+
+  const currentRoutes = routes(currentLocale);
+  const newRoutes = routes(newLocale);
+
+  const currentPathWithoutLocale = '/' + segments.slice(2).join('/');
+
+  const currentRoute = currentRoutes.find(r => r.path.endsWith(currentPathWithoutLocale));
+  if (!currentRoute) {
+    router.push(`/${newLocale}`);
+    return;
+  }
+
+  const newRoute = newRoutes.find(r => r.id === currentRoute.id);
+  if (!newRoute) {
+    router.push(`/${newLocale}`);
+    return;
+  }
+
+  router.push(newRoute.path);
 }
 </script>
 

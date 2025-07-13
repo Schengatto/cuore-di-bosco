@@ -21,10 +21,10 @@ const router = useRouter();
 
 const consentGiven = ref(true);
 const currentLocale = computed(() => route?.path?.split('/')[1]);
-const privacyPolicyPage = computed(() => `${currentLocale.value}/privacy-policy`);
 
 const goToPrivacyPolicy = () => {
-    router.push(privacyPolicyPage.value);
+    const target = routes(currentLocale).find(r => r.id === "privacy-policy")
+    router.push(target.path);
 };
 
 onMounted(() => {
