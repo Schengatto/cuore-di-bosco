@@ -3,6 +3,8 @@
         <TopNavbar />
     </header>
 
+    <CookieBanner />
+
     <div id="page">
         <main>
             <Toast message="Il B&B Cuore di Bosco è attualmente chiuso e aprirà in autunno 2025. A presto!"

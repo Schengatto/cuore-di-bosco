@@ -2,9 +2,9 @@
     <div v-if="!consentGiven" class="cookie-banner">
         <div class="cookie-text">
             {{ $t("cookies-banner-message") }}
-            <div @click="goToPrivacyPolicy" class="link">
+            <a :href="policyPage" class="link">
                 {{ $t("cookies-banner-read-policy") }}
-            </div>
+            </a>
         </div>
         <div class="cookie-buttons">
             <button @click="acceptCookies" class="accept-button">{{ $t("common.accept") }}</button>
@@ -17,15 +17,10 @@
 import { ref, onMounted } from 'vue'
 
 const route = useRoute();
-const router = useRouter();
-
-const consentGiven = ref(true);
 const currentLocale = computed(() => route?.path?.split('/')[1]);
 
-const goToPrivacyPolicy = () => {
-    const target = routes(currentLocale).find(r => r.id === "privacy-policy")
-    router.push(target.path);
-};
+const consentGiven = ref(true);
+const policyPage = `/${currentLocale.value}/privacy-policy`;
 
 onMounted(() => {
     const cookie = useCookie('cookie_consent')
