@@ -7,7 +7,7 @@
 
     <div id="page">
         <main>
-            <Toast message="Il B&B Cuore di Bosco è attualmente chiuso e aprirà in autunno 2025. A presto!"
+            <Toast message="Il B&B Cuore di Bosco aprirà in autunno 2025. A presto!"
                 type="warning" />
             <slot />
             <a href="https://wa.me/393494960228" target="_blank" class="whatsapp">

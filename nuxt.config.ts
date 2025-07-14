@@ -9,7 +9,8 @@ export default defineNuxtConfig({
   css: ['@/assets/css/global.css'],
   googleFonts: {
     families: {
-      Cardo: [400, 700],
+      Cardo: [400, 700], 
+      Yesteryear:[400, 700]
     },
     display: 'swap',
     preconnect: true,

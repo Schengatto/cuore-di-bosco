@@ -3,7 +3,7 @@
         <img height="100" :src="logo" class="custom-logo link" alt="B&amp;B CUORE DI BOSCO PRADA BRENTONICO"
             decoding="async" fetchpriority="high" :onClick="goToHome" loading="eager">
         <div class="site-name">
-            <div class="title">B&B CUORE DI BOSCO</div>
+            <div class="title">B&B Cuore di Bosco</div>
             <div class="desktop-language-switcher">
                 <LanguageSwitcher />
             </div>
@@ -22,7 +22,7 @@
             <span></span>
         </div>
         <div class="site-name-mobile">
-            <div class="title">B&B CUORE DI BOSCO PRADA BRENTONICO</div>
+            <div class="title">B&B Cuore di Bosco Prada Brentonico</div>
         </div>
         <img height="50" :src=logo class="custom-logo" alt="B&amp;B CUORE DI BOSCO PRADA BRENTONICO" decoding="async"
             fetchpriority="high" sizes="(max-width: 1000px) 100vw, 1000px" loading="eager">
@@ -42,7 +42,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue';
 import { useRouter } from 'vue-router';
-import logo from '~/assets/images/small-logo.webp';
+import logo from '~/assets/images/logo_400.webp';
 import type { LanguageCode } from '~/utils/routes';
 
 interface NavLink {
@@ -149,7 +149,8 @@ onUnmounted(() => {
 }
 
 .title {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    font-family: 'Yesteryear', Courier, monospace;
 }
 
 .subtitle {
@@ -266,7 +267,7 @@ onUnmounted(() => {
     }
 
     .title {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .site-name {
@@ -326,7 +327,7 @@ onUnmounted(() => {
     }
 
     .title {
-        font-size: 10pt;
+        font-size: 1.5rem;
     }
 }
 </style>

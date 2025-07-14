@@ -373,10 +373,6 @@ section {
     font-size: 24px;
   }
 
-  .separator {
-    min-width: 400px;
-  }
-
   .map {
     width: auto;
   }
