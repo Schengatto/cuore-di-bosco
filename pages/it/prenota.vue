@@ -57,7 +57,7 @@
             bidet.
             Prodotti per igiene personale, pulizia e biancheria inclusi. Per famiglie con bambini tutto lo spazio e le
             comodità necessarie!</p>
-          <h3>€ 100 a notte a dimora</h3>
+          <h3>da 2 a 5 posti letto</h3>
         </div>
       </div>
 
@@ -73,7 +73,7 @@
             cassettiera, zona relax con divano, frigobar, macchina del caffè e bollitore. Bagno con doccia, lavabo e
             bidet. Prodotti per igiene personale, pulizia e biancheria inclusi. Per famiglia o tra amici, con vista
             panoramica e pace!</p>
-          <h3>€ 90 a notte a dimora </h3>
+          <h3>da 2 a 3 posti letto</h3>
         </div>
       </div>
     </section>
