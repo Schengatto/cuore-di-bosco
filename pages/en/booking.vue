@@ -54,7 +54,7 @@
             relaxation area with armchair, minibar, coffee machine, and kettle. Bathroom with shower, sink, and bidet.
             Personal hygiene products, cleaning, and linens included. Perfect for families with kids, offering all the
             space and comfort you need!</p>
-          <h3>€ 100 per night per stay</h3>
+          <h3>2 to 5 beds available</h3>
         </div>
       </div>
 
@@ -70,7 +70,7 @@
             relaxation area with sofa, minibar, coffee machine, and kettle. Bathroom with shower, sink, and bidet.
             Personal hygiene products, cleaning, and linens included. Great for families or friends, with panoramic
             views and peace!</p>
-          <h3>€ 90 per night per stay</h3>
+          <h3>2 to 3 beds available</h3>
         </div>
       </div>
     </section>
