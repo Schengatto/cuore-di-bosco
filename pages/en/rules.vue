@@ -35,78 +35,94 @@ const sections = [
   {
     title: "RATES AND INCLUDED SERVICES",
     content: `
-      <p>Our rates include the use of the room, private bathroom with accessories, breakfast, provision of bed and bath linen. All services are designed to offer you maximum comfort during your mountain stay.</p>
-      <p>We have chosen not to have TVs in the rooms but will offer you all possible entertainment for you and your family! Board games, cards, books, and more are available in case of bad weather, and we organize snacks and games together!</p>
+      <p>Our rates include the use of the room, a private bathroom with amenities, breakfast, bed linen, and towels. All services are designed to offer you maximum comfort during your stay in the mountains.</p>
+      <p>We have chosen not to have TVs in the rooms, but we will provide all the entertainment possible for you and your family! Board games, cards, books, and more are available in case of bad weather, and we also organize snacks and games together!</p>
     `,
   },
   {
-    title: "RESERVATIONS AND CONTACTS",
+    title: "BOOKINGS AND CONTACTS",
     content: `
-      <p>For detailed information about our facility or to book your stay, please use the form on our website in the booking section. You can also write to us directly via email or contact us by phone. We will respond promptly to confirm availability and provide all necessary details.</p>
+      <p>For detailed information about our property or to book your stay, please use the booking form on our website in the “Book” section. You can also write to us directly via email or contact us by phone. We will respond quickly to confirm availability and provide all necessary details.</p>
     `,
   },
   {
     title: "PAYMENT METHODS",
     content: `
-      <p>Once the reservation is confirmed, we require a deposit of 35% of the total amount via bank transfer or through online booking. The final balance will be paid on arrival in cash or by credit/debit card, with a regular receipt issued.</p>
-      <p><strong>IMPORTANT:</strong> Please pay the deposit only after receiving the official confirmation of availability and agreement on the amount.</p>
+      <p>Once the booking is confirmed, we require a deposit of 35% of the total amount via bank transfer or online booking. The remaining balance will be paid upon arrival in cash or by credit/debit card, with an official receipt issued.</p>
+      <p><strong>IMPORTANT:</strong> Please make the deposit only after receiving official confirmation of availability and agreement on the amount.</p>
     `,
   },
   {
-    title: "CANCELLATION POLICIES",
+    title: "CANCELLATION POLICY",
     content: `
-      <p>If cancellation is communicated between the 15th and 8th day before arrival, the deposit will be fully refunded. No refunds are provided for cancellations made within the last 7 days or for early departures compared to the original booking.</p>
+      <p>If the cancellation is communicated between the 15th and 8th day before arrival, we will fully refund the deposit paid. No refunds are provided for cancellations communicated in the last 7 days or for early departures compared to the original booking.</p>
     `,
   },
   {
     title: "CHECK-IN AND DOCUMENTS",
     content: `
-      <p>Upon arrival, you must present a valid ID. Without valid documents, registration cannot proceed. We handle all personal data in compliance with current privacy regulations.</p>
-      <p>After registration and payment, we will give you the keys to the main entrance and your room. To speed up check-in, you can alternatively send us readable copies of your documents via WhatsApp or email the day before arrival.</p>
+      <p>Upon arrival, you must present a valid ID. Without valid documents, registration cannot be completed. All personal data is handled in compliance with current privacy regulations.</p>
+      <p>After registration and payment, we will hand over the keys to the main entrance and your room. To speed up check-in, you may alternatively send us clear copies of your documents via WhatsApp or email the day before arrival.</p>
     `,
   },
   {
     title: "TIMES",
     content: `
-      <p><strong>Check-in</strong>: from 3:00 PM to 6:00 PM. Please inform us of your expected arrival time to organize your welcome.</p>
-      <p><strong>Check-out</strong>: by 10:30 AM. If the room is available, a late check-out can be requested.</p>
+      <p><strong>Check-in</strong>: from 3:00 PM to 6:00 PM. Please inform us of your expected arrival time so we can organize your welcome.</p>
+      <p><strong>Check-out</strong>: by 10:30 AM. If the room is available, it is possible to stay longer upon request.</p>
     `,
+  },
+  {
+    title: "SECURITY AND LIABILITY",
+    content: `<p>We recommend not leaving valuables unattended in the rooms or common areas. Rooms do not have safes, so please always lock doors and windows when leaving.</p>
+    <p>The property is not responsible for theft, loss, or damage to personal belongings, nor for damage caused by or to third parties. Any damage to the property or furnishings must be reported immediately and compensated.</p>`,
+  },
+  {
+    title: "HOUSE RULES",
+    content: `<p>For the safety of all guests, our family, and for hygiene reasons:</p>
+    <ul>
+      <li>We love animals, but at the moment we cannot accommodate pets inside the property to ensure compliance with hygiene and safety regulations and to protect guests with health issues.</li>
+      <li>Cooking or using stoves in the rooms is prohibited. Mini-fridges and kettles are available in the rooms, while a microwave and coffee machine can be found in the breakfast room.</li>
+      <li>Smoking is strictly prohibited in all indoor and outdoor areas of the property. We also advise extreme caution in forests and along roads, as mountain areas are often prone to wildfires — the forests, air, and livestock thank you!</li>
+    </ul>`,
   },
   {
     title: "CLEANING AND MAINTENANCE",
     content: `
-      <p>Cleaning service is included on arrival and regularly thereafter. Extra cleaning on request. We ask you to vacate the room by 10:30 AM unless otherwise agreed.<br> Please leave towels to be replaced in the shower or in the designated basket.</p>
+      <p>Room cleaning and linen change are included upon arrival and every three days for long stays. We ask you to use the bathroom facilities correctly and respect the premises. Extra cleaning or linen changes are available upon request and will incur an additional cost. Cleaning materials will be available upon request in case of need.</p>
+      <p>To facilitate cleaning, please vacate the room by 10:30 AM, arrange personal items neatly, and leave towels to be replaced on the bathroom floor. If you do not require cleaning, prefer to avoid it, or need it at different times for personal reasons, please inform us to arrange accordingly.</p>
     `,
   },
   {
     title: "BREAKFAST",
     content: `
-      <p>Breakfast is served from 7:30 AM to 9:30 AM with local products. We can also prepare breakfasts in the room or picnic baskets (upon request with 24 hours' notice).</p>
+      <p>Breakfast is served in our breakfast room from 7:30 AM to 9:30 AM. We offer local products and mountain specialties to start your outdoor days in the best way.</p>
+      <p>We can also prepare breakfast to be enjoyed in your room (on request) and picnic baskets to take with you (paid service, book at least 24 hours in advance).</p>
     `,
   },
   {
-    title: "CODE OF CONDUCT",
+    title: "BEHAVIORAL RULES",
     content: `
-      <p>We kindly ask you to:</p>
+      <p>Please kindly:</p>
       <ul>
-        <li>Turn off lights and heating when you leave</li>
-        <li>Separate your waste for recycling</li>
+        <li>Turn off lights and heating when leaving</li>
+        <li>Sort your waste for recycling</li>
         <li>Respect quiet hours: 2:00–4:00 PM and 10:30 PM–7:00 AM</li>
-        <li>Not receive external visitors or increase the number of guests per room</li>
+        <li>Do not receive outside visitors or increase the number of guests per room</li>
       </ul>
     `,
   },
   {
     title: "EXTERNAL SERVICES",
     content: `
-      <p>We are not responsible for any service disruptions outside of our management (internet, public services) related to the mountain location.</p>
+      <p>We are not responsible for any disruptions not under our management (internet, telephone network, public services) due to the mountain location.</p>
     `,
   },
   {
-    title: "ACCESS TO THE FACILITY",
+    title: "ACCESS TO THE PROPERTY",
     content: `
-      <p>Access is free 24 hours thanks to personal keys. Please avoid disturbing others during nighttime movements.</p>
-      <p>Keys must be returned upon departure. In case of loss, replacement costs will be charged.</p>
+      <p>Access is available 24/7 thanks to personal keys. Please avoid disturbing others during nighttime movements.</p>
+      <p>Keys must be returned upon departure. In case of loss, the replacement cost will be charged.</p>
     `,
   },
 ];

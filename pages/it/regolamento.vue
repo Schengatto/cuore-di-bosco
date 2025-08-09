@@ -1,16 +1,9 @@
 <template>
   <div class="page-container">
-      <div class="welcome">
-      <img
-        decoding="async"
-        width="1400"
-        height="800"
-        class="landing-image"
-        alt="bosco"
-        src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/07/regole-scaled.jpg"
-        data-object-fit="cover"
-        sizes="(max-width: 1200px) 100vw, 1200px"
-      /><span aria-hidden="true" style="background-color: #526a71"></span>
+    <div class="welcome">
+      <img decoding="async" width="1400" height="800" class="landing-image" alt="bosco"
+        src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/07/regole-scaled.jpg" data-object-fit="cover"
+        sizes="(max-width: 1200px) 100vw, 1200px" /><span aria-hidden="true" style="background-color: #526a71"></span>
       <div class="landing-text">
         <h1 class="page-title text-white">Regolamento</h1>
       </div>
@@ -75,15 +68,31 @@ const sections = [
     `,
   },
   {
+    title: "SICUREZZA E RESPONSABILITÀ",
+    content: `<p>Vi consigliamo di non lasciare oggetti di valore incustoditi nelle camere o negli spazi comuni. Le camere non dispongono di cassaforte, quindi abbiate cura di chiudere sempre porte e finestre quando uscite.</p>
+    <p>La struttura non si assume responsabilità per furti, smarrimenti o danneggiamenti di oggetti personali, né per danni causati da o a terzi. Eventuali danni alla struttura o agli arredi dovranno essere immediatamente segnalati e risarciti.</p>`,
+  },
+  {
+    title: "REGOLE DELLA CASA",
+    content: `<p>Per la sicurezza di tutti gli ospiti, della nostra famiglia e per ragioni igienico-sanitarie:</p>
+    <ul>
+      <li>Amiamo gli animali ma attualmente non possiamo ospitare animali domestici all’interno della struttura per garantire il rispetto delle norme igieniche e di sicurezza, nonché per tutelare eventuali ospiti con problematiche di salute.</li>
+      <li>È vietato cucinare o utilizzare fornelli nelle camere. Sono presenti frigobar e bollitori nelle camere, mentre troverete microonde e macchina del caffè in sala colazione.</li>
+      <li>È rigorosamente vietato fumare in tutti gli ambienti interni ed esterni della struttura, vi consigliamo inoltre di fare molta attenzione nei boschi e per strada in quanto le aree montane sono spesso suscettibili di incendi di questa natura, boschi, aria e bestiame vi ringraziano!</li>
+    </ul>`,
+  },
+  {
     title: "PULIZIE E MANUTENZIONE",
     content: `
-      <p>Il servizio di pulizia è incluso all’arrivo e su base regolare. Pulizie straordinarie su richiesta. Vi chiediamo di liberare la camera per le 10:30 se non diversamente concordato.<br> Lasciate gli asciugamani da sostituire nella doccia o nell'apposita cesta.</p>
+      <p>Il servizio di pulizia della camera e cambio biancheria è incluso all’arrivo e ogni tre giorni per soggiorni lunghi. Vi chiediamo di utilizzare correttamente i servizi igienici e di rispettare gli ambienti. Pulizie o cambi biancheria straordinari sono su richiesta e comporteranno un costo aggiuntivo. Saranno a vs disposizione materiali di pulizia su richiesta e se dovessero capitare inconvenienti.</p>
+      <p>Per facilitare il lavoro di pulizia, vi chiediamo di liberare la camera per le pulizie per le 10:30, sistemate gli effetti personali in modo ordinato e lasciate sul pavimento del bagno gli asciugamani da sostituire. Se non avete bisogno o preferite evitare la pulizia o la preferite in orari diversi per ragioni personali vi chiediamo di avvisarci per accordarci.</p>
     `,
   },
   {
     title: "COLAZIONE",
     content: `
-      <p>La colazione viene servita dalle 7:30 alle 9:30 con prodotti locali. Possiamo anche preparare colazioni in camera o cesti picnic (su richiesta con 24h di anticipo).</p>
+      <p>La colazione viene servita nella nostra sala colazioni dalle 7:30 alle 9:30. Offriamo prodotti locali e specialità montane per iniziare al meglio le vostre giornate all’aria aperta.</p>
+      <p>Inoltre possiamo preparare una colazione da consumare in camera (a richiesta) e cesti picnic per consumarli in uscita (servizio a pagamento su prenotazione almeno 24h prima)</p>
     `,
   },
   {
@@ -101,7 +110,7 @@ const sections = [
   {
     title: "SERVIZI ESTERNI",
     content: `
-      <p>Non rispondiamo di eventuali disservizi non dipendenti dalla nostra gestione (internet, servizi pubblici) legati alla posizione montana.</p>
+      <p>Non rispondiamo di eventuali disservizi non dipendenti dalla nostra gestione (internet, rete telefonica, servizi pubblici) legati alla posizione montana.</p>
     `,
   },
   {
