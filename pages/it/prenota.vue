@@ -50,14 +50,13 @@
             src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/blueberry.png" alt="mirtillo">
         </figure>
         <div class="room-info">
-          <h2>MIRTILLO</h2>
+          <h2>LAMPONE</h2>
           <p class="room-short">Spaziosa e accogliente, adatta a famiglie che desiderano comfort e tranquillità.</p>
-          <p>Camera doppia con camera matrimoniale da 23 mq e seconda camera con letto a castello. Armadio,
-            cassettiera, zona relax con poltrona, frigobar, macchina del caffè e bollitore. Bagno con doccia, lavabo e
-            bidet.
+          <p>Ampia camera da 24 mq con letto matrimoniale e due letti singoli. Armadio con cassettiera, bollitore, frigobar.
+            Bagno privato con doccia, lavabo e bidet. Culla attrezzata, sponde per letti e fasciatoio su richiesta.
             Prodotti per igiene personale, pulizia e biancheria inclusi. Per famiglie con bambini tutto lo spazio e le
             comodità necessarie!</p>
-          <h3>da 2 a 5 posti letto</h3>
+          <h3>da 2 a 4 posti letto adulti</h3>
         </div>
       </div>
 
@@ -67,13 +66,13 @@
             src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/raspberry.png" alt="lampone">
         </figure>
         <div class="room-info">
-          <h2>LAMPONE</h2>
+          <h2>MIRTILLO</h2>
           <p class="room-short">Fresca e luminosa, perfetta per chi ama la natura.</p>
-          <p>Ampia camera matrimoniale o tripla da 30 mq con letto matrimoniale ed eventuale terzo letto, armadio,
-            cassettiera, zona relax con divano, frigobar, macchina del caffè e bollitore. Bagno con doccia, lavabo e
-            bidet. Prodotti per igiene personale, pulizia e biancheria inclusi. Per famiglia o tra amici, con vista
-            panoramica e pace!</p>
-          <h3>da 2 a 3 posti letto</h3>
+          <p>Ampia camera matrimoniale da 24 mq con letto matrimoniale, armadio con cassettiera, zona relax con divano e scrivania.
+            Bagno privato con doccia, lavabo e bidet. Prodotti per igiene personale, pulizia e biancheria inclusi. 
+            Culla attrezzata, sponde per letti e fasciatoio su richiesta.
+            Per famiglia o tra amici, con vista panoramica e pace!</p>
+          <h3>da 2 posti letto adulti</h3>
         </div>
       </div>
     </section>
