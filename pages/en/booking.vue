@@ -36,7 +36,7 @@
       <blockquote class="intro-text">
         <p>B&amp;B Cuore di Bosco is our home and yours in the
           mountains—a peaceful refuge to rest your mind and heart.</p>
-        <p>Upon request, baby kit including crib with mattress, sheets and blankets, changing table, and bottle warmer.
+        <p>Upon request, baby kit including baby cot with mattress, sheets and blankets, changing table, and bottle warmer.
         </p>
       </blockquote>
     </section>
@@ -50,11 +50,11 @@
         <div class="room-info">
           <h2>BLUEBERRY</h2>
           <p class="room-short">Spacious and welcoming, ideal for families seeking comfort and tranquility.</p>
-          <p>Double room with 23 sqm master bedroom and a second room with bunk beds. Wardrobe, chest of drawers,
-            relaxation area with armchair, minibar, coffee machine, and kettle. Bathroom with shower, sink, and bidet.
-            Personal hygiene products, cleaning, and linens included. Perfect for families with kids, offering all the
-            space and comfort you need!</p>
-          <h3>2 to 5 beds available</h3>
+          <p>Double room with 24 sqm, double bed and 2 singles beds. Wardrobe with drawers, minibar and kettle. 
+            Bathroom with shower, sink, and bidet. Personal hygiene products, cleaning, and linens included. 
+            Baby cot with linens, bed rails, and changing table available upon request.
+            Perfect for families with kids, offering all the space and comfort you need!</p> 
+          <h3>2 to 4 adult beds available</h3>
         </div>
       </div>
 
@@ -66,11 +66,11 @@
         <div class="room-info">
           <h2>RASPBERRY</h2>
           <p class="room-short">Fresh and bright, perfect for nature lovers.</p>
-          <p>Spacious 30 sqm double or triple room with double bed and optional third bed, wardrobe, chest of drawers,
-            relaxation area with sofa, minibar, coffee machine, and kettle. Bathroom with shower, sink, and bidet.
-            Personal hygiene products, cleaning, and linens included. Great for families or friends, with panoramic
-            views and peace!</p>
-          <h3>2 to 3 beds available</h3>
+          <p>Spacious 24 sqm double room with double bed, wardrobe with drawers, relax area with sofa and kettle.
+            Bathroom with shower, sink, and bidet. Personal hygiene products, cleaning, and linens included.
+            Baby cot with linens, bed rails, and changing table available upon request.
+            Great for families or friends, with panoramic views and peace!</p>
+          <h3>2 adults beds available</h3>
         </div>
       </div>
     </section>
