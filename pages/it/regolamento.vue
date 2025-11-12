@@ -50,7 +50,7 @@ const sections = [
   {
     title: "POLITICHE DI CANCELLAZIONE",
     content: `
-      <p>In caso di cancellazione comunicata tra il 15° e l’8° giorno prima dell’arrivo, restituiremo per intero l’acconto versato. Non sono previsti rimborsi per cancellazioni comunicate negli ultimi 7 giorni o per partenze anticipate rispetto alla prenotazione originaria.</p>
+      <p>In caso di cancellazione comunicata entro il 15° giorno prima dell’arrivo, restituiremo per intero l’acconto versato. Non sono previsti rimborsi per cancellazioni comunicate negli ultimi 7 giorni o per partenze anticipate rispetto alla prenotazione originaria.</p>
     `,
   },
   {
@@ -78,7 +78,7 @@ const sections = [
     <ul>
       <li>Amiamo gli animali ma attualmente non possiamo ospitare animali domestici all’interno della struttura per garantire il rispetto delle norme igieniche e di sicurezza, nonché per tutelare eventuali ospiti con problematiche di salute.</li>
       <li>È vietato cucinare o utilizzare fornelli nelle camere. Sono presenti frigobar e bollitori nelle camere, mentre troverete microonde e macchina del caffè in sala colazione.</li>
-      <li>È rigorosamente vietato fumare in tutti gli ambienti interni ed esterni della struttura, vi consigliamo inoltre di fare molta attenzione nei boschi e per strada in quanto le aree montane sono spesso suscettibili di incendi di questa natura, boschi, aria e bestiame vi ringraziano!</li>
+      <li>È rigorosamente <b>vietato fumare negli ambienti interni ed esterni della struttura</b>, le camere sono dotate di rilevatori di fumo con allarme. Vi invitiamo inoltre di fare molta attenzione nei boschi e per strada in quanto le aree montane sono spesso suscettibili di incendi di questa natura, boschi, aria e bestiame vi ringraziano!</li>
     </ul>`,
   },
   {
@@ -91,7 +91,8 @@ const sections = [
   {
     title: "COLAZIONE",
     content: `
-      <p>La colazione viene servita nella nostra sala colazioni dalle 7:30 alle 9:30. Offriamo prodotti locali e specialità montane per iniziare al meglio le vostre giornate all’aria aperta.</p>
+      <p>La colazione viene servita nella nostra <b>sala colazioni dalle 7:30 alle 9:30</b>. Offriamo prodotti locali e specialità montane per iniziare al meglio le vostre giornate all’aria aperta.
+      Se preferite un orario differente faremo del nostro meglio per accontentarvi. Vi preghiamo di avvisarci per tempo per organizzarci.</p>
       <p>Inoltre possiamo preparare una colazione da consumare in camera (a richiesta) e cesti picnic per consumarli in uscita (servizio a pagamento su prenotazione almeno 24h prima)</p>
     `,
   },
@@ -100,10 +101,12 @@ const sections = [
     content: `
       <p>Vi chiediamo cortesemente di:</p>
       <ul>
-        <li>Spegnere luci e riscaldamento quando uscite</li>
+        <li>Spegnere luci e finestre quando uscite</li>
+        <li>Non impostare il riscaldamento su più di 20 gradi (regolamento provinciale)</li>
         <li>Differenziare la spazzatura</li>
-        <li>Rispettare gli orari di silenzio: 14–16 e 22:30–7</li>
+        <li>Rispettare gli orari di silenzio: 13–15 e 22:30–7</li>
         <li>Non ricevere visitatori esterni o aumentare il numero di ospiti per camera</li>
+        <li>Non fumare negli ambienti esterni ed interni della struttura</li>
       </ul>
     `,
   },

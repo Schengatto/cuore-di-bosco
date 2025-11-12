@@ -47,18 +47,18 @@
           <img decoding="async" class="separator" :src="separator" alt="separator" />
         </figure>
         <p>
-          Cuore di Bosco si trova a Prada di Brentonico, facilmente
-          raggiungibile in auto dall’<b>uscita di Rovereto dell’autostrada A22</b>.
+          Cuore di Bosco si trova a Prada di Brentonico, sulla strada per Polsa, facilmente
+          raggiungibile in auto dall’<b>uscita di Rovereto Sud dell’autostrada A22</b>.
         </p>
         <p>
           Vi consigliamo di passare da <b>Mori</b> e salire seguendo le
           indicazioni per l'<b>Altopiano di Brentonico</b> (cartelli marroni).
-          Da Brentonico la SP3 vi porterà in pochi minuti a Prada, fate
-          attenzione al bivio per Prada sulla sinistra in curva. Parcheggiate
-          nel parcheggio libero accanto alla chiesa e al parco giochi, siamo a
+          Da Brentonico la SP3, seguendo la direzione Polsa, vi porterà in pochi minuti a Prada, fate
+          attenzione al bivio per Prada sulla sinistra in curva. </p><p>Parcheggiate
+          nel parcheggio libero accanto alla chiesa e al parco giochi, siamo sulla via principale, a
           pochi passi sulla sinistra!
         </p>
-        <p>Se hai bisogno di aiuto chiamaci e arriviamo!</p>
+        <p>Se hai bisogno di aiuto chiamaci!</p>
         <p>
           Una volta arrivati, vi accoglierà il silenzio e la bellezza
           dell’Altopiano di Brentonico, con la sua cornice di verdi montagne.

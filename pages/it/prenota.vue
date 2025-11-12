@@ -39,7 +39,7 @@
       <blockquote class="intro-text">
         <p>B&amp;B Cuore di Bosco è la nostra e la vostra casa in
           montagna, un rifugio di pace e quiete dove riposare mente e cuore</p>
-        <p>A richiesta kit bimbo con lettino con materasso, lenzuola e coperte, fasciatoio e scalda biberon.</p>
+        <p>A richiesta kit bimbo con lettino con materasso, lenzuola e coperte, fasciatoio e scalda biberon. A disposizione anche spondine per letto, vasino e scalini per il bagno per tutte le età.</p>
       </blockquote>
     </section>
 
@@ -47,15 +47,14 @@
       <div class="card text-center">
         <figure>
           <img decoding="async" width="128" height="128"
-            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/blueberry.png" alt="mirtillo">
+            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/raspberry.png" alt="lampone">
         </figure>
         <div class="room-info">
           <h2>LAMPONE</h2>
           <p class="room-short">Spaziosa e accogliente, adatta a famiglie che desiderano comfort e tranquillità.</p>
           <p>Ampia camera da 24 mq con letto matrimoniale e due letti singoli. Armadio con cassettiera, bollitore, frigobar.
-            Bagno privato con doccia, lavabo e bidet. Culla attrezzata, sponde per letti e fasciatoio su richiesta.
-            Prodotti per igiene personale, pulizia e biancheria inclusi. Per famiglie con bambini tutto lo spazio e le
-            comodità necessarie!</p>
+            Bagno privato con doccia, lavabo e bidet. Prodotti per igiene personale, pulizia e biancheria inclusi.</p><p>Culla attrezzata, sponde per letti e fasciatoio su richiesta.
+             Per famiglie con bambini tutto lo spazio e le comodità necessarie!</p>
           <h3>da 2 a 4 posti letto adulti</h3>
         </div>
       </div>
@@ -63,14 +62,14 @@
       <div class="card text-center">
         <figure>
           <img decoding="async" width="128" height="128"
-            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/raspberry.png" alt="lampone">
+            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/blueberry.png" alt="mirtillo">
         </figure>
         <div class="room-info">
           <h2>MIRTILLO</h2>
           <p class="room-short">Fresca e luminosa, perfetta per chi ama la natura.</p>
-          <p>Ampia camera matrimoniale da 24 mq con letto matrimoniale, armadio con cassettiera, zona relax con divano e scrivania.
+          <p>Ampia camera matrimoniale da 24 mq con letto matrimoniale. Armadio con cassettiera, zona relax con divano e scrivania.
             Bagno privato con doccia, lavabo e bidet. Prodotti per igiene personale, pulizia e biancheria inclusi. 
-            Culla attrezzata, sponde per letti e fasciatoio su richiesta.
+            </p><p>Culla attrezzata, sponde per letti e fasciatoio su richiesta.
             Per famiglia o tra amici, con vista panoramica e pace!</p>
           <h3>da 2 posti letto adulti</h3>
         </div>
@@ -177,8 +176,7 @@
         Prodotti ecologici ricaricabili per l’igiene personale<br>
         <br>
         Omaggio di benvenuto<br>
-        Frigobar silenzioso<br>
-        Bicchieri<br>
+        Bicchieri e tazze a disposizione<br>
         <br>
         Materiale ecologico per pulizie, scopa e paletta<br>
         Stendino e mollette in balcone (clima permettendo)

@@ -65,7 +65,7 @@
                         <p>Check in 15.00 – 18.00<br />
                             Check out 9 – 10.30</p>
                         <p><strong>B&B Cuore di Bosco</strong><br />
-                            CIN 0000000000000000000<br />
+                            CIN IT022025C1W3ZHJVK4<br />
                             P IVA 000000000000000000</p>
                     </div>
                     <div class="card">

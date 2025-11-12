@@ -55,7 +55,7 @@ const sections = [
   {
     title: "CANCELLATION POLICY",
     content: `
-      <p>If the cancellation is communicated between the 15th and 8th day before arrival, we will fully refund the deposit paid. No refunds are provided for cancellations communicated in the last 7 days or for early departures compared to the original booking.</p>
+      <p>If the cancellation is communicated the 15th day before arrival, we will fully refund the deposit paid. No refunds are provided for cancellations communicated in the last 7 days or for early departures compared to the original booking.</p>
     `,
   },
   {
@@ -83,20 +83,21 @@ const sections = [
     <ul>
       <li>We love animals, but at the moment we cannot accommodate pets inside the property to ensure compliance with hygiene and safety regulations and to protect guests with health issues.</li>
       <li>Cooking or using stoves in the rooms is prohibited. Mini-fridges and kettles are available in the rooms, while a microwave and coffee machine can be found in the breakfast room.</li>
-      <li>Smoking is strictly prohibited in all indoor and outdoor areas of the property. We also advise extreme caution in forests and along roads, as mountain areas are often prone to wildfires — the forests, air, and livestock thank you!</li>
+      <li>Smoking is strictly prohibited in all indoor and outdoor areas of the property. Rooms feature smoke allarms. We also advise extreme caution in forests and along roads, as mountain areas are often prone to wildfires — the forests, air, and livestock thank you!</li>
     </ul>`,
   },
   {
     title: "CLEANING AND MAINTENANCE",
     content: `
       <p>Room cleaning and linen change are included upon arrival and every three days for long stays. We ask you to use the bathroom facilities correctly and respect the premises. Extra cleaning or linen changes are available upon request and will incur an additional cost. Cleaning materials will be available upon request in case of need.</p>
-      <p>To facilitate cleaning, please vacate the room by 10:30 AM, arrange personal items neatly, and leave towels to be replaced on the bathroom floor. If you do not require cleaning, prefer to avoid it, or need it at different times for personal reasons, please inform us to arrange accordingly.</p>
+      <p>To facilitate cleaning, please vacate the room by 10:30 AM, arrange personal items, and leave towels to be replaced on the bathroom floor. If you do not require cleaning, prefer to avoid it, or need it at different times for personal reasons, please inform us to arrange accordingly.</p>
     `,
   },
   {
     title: "BREAKFAST",
     content: `
-      <p>Breakfast is served in our breakfast room from 7:30 AM to 9:30 AM. We offer local products and mountain specialties to start your outdoor days in the best way.</p>
+      <p>Breakfast is served in our breakfast room from 7:30 AM to 9:30 AM. We offer local products and mountain specialties to start your outdoor days in the best way. 
+      If you prefer a different time we will do our best to accommodate you. Please notify us in time to arrange.</p>
       <p>We can also prepare breakfast to be enjoyed in your room (on request) and picnic baskets to take with you (paid service, book at least 24 hours in advance).</p>
     `,
   },
@@ -105,10 +106,12 @@ const sections = [
     content: `
       <p>Please kindly:</p>
       <ul>
-        <li>Turn off lights and heating when leaving</li>
+        <li>Turn off lights and windows when leaving</li>
         <li>Sort your waste for recycling</li>
-        <li>Respect quiet hours: 2:00–4:00 PM and 10:30 PM–7:00 AM</li>
+        <li>Do not set the heating to more than 20 degrees (provincial rules)</li>
+        <li>Respect quiet hours: 1:00–3:00 PM and 10:30 PM–7:00 AM</li>
         <li>Do not receive outside visitors or increase the number of guests per room</li>
+        <li>Smoking is strictly prohibited in all indoor and outdoor areas of the property.</li>
       </ul>
     `,
   },
