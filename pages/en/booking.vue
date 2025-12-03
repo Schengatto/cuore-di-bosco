@@ -9,6 +9,10 @@
       </div>
     </div>
 
+    <div id="tosc5widget" data-tag="7d3d1c22-b352-46f7-ac62-d6299321b8ce"
+      data-fid="f30f64bf-5f80-424a-92a9-f1d667b83815" data-lang="en" data-theme="h" data-gallery="false"
+      data-inpage="false"></div>
+
     <section class="text-center">
       <p>Welcome to <strong>B&amp;B <em>Cuore di Bosco</em></strong>,<br>a haven immersed in the nature of the
         <strong>Vallagarina</strong>,<br>on the <strong>Brentonico Plateau</strong>, <strong>Europe’s Garden</strong>.
@@ -17,7 +21,7 @@
       <p>There are many B&amp;Bs, but we hope to offer you<br> a mix of special experiences: the beauty of the
         surrounding mountains,<br>
         our passion for cooking and hospitality, and all the enthusiasm<br> we put into our work!</p>
-      <p>For special dietary needs like vegetarian,<br> vegan, gluten-free, lactose-free, or others—we’re here for you!
+      <p>For special needs like vegetarian,<br> vegan, gluten-free, lactose-free, or others—we’re here for you!
         <br> Just let us know before your arrival<br> so we can prepare accordingly!
       </p>
       <p> See you soon!</p>
@@ -219,6 +223,10 @@ useHead({
       href: "https://www.cuoredibosco.it/en/booking",
     },
   ],
+  script: [
+    { src: "https://s3-eu-west-1.amazonaws.com/s3.suggesto.eu/hooks/vtn-hook/docroot/js/widget-tosc5-min.js?v=1.12",  fetchpriority: "high"},
+    // { async: true, src: "https://web5.deskline.net/start/ACCOWEB/7d3d1c22-b352-46f7-ac62-d6299321b8ce/index.js" }
+  ]
 });
 </script>
 
@@ -520,5 +528,33 @@ figcaption {
   .icon {
     flex: 0 1 100%;
   }
+}
+
+
+.tosc5form {
+  border-radius: 0px;
+  background-color: #f5f1e8 !important;
+  color: #000000 !important;
+  gap: 16px;
+}
+
+.tosc5formInput {
+  border-radius: 4px !important
+}
+
+.tosc5formButton {
+  background-color: #4caf50 !important;
+  color: rgb(0, 0, 0) !important;
+  border-radius: 4px !important
+}
+
+.tosc5link {
+  color: #000000 !important;
+  /* font-family: var(--font-base); */
+}
+
+.tosc5cal {
+  min-height: auto !important;
+  height: 20px !important;
 }
 </style>

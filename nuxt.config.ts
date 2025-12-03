@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/google-fonts',
     '@nuxtjs/i18n',
+    '@nuxt/scripts',
   ],
   css: ['@/assets/css/global.css'],
   googleFonts: {
@@ -25,5 +26,5 @@ export default defineNuxtConfig({
     defaultLocale: 'it',
     lazy: true,
     strategy: 'no_prefix' // puoi anche usare 'prefix' se vuoi sempre il prefisso /en /it
-  }
+  },
 });

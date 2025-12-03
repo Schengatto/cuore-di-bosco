@@ -9,6 +9,10 @@
       </div>
     </div>
 
+    <div :key="widgetKey" id="tosc5widget" data-tag="7d3d1c22-b352-46f7-ac62-d6299321b8ce"
+      data-fid="f30f64bf-5f80-424a-92a9-f1d667b83815" data-lang="it" data-theme="h" data-gallery="false"
+      data-inpage="false"></div>
+
     <section class="text-center">
       <p>Benvenuti al&nbsp;<strong>B&amp;B&nbsp;<em>Cuore di Bosco</em></strong>,<br>un rifugio immerso nella natura
         della&nbsp;<strong>Vallagarina</strong>,<br>sull’A<strong>ltopiano di Brentonico</strong>,&nbsp;<strong>il
@@ -22,12 +26,6 @@
       <p> Ci vediamo presto!</p>
     </section>
 
-    <!-- <section>
-      <iframe src="https://www.bed-and-breakfast.it/booking-engine/widget.cfm?id_struttura=TUO_ID_STRUTTURA"
-        width="100%" height="600" frameborder="0" scrolling="auto" style="border: none;">
-      </iframe>
-    </section> -->
-
     <div class="text-center">
       <figure class="separator-wrapper">
         <img decoding="async" class="separator" :src="separator" alt="separator" />
@@ -39,7 +37,8 @@
       <blockquote class="intro-text">
         <p>B&amp;B Cuore di Bosco è la nostra e la vostra casa in
           montagna, un rifugio di pace e quiete dove riposare mente e cuore</p>
-        <p>A richiesta kit bimbo con lettino con materasso, lenzuola e coperte, fasciatoio e scalda biberon. A disposizione anche spondine per letto, vasino e scalini per il bagno per tutte le età.</p>
+        <p>A richiesta kit bimbo con lettino con materasso, lenzuola e coperte, fasciatoio e scalda biberon. A
+          disposizione anche spondine per letto, vasino e scalini per il bagno per tutte le età.</p>
       </blockquote>
     </section>
 
@@ -52,9 +51,11 @@
         <div class="room-info">
           <h2>LAMPONE</h2>
           <p class="room-short">Spaziosa e accogliente, adatta a famiglie che desiderano comfort e tranquillità.</p>
-          <p>Ampia camera da 24 mq con letto matrimoniale e due letti singoli. Armadio con cassettiera, bollitore, frigobar.
-            Bagno privato con doccia, lavabo e bidet. Prodotti per igiene personale, pulizia e biancheria inclusi.</p><p>Culla attrezzata, sponde per letti e fasciatoio su richiesta.
-             Per famiglie con bambini tutto lo spazio e le comodità necessarie!</p>
+          <p>Ampia camera da 24 mq con letto matrimoniale e due letti singoli. Armadio con cassettiera, bollitore,
+            frigobar.
+            Bagno privato con doccia, lavabo e bidet. Prodotti per igiene personale, pulizia e biancheria inclusi.</p>
+          <p>Culla attrezzata, sponde per letti e fasciatoio su richiesta.
+            Per famiglie con bambini tutto lo spazio e le comodità necessarie!</p>
           <h3>da 2 a 4 posti letto adulti</h3>
         </div>
       </div>
@@ -67,9 +68,11 @@
         <div class="room-info">
           <h2>MIRTILLO</h2>
           <p class="room-short">Fresca e luminosa, perfetta per chi ama la natura.</p>
-          <p>Ampia camera matrimoniale da 24 mq con letto matrimoniale. Armadio con cassettiera, zona relax con divano e scrivania.
-            Bagno privato con doccia, lavabo e bidet. Prodotti per igiene personale, pulizia e biancheria inclusi. 
-            </p><p>Culla attrezzata, sponde per letti e fasciatoio su richiesta.
+          <p>Ampia camera matrimoniale da 24 mq con letto matrimoniale. Armadio con cassettiera, zona relax con divano e
+            scrivania.
+            Bagno privato con doccia, lavabo e bidet. Prodotti per igiene personale, pulizia e biancheria inclusi.
+          </p>
+          <p>Culla attrezzata, sponde per letti e fasciatoio su richiesta.
             Per famiglia o tra amici, con vista panoramica e pace!</p>
           <h3>da 2 posti letto adulti</h3>
         </div>
@@ -217,10 +220,21 @@ useHead({
       href: "https://www.cuoredibosco.it/it/prenota",
     },
   ],
+  script: [
+    {
+      src: "https://s3-eu-west-1.amazonaws.com/s3.suggesto.eu/hooks/vtn-hook/docroot/js/widget-tosc5-min.js?v=1.12",
+      fetchpriority: "high",
+      defer: "true",
+      async: "true",
+    },
+  ]
 });
+
+const widgetKey = ref(Date.now());
+
 </script>
 
-<style scoped>
+<style>
 section {
   margin: 1em auto;
   max-width: 1200px;
@@ -518,5 +532,32 @@ figcaption {
   .icon {
     flex: 0 1 100%;
   }
+}
+
+.tosc5form {
+  border-radius: 0px;
+  background-color: #f5f1e8 !important;
+  color: #000000 !important;
+  gap: 16px;
+}
+
+.tosc5formInput {
+  border-radius: 4px !important
+}
+
+.tosc5formButton {
+  background-color: #4caf50 !important;
+  color: rgb(0, 0, 0) !important;
+  border-radius: 4px !important
+}
+
+.tosc5link {
+  color: #000000 !important;
+  /* font-family: var(--font-base); */
+}
+
+.tosc5cal {
+  min-height: auto !important;
+  height: 20px !important;
 }
 </style>

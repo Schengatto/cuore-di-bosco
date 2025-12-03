@@ -7,7 +7,7 @@
 
     <div id="page">
         <main>
-            <Toast message="B&B Cuore di Bosco will open in Autumn 2025. See you soon!"
+            <Toast message="Welcome to B&B Cuore di Bosco. See you soon!"
                 type="warning" />
             <slot />
             <a href="https://wa.me/393494960228" target="_blank" class="whatsapp">
