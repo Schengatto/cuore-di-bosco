@@ -66,7 +66,7 @@
                             Check out 9 – 10.30</p>
                         <p><strong>B&B Cuore di Bosco</strong><br />
                             CIN IT022025C1W3ZHJVK4<br />
-                            P IVA 000000000000000000</p>
+                            CF MLCMRA86P66L781J</p>
                     </div>
                     <div class="card">
                         <h3>Contatti</h3>
@@ -74,6 +74,24 @@
                             alt="phone" width="64" />
                         <p>Puoi scriverci al numero <a href="tel:+393494960228">+39 3494960228</a><br />
                             o una mail a <a href="mailto:info@cuoredibosco.it">info@cuoredibosco.it</a></p>
+                            <p>
+                             <a href="https://www.facebook.com/profile.php?id=61583661897314"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="Facebook"
+                                >
+                                <img src="https://cuoredibosco.altervista.org/wp-content/uploads/2026/01/facebook-2.png" alt="Facebook" width="50" />
+                            </a>
+                        &nbsp;
+                             <a href="https://www.instagram.com/bbcuoredibosco/"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="Istagram"
+                                >
+                                <img src="https://cuoredibosco.altervista.org/wp-content/uploads/2026/01/instagram-1.png" alt="Instagram" width="50" />
+                            </a>
+                        </p>
+
                     </div>
                     <div>
                     </div>
