@@ -9,7 +9,7 @@
       </div>
     </div>
 
-    <div id="tosc5widget" data-tag="7d3d1c22-b352-46f7-ac62-d6299321b8ce"
+    <div :key="widgetKey" id="tosc5widget" data-tag="7d3d1c22-b352-46f7-ac62-d6299321b8ce"
       data-fid="f30f64bf-5f80-424a-92a9-f1d667b83815" data-lang="en" data-theme="h" data-gallery="false"
       data-inpage="false"></div>
 
@@ -301,9 +301,11 @@ useHead({
     // { async: true, src: "https://web5.deskline.net/start/ACCOWEB/7d3d1c22-b352-46f7-ac62-d6299321b8ce/index.js" }
   ]
 });
+
+const widgetKey = ref(Date.now());
 </script>
 
-<style scoped>
+<style>
 section {
   margin: 1em auto;
   max-width: 1200px;
@@ -485,8 +487,8 @@ section {
   text-align: left;
 }
 
-.rooms {
-  display: flex;
+section.rooms {
+  display: flex !important;
   flex-direction: row;
   gap: 5rem;
   max-width: 1050px;
@@ -532,6 +534,7 @@ section {
   opacity: 0.85;
 }
 
+/* ── Lightbox ── */
 .lightbox-overlay {
   position: fixed;
   inset: 0;
@@ -541,12 +544,14 @@ section {
   justify-content: center;
   z-index: 1000;
 }
+
 .lightbox-img {
   max-width: 90vw;
   max-height: 85vh;
   object-fit: contain;
   border-radius: 4px;
 }
+
 .lightbox-close {
   position: absolute;
   top: 1rem;
@@ -559,6 +564,7 @@ section {
   line-height: 1;
   padding: 0.25rem 0.5rem;
 }
+
 .lightbox-prev,
 .lightbox-next {
   position: absolute;
@@ -574,10 +580,15 @@ section {
   line-height: 1;
   transition: background 0.2s;
 }
+
 .lightbox-prev:hover,
-.lightbox-next:hover { background: rgba(255, 255, 255, 0.3); }
+.lightbox-next:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
 .lightbox-prev { left: 1rem; }
 .lightbox-next { right: 1rem; }
+
 .lightbox-counter {
   position: absolute;
   bottom: 1.25rem;
@@ -633,8 +644,8 @@ figcaption {
 }
 
 @media (max-width: 750px) {
-  .rooms {
-    flex-direction: column;
+  section.rooms {
+    flex-direction: column !important;
     align-items: center;
     gap: 2rem;
   }
@@ -702,7 +713,6 @@ figcaption {
     flex: 0 1 100%;
   }
 }
-
 
 .tosc5form {
   border-radius: 0px;
