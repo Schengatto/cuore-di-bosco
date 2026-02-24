@@ -35,7 +35,7 @@
                         <p>Set this address on Google Maps: it will bring you straight to us!</p>
                         <p><strong>B&B Cuore di Bosco</strong><br />
                             Via Gardesani, 15<br />
-                            Brentonico – Prada hamlet (TN)</p>
+                             Prada di Brentonico (TN)</p>
                     </a>
                     <div class="card">
                         <h3>Opening Hours</h3>
@@ -44,8 +44,8 @@
                         <p>Check-in 3:00 PM – 6:00 PM<br />
                             Check-out 9:00 AM – 10:30 AM</p>
                         <p><strong>B&B Cuore di Bosco</strong><br />
-                            CIN 0000000000000000000<br />
-                            VAT ID 000000000000000000</p>
+                            CIN IT022025C1W3ZHJVK4<br />
+                            CF MLCMRA86P66L781J</p>
                     </div>
                     <div class="card">
                         <h3>Contacts</h3>
@@ -53,7 +53,23 @@
                             alt="phone" width="64" />
                         <p>You can write to us at <a href="tel:+393494960228">+39 3494960228</a><br />
                             or email us at <a href="mailto:info@cuoredibosco.it">info@cuoredibosco.it</a></p>
-                    </div>
+                    <p>
+                             <a href="https://www.facebook.com/profile.php?id=61583661897314"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="Facebook"
+                                >
+                                <img src="https://cuoredibosco.altervista.org/wp-content/uploads/2026/01/facebook-2.png" alt="Facebook" width="50" />
+                            </a>
+                        &nbsp;
+                             <a href="https://www.instagram.com/bbcuoredibosco/"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="Istagram"
+                                >
+                                <img src="https://cuoredibosco.altervista.org/wp-content/uploads/2026/01/instagram-1.png" alt="Instagram" width="50" />
+                            </a>
+                        </p></div>
                     <div>
                     </div>
                 </div>
