@@ -43,41 +43,78 @@
     </section>
 
     <section class="rooms">
-      <div class="card text-center">
-        <figure>
-          <img decoding="async" width="128" height="128"
-            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/raspberry.png" alt="lampone">
-        </figure>
-        <div class="room-info">
-          <h2>LAMPONE</h2>
-          <p class="room-short">Spaziosa e accogliente, adatta a famiglie che desiderano comfort e tranquillità.</p>
-          <p>Ampia camera da 24 mq con letto matrimoniale e due letti singoli. Armadio con cassettiera, bollitore,
-            frigobar.
-            Bagno privato con doccia, lavabo e bidet. Prodotti per igiene personale, pulizia e biancheria inclusi.</p>
-          <p>Culla attrezzata, sponde per letti e fasciatoio su richiesta.
-            Per famiglie con bambini tutto lo spazio e le comodità necessarie!</p>
-          <h3>da 2 a 4 posti letto adulti</h3>
+      <!-- CAMERA LAMPONE -->
+      <div class="room-block">
+        <div class="card text-center">
+          <figure>
+            <img decoding="async" width="128" height="128"
+              src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/raspberry.png" alt="lampone">
+          </figure>
+          <div class="room-info">
+            <h2>LAMPONE</h2>
+            <p class="room-short">Spaziosa e accogliente, adatta a famiglie che desiderano comfort e tranquillità.</p>
+            <p>Ampia camera da 34 mq con letto matrimoniale e due letti singoli. Armadio con cassettiera, bollitore,
+              frigobar.
+              Bagno privato con doccia, lavabo e bidet. Prodotti per igiene personale, pulizia e biancheria inclusi.</p>
+            <p>Culla attrezzata, sponde per letti e fasciatoio su richiesta.
+              Per famiglie con bambini tutto lo spazio e le comodità necessarie!</p>
+            <h3>da 2 a 4 posti letto adulti</h3>
+          </div>
+        </div>
+        <div class="room-gallery">
+          <img
+            v-for="(photo, i) in lamponePhotos"
+            :key="i"
+            :src="photo"
+            :alt="`Camera Lampone foto ${i + 1}`"
+            loading="lazy"
+            @click="openLightbox(lamponePhotos, i)"
+          />
         </div>
       </div>
 
-      <div class="card text-center">
-        <figure>
-          <img decoding="async" width="128" height="128"
-            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/blueberry.png" alt="mirtillo">
-        </figure>
-        <div class="room-info">
-          <h2>MIRTILLO</h2>
-          <p class="room-short">Fresca e luminosa, perfetta per chi ama la natura.</p>
-          <p>Ampia camera matrimoniale da 24 mq con letto matrimoniale. Armadio con cassettiera, zona relax con divano e
-            scrivania.
-            Bagno privato con doccia, lavabo e bidet. Prodotti per igiene personale, pulizia e biancheria inclusi.
-          </p>
-          <p>Culla attrezzata, sponde per letti e fasciatoio su richiesta.
-            Per famiglia o tra amici, con vista panoramica e pace!</p>
-          <h3>da 2 posti letto adulti</h3>
+      <!-- CAMERA MIRTILLO -->
+      <div class="room-block">
+        <div class="card text-center">
+          <figure>
+            <img decoding="async" width="128" height="128"
+              src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/blueberry.png" alt="mirtillo">
+          </figure>
+          <div class="room-info">
+            <h2>MIRTILLO</h2>
+            <p class="room-short">Fresca e luminosa, perfetta per chi ama la natura.</p>
+            <p>Ampia camera matrimoniale da 28 mq con letto matrimoniale. Armadio con cassettiera, zona relax con divano e
+              scrivania. Divano letto matrimoniale per aggiungere due ospiti in più. 
+              Bagno privato con doccia, lavabo e bidet. Prodotti per igiene personale, pulizia e biancheria inclusi.
+            </p>
+            <p>Culla attrezzata, sponde per letti e fasciatoio su richiesta.
+              Per famiglia o tra amici, con vista panoramica e pace!</p>
+            <h3>da 2 a 4 posti letto adulti</h3>
+          </div>
+        </div>
+        <div class="room-gallery">
+          <img
+            v-for="(photo, i) in mirtilloPhotos"
+            :key="i"
+            :src="photo"
+            :alt="`Camera Mirtillo foto ${i + 1}`"
+            loading="lazy"
+            @click="openLightbox(mirtilloPhotos, i)"
+          />
         </div>
       </div>
     </section>
+
+    <!-- Lightbox -->
+    <Teleport to="body">
+      <div v-if="lightbox.visible" class="lightbox-overlay" @click.self="closeLightbox">
+        <button class="lightbox-close" @click="closeLightbox" aria-label="Chiudi">✕</button>
+        <button class="lightbox-prev" @click="prevPhoto" aria-label="Precedente">&#8249;</button>
+        <img :src="lightbox.images[lightbox.index]" class="lightbox-img" :alt="`Foto ${lightbox.index + 1}`" />
+        <button class="lightbox-next" @click="nextPhoto" aria-label="Successiva">&#8250;</button>
+        <div class="lightbox-counter">{{ lightbox.index + 1 }} / {{ lightbox.images.length }}</div>
+      </div>
+    </Teleport>
 
     <div class="welcome">
       <img decoding="async" width="1400" height="800" class="service-image" alt="casa" :src="colazioni"
@@ -177,10 +214,8 @@
         Kit asciugamani per ogni ospite<br>
         Pulizia regolare<br>
         Prodotti ecologici ricaricabili per l’igiene personale<br>
-        <br>
         Omaggio di benvenuto<br>
         Bicchieri e tazze a disposizione<br>
-        <br>
         Materiale ecologico per pulizie, scopa e paletta<br>
         Stendino e mollette in balcone (clima permettendo)
       </p>
@@ -199,6 +234,57 @@
 import camere from "~/assets/images/camere.webp";
 import colazioni from "~/assets/images/colazioni.webp";
 import separator from "~/assets/images/separator.webp";
+
+// ── Foto camere ──────────────────────────────────────────────────────────────
+// Metti le foto in public/images/lampone/ e public/images/mirtillo/
+// nominate 1.webp, 2.webp, 3.webp, 4.webp (o .jpg se preferisci)
+const lamponePhotos = [
+  '/images/lampone/1.webp',
+  '/images/lampone/2.webp',
+  '/images/lampone/3.webp',
+  '/images/lampone/4.webp',
+];
+const mirtilloPhotos = [
+  '/images/mirtillo/1.webp',
+  '/images/mirtillo/2.webp',
+  '/images/mirtillo/3.webp',
+  '/images/mirtillo/4.webp',
+];
+
+// ── Lightbox ──────────────────────────────────────────────────────────────────
+const lightbox = reactive({
+  visible: false,
+  images: [] as string[],
+  index: 0,
+});
+
+function openLightbox(images: string[], index: number) {
+  lightbox.images = images;
+  lightbox.index = index;
+  lightbox.visible = true;
+}
+
+function closeLightbox() {
+  lightbox.visible = false;
+}
+
+function prevPhoto() {
+  lightbox.index = (lightbox.index - 1 + lightbox.images.length) % lightbox.images.length;
+}
+
+function nextPhoto() {
+  lightbox.index = (lightbox.index + 1) % lightbox.images.length;
+}
+
+function handleKeydown(e: KeyboardEvent) {
+  if (!lightbox.visible) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') prevPhoto();
+  if (e.key === 'ArrowRight') nextPhoto();
+}
+
+onMounted(() => window.addEventListener('keydown', handleKeydown));
+onBeforeUnmount(() => window.removeEventListener('keydown', handleKeydown));
 
 useHead({
   title: "Prenota il tuo soggiorno | Cuore di Bosco - Prada di Brentonico",
@@ -416,13 +502,116 @@ section {
   text-align: left;
 }
 
-.rooms {
-  display: flex;
+section.rooms {
+  display: flex !important;
   flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1em;
+  gap: 5rem;
+  max-width: 1050px;
+  width: 100%;
+  margin: 0 auto 2rem;
+  padding: 0 2rem;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.room-block {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.room-block .card {
+  max-width: 100%;
+  width: 100%;
+}
+
+.room-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.room-gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.room-gallery img:hover {
+  transform: scale(1.03);
+  opacity: 0.85;
+}
+
+/* ── Lightbox ── */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  display: flex;
+  align-items: center;
   justify-content: center;
-  margin-bottom: 1em;
+  z-index: 1000;
+}
+
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.25rem 0.5rem;
+}
+
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #fff;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  line-height: 1;
+  transition: background 0.2s;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.lightbox-prev { left: 1rem; }
+.lightbox-next { right: 1rem; }
+
+.lightbox-counter {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
 }
 
 .wp-block-group {
@@ -469,11 +658,17 @@ figcaption {
   border-radius: 8px;
 }
 
-@media (max-width: 600px) {
-  .rooms {
-    flex-direction: column;
+@media (max-width: 750px) {
+  section.rooms {
+    flex-direction: column !important;
     align-items: center;
+    gap: 2rem;
   }
+}
+
+@media (max-width: 600px) {
+  .lightbox-prev { left: 0.25rem; }
+  .lightbox-next { right: 0.25rem; }
 
   .landing-text {
     bottom: 1rem;

@@ -46,38 +46,75 @@
     </section>
 
     <section class="rooms">
-      <div class="card text-center">
-        <figure>
-          <img decoding="async" width="128" height="128"
-            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/blueberry.png" alt="blueberry">
-        </figure>
-        <div class="room-info">
-          <h2>BLUEBERRY</h2>
-          <p class="room-short">Spacious and welcoming, ideal for families seeking comfort and tranquility.</p>
-          <p>Double room with 24 sqm, double bed and 2 singles beds. Wardrobe with drawers, minibar and kettle. 
-            Bathroom with shower, sink, and bidet. Personal hygiene products, cleaning, and linens included. 
-            Baby cot with linens, bed rails, and changing table available upon request.
-            Perfect for families with kids, offering all the space and comfort you need!</p> 
-          <h3>2 to 4 adult beds available</h3>
+      <!-- BLUEBERRY room -->
+      <div class="room-block">
+        <div class="card text-center">
+          <figure>
+            <img decoding="async" width="128" height="128"
+              src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/blueberry.png" alt="blueberry">
+          </figure>
+          <div class="room-info">
+            <h2>MIRTILLO</h2>
+            <p class="room-short">Spacious and welcoming, ideal for families seeking comfort and tranquility.</p>
+            <p>Double room with 34 sqm, double bed and 2 singles beds. Wardrobe with drawers, minibar and kettle.
+              Bathroom with shower, sink, and bidet. Personal hygiene products, cleaning, and linens included.
+              Baby cot with linens, bed rails, and changing table available upon request.
+              Perfect for families with kids, offering all the space and comfort you need!</p>
+            <h3>2 to 4 adult beds available</h3>
+          </div>
+        </div>
+        <div class="room-gallery">
+          <img
+            v-for="(photo, i) in blueberryPhotos"
+            :key="i"
+            :src="photo"
+            :alt="`Blueberry room photo ${i + 1}`"
+            loading="lazy"
+            @click="openLightbox(blueberryPhotos, i)"
+          />
         </div>
       </div>
 
-      <div class="card text-center">
-        <figure>
-          <img decoding="async" width="128" height="128"
-            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/raspberry.png" alt="raspberry">
-        </figure>
-        <div class="room-info">
-          <h2>RASPBERRY</h2>
-          <p class="room-short">Fresh and bright, perfect for nature lovers.</p>
-          <p>Spacious 24 sqm double room with double bed, wardrobe with drawers, relax area with sofa and kettle.
-            Bathroom with shower, sink, and bidet. Personal hygiene products, cleaning, and linens included.
-            Baby cot with linens, bed rails, and changing table available upon request.
-            Great for families or friends, with panoramic views and peace!</p>
-          <h3>2 adults beds available</h3>
+      <!-- RASPBERRY room -->
+      <div class="room-block">
+        <div class="card text-center">
+          <figure>
+            <img decoding="async" width="128" height="128"
+              src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/raspberry.png" alt="raspberry">
+          </figure>
+          <div class="room-info">
+            <h2>LAMPONE</h2>
+            <p class="room-short">Fresh and bright, perfect for nature lovers.</p>
+            <p>Spacious 28 sqm double room with double bed, wardrobe with drawers, relax area with sofa and kettle.
+              Bathroom with shower, sink, and bidet. Personal hygiene products, cleaning, and linens included.
+              Baby cot with linens, bed rails, and changing table available upon request. Double sofa bed to accomodate 2 more guests.
+              Great for families or friends, with panoramic views and peace!</p>
+            <h3>2 to 4 adults beds available</h3>
+          </div>
+        </div>
+        <div class="room-gallery">
+          <img
+            v-for="(photo, i) in raspberryPhotos"
+            :key="i"
+            :src="photo"
+            :alt="`Raspberry room photo ${i + 1}`"
+            loading="lazy"
+            @click="openLightbox(raspberryPhotos, i)"
+          />
         </div>
       </div>
     </section>
+
+    <!-- Lightbox -->
+    <Teleport to="body">
+      <div v-if="lightbox.visible" class="lightbox-overlay" @click.self="closeLightbox">
+        <button class="lightbox-close" @click="closeLightbox" aria-label="Close">✕</button>
+        <button class="lightbox-prev" @click="prevPhoto" aria-label="Previous">&#8249;</button>
+        <img :src="lightbox.images[lightbox.index]" class="lightbox-img" :alt="`Photo ${lightbox.index + 1}`" />
+        <button class="lightbox-next" @click="nextPhoto" aria-label="Next">&#8250;</button>
+        <div class="lightbox-counter">{{ lightbox.index + 1 }} / {{ lightbox.images.length }}</div>
+      </div>
+    </Teleport>
 
     <div class="welcome">
       <img decoding="async" width="1400" height="800" class="service-image" alt="house" :src="colazioni"
@@ -176,8 +213,7 @@
         Regular cleaning<br>
         Refillable eco-friendly hygiene products<br><br>
         Welcome gift<br>
-        Silent minibar<br>
-        Glasses<br><br>
+        Drinking glasses<br><br>
         Eco-friendly cleaning products, broom and dustpan<br>
         Clothes rack and pegs on the balcony (weather permitting)
       </p>
@@ -198,6 +234,43 @@
 import camere from "~/assets/images/camere.webp";
 import colazioni from "~/assets/images/colazioni.webp";
 import separator from "~/assets/images/separator.webp";
+
+// Blueberry = Mirtillo room, Raspberry = Lampone room (same photos as Italian page)
+const blueberryPhotos = [
+  '/images/mirtillo/1.webp',
+  '/images/mirtillo/2.webp',
+  '/images/mirtillo/3.webp',
+  '/images/mirtillo/4.webp',
+];
+const raspberryPhotos = [
+  '/images/lampone/1.webp',
+  '/images/lampone/2.webp',
+  '/images/lampone/3.webp',
+  '/images/lampone/4.webp',
+];
+
+const lightbox = reactive({
+  visible: false,
+  images: [] as string[],
+  index: 0,
+});
+
+function openLightbox(images: string[], index: number) {
+  lightbox.images = images;
+  lightbox.index = index;
+  lightbox.visible = true;
+}
+function closeLightbox() { lightbox.visible = false; }
+function prevPhoto() { lightbox.index = (lightbox.index - 1 + lightbox.images.length) % lightbox.images.length; }
+function nextPhoto() { lightbox.index = (lightbox.index + 1) % lightbox.images.length; }
+function handleKeydown(e: KeyboardEvent) {
+  if (!lightbox.visible) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') prevPhoto();
+  if (e.key === 'ArrowRight') nextPhoto();
+}
+onMounted(() => window.addEventListener('keydown', handleKeydown));
+onBeforeUnmount(() => window.removeEventListener('keydown', handleKeydown));
 
 definePageMeta({
   layout: 'english'
@@ -415,10 +488,104 @@ section {
 .rooms {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1em;
+  gap: 5rem;
+  max-width: 1050px;
+  width: 100%;
+  margin: 0 auto 2rem;
+  padding: 0 2rem;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.room-block {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.room-block .card {
+  max-width: 100%;
+  width: 100%;
+}
+
+.room-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.room-gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.room-gallery img:hover {
+  transform: scale(1.03);
+  opacity: 0.85;
+}
+
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  display: flex;
+  align-items: center;
   justify-content: center;
-  margin-bottom: 1em;
+  z-index: 1000;
+}
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 4px;
+}
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.25rem 0.5rem;
+}
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #fff;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  line-height: 1;
+  transition: background 0.2s;
+}
+.lightbox-prev:hover,
+.lightbox-next:hover { background: rgba(255, 255, 255, 0.3); }
+.lightbox-prev { left: 1rem; }
+.lightbox-next { right: 1rem; }
+.lightbox-counter {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
 }
 
 .wp-block-group {
@@ -465,11 +632,17 @@ figcaption {
   border-radius: 8px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .rooms {
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
   }
+}
+
+@media (max-width: 600px) {
+  .lightbox-prev { left: 0.25rem; }
+  .lightbox-next { right: 0.25rem; }
 
   .landing-text {
     bottom: 1rem;
