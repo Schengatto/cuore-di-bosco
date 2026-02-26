@@ -29,7 +29,7 @@
       <figure class="image-wrapper aligncenter size-large is-resized">
         <a href="https://www.parcomontebaldo.tn.it/it" target="_blank" rel="noopener noreferrer nofollow">
           <img decoding="async" src="https://www.parcomontebaldo.tn.it/sites/default/files/logo-parcomontebaldo.jpg"
-            alt="" style="width: 132px; height: auto" /></a>
+            alt="Monte Baldo Nature Park Logo" style="width: 132px; height: auto" /></a>
       </figure>
 
       <p>
@@ -72,7 +72,7 @@
         <figure class="image-wrapper">
           <a href="https://www.visitrovereto.it/" target="_blank" rel="noopener noreferrer nofollow">
             <img decoding="async" width="850" height="371" data-id="601"
-              src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/apt_brentonico.jpg" alt=""
+              src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/apt_brentonico.jpg" alt="Brentonico Plateau panorama"
               class="wp-image-601" srcset="
             https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/apt_brentonico.jpg         850w,
             https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/apt_brentonico-320x140.jpg 320w,
@@ -239,6 +239,40 @@ useHead({
       name: "keywords",
       content:
         "things to do Prada di Brentonico, hiking, Trentino nature, activities near the B&B, what to see Brentonico",
+    },
+    {
+      property: "og:title",
+      content: "What to See Nearby | B&B Cuore di Bosco",
+    },
+    {
+      property: "og:description",
+      content:
+        "Explore nature, trails, and attractions near B&B Cuore di Bosco. Outdoor activities and culture in the heart of Trentino.",
+    },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:url",
+      content: "https://www.cuoredibosco.it/en/explore",
+    },
+    {
+      property: "og:image",
+      content: "https://www.cuoredibosco.it/images/cuore-casa.webp",
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:title",
+      content: "What to See Nearby | B&B Cuore di Bosco",
+    },
+    {
+      name: "twitter:description",
+      content:
+        "Explore nature, trails, and attractions near B&B Cuore di Bosco.",
     },
   ],
   link: [{ rel: "canonical", href: "https://www.cuoredibosco.it/en/explore" }],

@@ -69,6 +69,39 @@ import cookies from "~/assets/images/cookies.webp";
 definePageMeta({
     layout: 'english'
 });
+
+useHead({
+  title: "Cookie & Privacy Policy | Cuore di Bosco - B&B Prada di Brentonico",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Privacy and cookie policy for cuoredibosco.it. Learn how we manage your data and cookies.",
+    },
+    {
+      property: "og:title",
+      content: "Cookie & Privacy Policy | B&B Cuore di Bosco",
+    },
+    {
+      property: "og:description",
+      content:
+        "Privacy and cookie policy for cuoredibosco.it.",
+    },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:url",
+      content: "https://www.cuoredibosco.it/en/privacy-policy",
+    },
+    {
+      property: "og:image",
+      content: "https://www.cuoredibosco.it/images/cuore-casa.webp",
+    },
+  ],
+  link: [{ rel: "canonical", href: "https://www.cuoredibosco.it/en/privacy-policy" }],
+});
 </script>
 
 

@@ -299,6 +299,40 @@ useHead({
       content:
         "B&B Cuore di Bosco, Prada di Brentonico, bed and breakfast Trentino, soggiorno in montagna, prenotazione B&B, vacanza natura",
     },
+    {
+      property: "og:title",
+      content: "Prenota il tuo soggiorno | B&B Cuore di Bosco",
+    },
+    {
+      property: "og:description",
+      content:
+        "Prenota il tuo soggiorno al B&B Cuore di Bosco, immerso nella natura di Prada di Brentonico. Comfort, relax e autenticità nel cuore del Trentino.",
+    },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:url",
+      content: "https://www.cuoredibosco.it/it/prenota",
+    },
+    {
+      property: "og:image",
+      content: "https://www.cuoredibosco.it/images/cuore-casa.webp",
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:title",
+      content: "Prenota il tuo soggiorno | B&B Cuore di Bosco",
+    },
+    {
+      name: "twitter:description",
+      content:
+        "Prenota il tuo soggiorno al B&B Cuore di Bosco, immerso nella natura di Prada di Brentonico.",
+    },
   ],
   link: [
     {

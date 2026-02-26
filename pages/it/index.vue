@@ -190,6 +190,14 @@ useHead({
       content: "website",
     },
     {
+      property: "og:url",
+      content: "https://www.cuoredibosco.it/it",
+    },
+    {
+      property: "og:image",
+      content: "https://www.cuoredibosco.it/images/cuore-casa.webp",
+    },
+    {
       name: "twitter:card",
       content: "summary_large_image",
     },
@@ -257,6 +265,8 @@ section {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .overview {

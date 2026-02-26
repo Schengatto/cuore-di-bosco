@@ -144,6 +144,40 @@ useHead({
       content:
         "B&B rules, responsible stay, Cuore di Bosco rules, vacation home guidelines",
     },
+    {
+      property: "og:title",
+      content: "House Rules | B&B Cuore di Bosco",
+    },
+    {
+      property: "og:description",
+      content:
+        "Read the house rules of B&B Cuore di Bosco to ensure a peaceful and respectful stay for everyone.",
+    },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:url",
+      content: "https://www.cuoredibosco.it/en/rules",
+    },
+    {
+      property: "og:image",
+      content: "https://www.cuoredibosco.it/images/cuore-casa.webp",
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:title",
+      content: "House Rules | B&B Cuore di Bosco",
+    },
+    {
+      name: "twitter:description",
+      content:
+        "Read the house rules of B&B Cuore di Bosco.",
+    },
   ],
   link: [{ rel: "canonical", href: "https://www.cuoredibosco.it/en/rules" }],
 });

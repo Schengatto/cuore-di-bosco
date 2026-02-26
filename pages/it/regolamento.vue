@@ -138,6 +138,40 @@ useHead({
       content:
         "regole B&B, soggiorno responsabile, regole Cuore di Bosco, norme casa vacanza",
     },
+    {
+      property: "og:title",
+      content: "Regole della casa | B&B Cuore di Bosco",
+    },
+    {
+      property: "og:description",
+      content:
+        "Leggi le regole della casa del B&B Cuore di Bosco per garantire a tutti un soggiorno sereno e rispettoso.",
+    },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:url",
+      content: "https://www.cuoredibosco.it/it/regolamento",
+    },
+    {
+      property: "og:image",
+      content: "https://www.cuoredibosco.it/images/cuore-casa.webp",
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:title",
+      content: "Regole della casa | B&B Cuore di Bosco",
+    },
+    {
+      name: "twitter:description",
+      content:
+        "Leggi le regole della casa del B&B Cuore di Bosco.",
+    },
   ],
   link: [{ rel: "canonical", href: "https://www.cuoredibosco.it/it/regolamento" }],
 });

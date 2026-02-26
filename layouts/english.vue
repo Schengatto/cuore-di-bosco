@@ -65,7 +65,7 @@
                              <a href="https://www.instagram.com/bbcuoredibosco/"
                                 target="_blank"
                                 rel="noopener"
-                                aria-label="Istagram"
+                                aria-label="Instagram"
                                 >
                                 <img src="https://cuoredibosco.altervista.org/wp-content/uploads/2026/01/instagram-1.png" alt="Instagram" width="50" />
                             </a>
@@ -85,6 +85,56 @@ import Toast from '~/components/toast.vue';
 
 const { setLocale } = useI18n();
 setLocale("en");
+
+useHead({
+  htmlAttrs: { lang: 'en' },
+  link: [
+    { rel: 'alternate', hreflang: 'it', href: 'https://www.cuoredibosco.it/it' },
+    { rel: 'alternate', hreflang: 'en', href: 'https://www.cuoredibosco.it/en' },
+    { rel: 'alternate', hreflang: 'x-default', href: 'https://www.cuoredibosco.it/it' },
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "B&B Cuore di Bosco",
+        "description": "Bed and Breakfast nestled in the nature of Brentonico Plateau, in the heart of Trentino. Homemade breakfasts, authentic hospitality, and peace among the woods.",
+        "url": "https://www.cuoredibosco.it",
+        "telephone": "+393494960228",
+        "email": "info@cuoredibosco.it",
+        "image": "https://www.cuoredibosco.it/images/cuore-casa.webp",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Via Gardesani, 15",
+          "addressLocality": "Brentonico",
+          "addressRegion": "TN",
+          "postalCode": "38060",
+          "addressCountry": "IT"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 45.8015,
+          "longitude": 10.9562
+        },
+        "checkinTime": "15:00",
+        "checkoutTime": "10:30",
+        "priceRange": "$$",
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Breakfast included", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Free parking", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Family-friendly services", "value": true }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61583661897314",
+          "https://www.instagram.com/bbcuoredibosco/"
+        ]
+      }),
+    },
+  ],
+});
 </script>
 
 <style scoped>

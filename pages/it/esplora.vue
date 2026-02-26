@@ -34,7 +34,7 @@
 
       <figure class="image-wrapper aligncenter size-large is-resized">
         <a href="https://www.parcomontebaldo.tn.it/it" target="_blank" rel="noopener noreferrer nofollow"><img
-            decoding="async" src="https://www.parcomontebaldo.tn.it/sites/default/files/logo-parcomontebaldo.jpg" alt=""
+            decoding="async" src="https://www.parcomontebaldo.tn.it/sites/default/files/logo-parcomontebaldo.jpg" alt="Logo Parco Naturale Monte Baldo"
             style="width: 132px; height: auto" /></a>
       </figure>
 
@@ -88,7 +88,7 @@
         <figure class="image-wrapper">
           <a href="https://www.visitrovereto.it/" target="_blank" rel="noopener noreferrer nofollow">
             <img decoding="async" width="850" height="371" data-id="601"
-              src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/apt_brentonico.jpg" alt=""
+              src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/apt_brentonico.jpg" alt="Panorama Altopiano di Brentonico"
               class="wp-image-601" srcset="
                 https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/apt_brentonico.jpg         850w,
                 https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/apt_brentonico-320x140.jpg 320w,
@@ -276,6 +276,40 @@ useHead({
       name: "keywords",
       content:
         "cose da fare Prada di Brentonico, escursioni, natura Trentino, attività vicino al B&B, cosa vedere Brentonico",
+    },
+    {
+      property: "og:title",
+      content: "Cosa vedere nei dintorni | B&B Cuore di Bosco",
+    },
+    {
+      property: "og:description",
+      content:
+        "Esplora la natura, i sentieri e le attrazioni vicino al B&B Cuore di Bosco. Attività outdoor e cultura nel cuore del Trentino.",
+    },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:url",
+      content: "https://www.cuoredibosco.it/it/esplora",
+    },
+    {
+      property: "og:image",
+      content: "https://www.cuoredibosco.it/images/cuore-casa.webp",
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:title",
+      content: "Cosa vedere nei dintorni | B&B Cuore di Bosco",
+    },
+    {
+      name: "twitter:description",
+      content:
+        "Esplora la natura, i sentieri e le attrazioni vicino al B&B Cuore di Bosco.",
     },
   ],
   link: [{ rel: "canonical", href: "https://www.cuoredibosco.it/it/esplora" }],
