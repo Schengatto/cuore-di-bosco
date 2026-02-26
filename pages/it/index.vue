@@ -164,26 +164,26 @@ import brentonico from "~/assets/images/brentonico.webp";
 import separator from "~/assets/images/separator.webp";
 
 useHead({
-  title: "Cuore di Bosco B&B",
+  title: "B&B Cuore di Bosco | Vacanze in montagna per famiglie - Brentonico, Trentino",
   meta: [
     {
       name: "description",
       content:
-        "Cuore di Bosco è un B&B immerso nella natura delle montagne di Brentonico. Un rifugio accogliente dove riscoprire la tranquillità tra boschi, colazioni genuine e ospitalità autentica.",
+        "B&B per famiglie sull’Altopiano di Brentonico, Trentino. Vacanze in montagna con bambini: colazioni genuine, kit bimbo, natura e pace tra i boschi del Parco del Monte Baldo.",
     },
     {
       name: "keywords",
       content:
-        "b&b, bed and breakfast, Brentonico, montagna, natura, vacanze Trentino, relax, colazione genuina, ospitalità, soggiorno romantico, Cuore di Bosco",
+        "b&b per famiglie, vacanze montagna con bambini, bed and breakfast Brentonico, montagna bambini gratis, vacanze Trentino famiglie, b&b bambini Trentino, Altopiano di Brentonico, colazione genuina, Cuore di Bosco, Monte Baldo, family hotel Trentino",
     },
     {
       property: "og:title",
-      content: "Cuore di Bosco - B&B tra i boschi di Brentonico",
+      content: "B&B Cuore di Bosco - Vacanze per famiglie tra i boschi di Brentonico",
     },
     {
       property: "og:description",
       content:
-        "Un’accoglienza calda e familiare tra i boschi del Trentino. Colazioni fatte in casa, silenzio e natura a pochi passi da Brentonico.",
+        "B&B ideale per famiglie con bambini sull’Altopiano di Brentonico. Colazioni fatte in casa, kit bimbo, bici e tanto spazio nella natura del Trentino.",
     },
     {
       property: "og:type",
@@ -203,12 +203,12 @@ useHead({
     },
     {
       name: "twitter:title",
-      content: "Cuore di Bosco - Il tuo rifugio tra le montagne di Brentonico",
+      content: "B&B Cuore di Bosco - Vacanze in montagna per famiglie",
     },
     {
       name: "twitter:description",
       content:
-        "Rilassati nel nostro B&B tra i boschi del Trentino. Esperienza autentica, natura, e colazioni fatte in casa.",
+        "B&B per famiglie con bambini sull'Altopiano di Brentonico. Natura, colazioni genuine e servizi dedicati ai piccoli.",
     },
   ],
   link: [{ rel: "canonical", href: "https://www.cuoredibosco.it/it" }],

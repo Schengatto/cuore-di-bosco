@@ -265,26 +265,26 @@
 import bosco from "~/assets/images/bosco.webp";
 
 useHead({
-  title: "Cosa vedere nei dintorni | Cuore di Bosco - Prada di Brentonico",
+  title: "Cosa fare con bambini a Brentonico | Cuore di Bosco - Attività famiglie",
   meta: [
     {
       name: "description",
       content:
-        "Esplora la natura, i sentieri e le attrazioni vicino al B&B Cuore di Bosco. Attività outdoor e cultura nel cuore del Trentino.",
+        "Attività per famiglie e bambini vicino al B&B Cuore di Bosco: escursioni, parchi giochi sulla neve, sentieri facili e natura nel Trentino.",
     },
     {
       name: "keywords",
       content:
-        "cose da fare Prada di Brentonico, escursioni, natura Trentino, attività vicino al B&B, cosa vedere Brentonico",
+        "cosa fare con bambini Brentonico, escursioni famiglie Trentino, attività bambini montagna, parco giochi neve, sentieri facili famiglie, Monte Baldo bambini, Prada di Brentonico famiglie",
     },
     {
       property: "og:title",
-      content: "Cosa vedere nei dintorni | B&B Cuore di Bosco",
+      content: "Attività per famiglie a Brentonico | B&B Cuore di Bosco",
     },
     {
       property: "og:description",
       content:
-        "Esplora la natura, i sentieri e le attrazioni vicino al B&B Cuore di Bosco. Attività outdoor e cultura nel cuore del Trentino.",
+        "Scopri cosa fare con bambini vicino al B&B Cuore di Bosco: escursioni, neve, natura e divertimento per tutta la famiglia in Trentino.",
     },
     {
       property: "og:type",
@@ -304,12 +304,12 @@ useHead({
     },
     {
       name: "twitter:title",
-      content: "Cosa vedere nei dintorni | B&B Cuore di Bosco",
+      content: "Attività per famiglie a Brentonico | B&B Cuore di Bosco",
     },
     {
       name: "twitter:description",
       content:
-        "Esplora la natura, i sentieri e le attrazioni vicino al B&B Cuore di Bosco.",
+        "Cosa fare con bambini a Brentonico: escursioni, neve e natura per tutta la famiglia vicino al B&B Cuore di Bosco.",
     },
   ],
   link: [{ rel: "canonical", href: "https://www.cuoredibosco.it/it/esplora" }],

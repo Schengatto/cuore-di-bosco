@@ -287,26 +287,26 @@ onMounted(() => window.addEventListener('keydown', handleKeydown));
 onBeforeUnmount(() => window.removeEventListener('keydown', handleKeydown));
 
 useHead({
-  title: "Prenota il tuo soggiorno | Cuore di Bosco - Prada di Brentonico",
+  title: "Prenota il tuo soggiorno | B&B Cuore di Bosco - Vacanze famiglie Brentonico",
   meta: [
     {
       name: "description",
       content:
-        "Prenota il tuo soggiorno al B&B Cuore di Bosco, immerso nella natura di Prada di Brentonico. Comfort, relax e autenticità nel cuore del Trentino.",
+        "Prenota al B&B Cuore di Bosco: vacanze in montagna per famiglie con bambini a Prada di Brentonico. Kit bimbo, colazioni genuine e natura nel Trentino.",
     },
     {
       name: "keywords",
       content:
-        "B&B Cuore di Bosco, Prada di Brentonico, bed and breakfast Trentino, soggiorno in montagna, prenotazione B&B, vacanza natura",
+        "prenotazione B&B famiglie, vacanze montagna bambini Trentino, B&B Cuore di Bosco, Prada di Brentonico, bed and breakfast famiglie, kit bimbo montagna, soggiorno famiglia Brentonico",
     },
     {
       property: "og:title",
-      content: "Prenota il tuo soggiorno | B&B Cuore di Bosco",
+      content: "Prenota | B&B Cuore di Bosco - Vacanze per famiglie in Trentino",
     },
     {
       property: "og:description",
       content:
-        "Prenota il tuo soggiorno al B&B Cuore di Bosco, immerso nella natura di Prada di Brentonico. Comfort, relax e autenticità nel cuore del Trentino.",
+        "Prenota la tua vacanza in montagna per famiglie con bambini al B&B Cuore di Bosco. Kit bimbo, colazioni fatte in casa e natura a Brentonico.",
     },
     {
       property: "og:type",
@@ -326,12 +326,12 @@ useHead({
     },
     {
       name: "twitter:title",
-      content: "Prenota il tuo soggiorno | B&B Cuore di Bosco",
+      content: "Prenota | B&B Cuore di Bosco - Famiglie in montagna",
     },
     {
       name: "twitter:description",
       content:
-        "Prenota il tuo soggiorno al B&B Cuore di Bosco, immerso nella natura di Prada di Brentonico.",
+        "Prenota al B&B Cuore di Bosco: vacanze in montagna per famiglie con bambini a Brentonico, Trentino.",
     },
   ],
   link: [

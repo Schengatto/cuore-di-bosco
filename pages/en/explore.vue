@@ -228,26 +228,26 @@ definePageMeta({
 });
 
 useHead({
-  title: "What to See Nearby | Cuore di Bosco - Prada di Brentonico",
+  title: "Things to Do with Kids in Brentonico | Cuore di Bosco - Family Activities",
   meta: [
     {
       name: "description",
       content:
-        "Explore nature, trails, and attractions near B&B Cuore di Bosco. Outdoor activities and culture in the heart of Trentino.",
+        "Family activities and things to do with children near B&B Cuore di Bosco: hiking, snow playgrounds, easy trails and nature in Trentino.",
     },
     {
       name: "keywords",
       content:
-        "things to do Prada di Brentonico, hiking, Trentino nature, activities near the B&B, what to see Brentonico",
+        "things to do with kids Brentonico, family hiking Trentino, children activities mountains, snow playground, easy family trails, Monte Baldo kids, Prada di Brentonico families",
     },
     {
       property: "og:title",
-      content: "What to See Nearby | B&B Cuore di Bosco",
+      content: "Family Activities in Brentonico | B&B Cuore di Bosco",
     },
     {
       property: "og:description",
       content:
-        "Explore nature, trails, and attractions near B&B Cuore di Bosco. Outdoor activities and culture in the heart of Trentino.",
+        "Discover things to do with children near B&B Cuore di Bosco: hiking, snow, nature and fun for the whole family in Trentino.",
     },
     {
       property: "og:type",
@@ -267,12 +267,12 @@ useHead({
     },
     {
       name: "twitter:title",
-      content: "What to See Nearby | B&B Cuore di Bosco",
+      content: "Family Activities in Brentonico | B&B Cuore di Bosco",
     },
     {
       name: "twitter:description",
       content:
-        "Explore nature, trails, and attractions near B&B Cuore di Bosco.",
+        "Things to do with kids in Brentonico: hiking, snow and nature for the whole family near B&B Cuore di Bosco.",
     },
   ],
   link: [{ rel: "canonical", href: "https://www.cuoredibosco.it/en/explore" }],

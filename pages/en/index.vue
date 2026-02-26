@@ -98,26 +98,26 @@ definePageMeta({
 });
 
 useHead({
-  title: "Cuore di Bosco B&B",
+  title: "B&B Cuore di Bosco | Family Mountain Holidays - Brentonico, Trentino",
   meta: [
     {
       name: "description",
       content:
-        "Cuore di Bosco is a B&B nestled in the natural beauty of the Brentonico mountains. A cozy retreat where you can rediscover peace and quiet among woods, homemade breakfasts, and genuine hospitality.",
+        "Family-friendly B&B on the Brentonico Plateau, Trentino. Mountain holidays with children: homemade breakfasts, baby kit, nature and peace in the Monte Baldo Nature Park.",
     },
     {
       name: "keywords",
       content:
-        "b&b, bed and breakfast, Brentonico, mountains, nature, Trentino holidays, relaxation, homemade breakfast, hospitality, romantic getaway, Cuore di Bosco",
+        "family B&B, mountain holidays with kids, bed and breakfast Brentonico, kids stay free mountains, family vacation Trentino, B&B children Trentino, Brentonico Plateau, homemade breakfast, Cuore di Bosco, Monte Baldo, family hotel Trentino",
     },
     {
       property: "og:title",
-      content: "Cuore di Bosco - B&B in the Woods of Brentonico",
+      content: "B&B Cuore di Bosco - Family Holidays in the Woods of Brentonico",
     },
     {
       property: "og:description",
       content:
-        "A warm, family-style welcome in the woods of Trentino. Homemade breakfasts, silence, and nature just steps from Brentonico.",
+        "Family-friendly B&B on the Brentonico Plateau. Homemade breakfasts, baby kit, bikes and plenty of space in the nature of Trentino.",
     },
     {
       property: "og:type",
@@ -137,12 +137,12 @@ useHead({
     },
     {
       name: "twitter:title",
-      content: "Cuore di Bosco - Your Mountain Retreat in Brentonico",
+      content: "B&B Cuore di Bosco - Family Mountain Holidays in Trentino",
     },
     {
       name: "twitter:description",
       content:
-        "Relax in our B&B in the woods of Trentino. An authentic experience with nature and homemade breakfasts.",
+        "Family-friendly B&B on the Brentonico Plateau. Nature, homemade breakfasts and child-friendly services.",
     },
   ],
 

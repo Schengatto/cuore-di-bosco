@@ -277,26 +277,26 @@ definePageMeta({
 });
 
 useHead({
-  title: "Book Your Stay | Cuore di Bosco - Prada di Brentonico",
+  title: "Book Your Stay | B&B Cuore di Bosco - Family Holidays Brentonico",
   meta: [
     {
       name: "description",
       content:
-        "Book your stay at B&B Cuore di Bosco, surrounded by nature in Prada di Brentonico. Comfort, relaxation, and authenticity in the heart of Trentino.",
+        "Book at B&B Cuore di Bosco: family mountain holidays with children in Prada di Brentonico. Baby kit, homemade breakfasts and nature in Trentino.",
     },
     {
       name: "keywords",
       content:
-        "B&B Cuore di Bosco, Prada di Brentonico, bed and breakfast Trentino, mountain stay, B&B booking, nature vacation",
+        "family B&B booking, mountain holidays with kids Trentino, B&B Cuore di Bosco, Prada di Brentonico, family bed and breakfast, baby kit mountain, family stay Brentonico",
     },
     {
       property: "og:title",
-      content: "Book Your Stay | B&B Cuore di Bosco",
+      content: "Book | B&B Cuore di Bosco - Family Holidays in Trentino",
     },
     {
       property: "og:description",
       content:
-        "Book your stay at B&B Cuore di Bosco, surrounded by nature in Prada di Brentonico. Comfort, relaxation, and authenticity in the heart of Trentino.",
+        "Book your family mountain holiday with children at B&B Cuore di Bosco. Baby kit, homemade breakfasts and nature in Brentonico.",
     },
     {
       property: "og:type",
@@ -316,12 +316,12 @@ useHead({
     },
     {
       name: "twitter:title",
-      content: "Book Your Stay | B&B Cuore di Bosco",
+      content: "Book | B&B Cuore di Bosco - Family Mountain Holidays",
     },
     {
       name: "twitter:description",
       content:
-        "Book your stay at B&B Cuore di Bosco, surrounded by nature in Prada di Brentonico.",
+        "Book at B&B Cuore di Bosco: family mountain holidays with children in Brentonico, Trentino.",
     },
   ],
   link: [
