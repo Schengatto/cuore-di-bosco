@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="welcome">
-      <img decoding="async" width="1400" height="800" class="landing-image" alt="forest" :src="bosco"
+      <img decoding="async" width="1400" height="800" class="landing-image" alt="Forest trail on the Brentonico Plateau - Monte Baldo Nature Park" :src="bosco"
         data-object-fit="cover" sizes="(max-width: 1200px) 100vw, 1200px" /><span aria-hidden="true"
         style="background-color: #526a71"></span>
       <div class="landing-text">
@@ -13,17 +13,36 @@
       <p>
         Just a few minutes from Brentonico, <strong>Prada</strong> is a small mountain hamlet in the heart of the
         <strong>Monte Baldo Nature Park</strong>, a quiet yet easily accessible place—an ideal base for hiking and all
-        kinds of outdoor activities. Perfect for families looking for nature, peace, and freedom. Here, children of all
-        ages (even grown-ups!) can run through meadows, watch grazing animals, listen to birdsong, and enjoy a peaceful
-        mountain experience.
+        kinds of outdoor activities.
+      </p>
+      <p class="spaced">
+        Located in Prada di Brentonico, <strong>B&B Cuore di Bosco</strong>
+        is the ideal starting point for families and nature lovers.
+      </p>
+      <p class="spaced">
+        From easy trails for walks with children to panoramic trekking routes,
+        every hike offers breathtaking scenery immersed in the nature of Monte Baldo and the surrounding woods.
+      </p>
+      <p class="spaced">
+        The <strong>Brentonico Plateau</strong> is perfect for families looking for nature, peace, and freedom.
+      </p>
+      <p>
+        Here, children of all ages (even grown-ups!) can run through meadows, watch grazing animals, listen to birdsong,
+        and enjoy a peaceful mountain experience.
       </p>
 
       <p>
         The area is full of <strong>trails suitable for children</strong>, alpine huts accessible via easy walks, and
         forests that transform with each season: from the bright greens of spring to the warm colors of autumn. In
         <strong>summer</strong>, you can explore the alpine huts of Monte Baldo Park, taste local products, and enjoy
-        the cool mountain air. On the park's official website below, you’ll find trail maps and a calendar of
-        activities!
+        the cool mountain air.
+      </p>
+      <p>
+        Don’t miss the magnificent <strong>Canyon della Sorna</strong>, a natural wonder with gorges carved by water,
+        waterfalls and unique panoramic viewpoints for walks and photography.
+      </p>
+      <p>
+        On the park’s official website below, you’ll find trail maps and a calendar of activities!
       </p>
 
       <figure class="image-wrapper aligncenter size-large is-resized">
@@ -42,16 +61,18 @@
 
       <p>
         <strong>Rovereto</strong> is also close by (25 minutes), with its museums, historic center, and cultural
-        activities for all ages. Discover its renowned museums like MART and the innovative Museum of Science and
-        Archaeology. See more at
+        activities for all ages, with its renowned museums spanning art, history and science such as MART and the innovative
+        Museum of Science and Archaeology, as well as the famous Bell of the Fallen
+        and the historic center with the castle and the historic Teatro Zandonai. To discover more,
         <a href="https://www.visitrovereto.it/scopri/territorio/rovereto-citta-di-culture/" target="_blank">What to See
           in Rovereto</a>.
       </p>
 
       <p>
-        Want to complete your holiday with a day at <strong>Lake Garda</strong>? In just about 30 minutes, you can reach
-        the northern tip of Lake Garda with Torbole and Riva del Garda—crystal-clear waters and breathtaking views
-        await.
+        In the surrounding area, you can also visit <strong>Castello di Ala</strong>, an important example of local history and architecture,
+        and <strong>Lago di Loppio</strong>, perfect for nature walks and birdwatching.
+        To complete your holiday, in about 30 minutes you can reach <strong>Lake Garda</strong>,
+        with Torbole and Riva del Garda, for excursions, water sports, clean water and unique panoramas.
         <a href="https://www.gardatrentino.it/it" target="_blank">Find out more</a>.
       </p>
 
@@ -91,7 +112,7 @@
     </section>
 
     <section class="text-center">
-      <h1>Brentonico, the Flower of Mount Baldo</h1>
+      <h2>Brentonico, the Flower of Mount Baldo</h2>
 
       <Carousel :images="[
         'https://www.visitrovereto.it/wp-content/uploads/2019/11/paesaggio-inverno-monte-baldo-foto-valentino-azzolini-1.jpg',
@@ -99,6 +120,12 @@
         'https://www.visitrovereto.it/wp-content/uploads/2023/06/Giardino-Botanico-ph-lucamatassoni-web.png',
         'https://www.visitrovereto.it/wp-content/uploads/2019/10/paesaggio-inverno-monte-baldo-foto-tommaso-prugnola-3.jpg',
         'https://www.visitrovereto.it/wp-content/uploads/2024/10/Brentonico-il-fiore-del-Baldo-Graziano-Galvagni.jpg',
+      ]" :alts="[
+        'Monte Baldo in winter - snowy landscape on the Brentonico Plateau',
+        'Botanical garden at Palazzo Eccheli-Baisi in Brentonico',
+        'Botanical Garden of Monte Baldo Nature Park',
+        'Winter landscape Monte Baldo - Trentino',
+        'Brentonico the Flower of Mount Baldo - mountain panorama',
       ]" />
     </section>
 
@@ -136,7 +163,7 @@
     </section>
 
     <section>
-      <h3>In Spring</h3>
+      <h3>What to do in spring on the Brentonico Plateau</h3>
       <p>
         The blooming season is perfect for meeting and getting to know the rare plants and flowers that brighten the
         Brentonico Plateau. Follow the many <strong>scenic routes</strong>, choosing the one best suited to your
@@ -149,15 +176,20 @@
     </section>
 
     <section>
-      <h3>In Summer</h3>
+      <h3>Summer on Monte Baldo: trekking, alpine huts and outdoor activities</h3>
       <p>
-        Summer on Monte Baldo means <strong>outdoor activities</strong>!
+        Summer on Monte Baldo means outdoor activities: hiking, mountain biking, horse riding
+        and visits to mountain huts and alpine pastures to savor fresh milk and local cheeses. Panoramic trails offer views over Lake Garda,
+        and the Peace Trail passes through Great War sites such as trenches, tunnels, and fortifications.
       </p>
       <p>
-        Are you a hiker, biker, or horse riding enthusiast? Explore the extensive network of forest roads and trails,
-        some overlooking Lake Garda offering breathtaking views, others along the Peace Trail through Great War sites
-        such as trenches, tunnels, and fortifications! From time to time, stop at one of the many <strong>mountain
-          huts</strong>, where you can watch the sunrise while savoring freshly milked milk and delicious cheeses.
+The <strong>Cammino di San Rocco</strong> passes right in front of our property and is a scenic
+circular route of about 70 km, structured in 5 stages, combining history,
+nature and culture between Val di Gresta, Mori, Ronzo-Chienis and the Brentonico Plateau.
+It crosses woods, historic villages and Great War trenches, and can be walked all year round.
+You can pick up the "pilgrim’s passport" in Mori and follow the GPX tracks marked by SAT signs.
+For more information and to download the map, visit the official website
+<a href="https://camminosanrocco.it/" target="_blank">Find out more</a>
       </p>
       <p>
         The Brentonico Plateau is also home to <a href="https://www.visitrovereto.it/vivi/outdoor/summer-camp/"
@@ -172,7 +204,7 @@
     </section>
 
     <section>
-      <h3>In Autumn</h3>
+      <h3>Autumn in Trentino: chestnuts and local flavors in Brentonico</h3>
       <p>
         Walk among the majestic trees of the plateau and discover the warm colors and delicious flavors of autumn.
         During this season, the famous <strong>Castione chestnuts</strong> become the undisputed stars of local events
@@ -187,7 +219,7 @@
     </section>
 
     <section>
-      <h3>In Winter</h3>
+      <h3>Winter at Polsa and San Valentino: skiing and snow for families</h3>
       <p>
         At <a href="https://www.visitrovereto.it/vivi/outdoor/neve/sci/sci-alpino/" target="_blank"
           rel="noopener noreferrer nofollow">Polsa and San Valentino</a>, the slopes of Trentino closest to the plains
@@ -228,26 +260,26 @@ definePageMeta({
 });
 
 useHead({
-  title: "Things to Do with Kids in Brentonico | Cuore di Bosco - Family Activities",
+  title: "Explore the Surroundings of Brentonico | B&B Cuore di Bosco - Trekking, alpine huts and family activities",
   meta: [
     {
       name: "description",
       content:
-        "Family activities and things to do with children near B&B Cuore di Bosco: hiking, snow playgrounds, easy trails and nature in Trentino.",
+        "Explore the surroundings of B&B Cuore di Bosco in Brentonico: Monte Baldo trekking, alpine huts, skiing at Polsa, Lake Garda and family activities with children in Trentino.",
     },
     {
       name: "keywords",
       content:
-        "things to do with kids Brentonico, family hiking Trentino, children activities mountains, snow playground, easy family trails, Monte Baldo kids, Prada di Brentonico families",
+        "things to do Brentonico, hiking Monte Baldo, trekking Brentonico, alpine huts Trentino, Monte Baldo Nature Park, Lake Garda day trip, Rovereto museums, skiing Polsa San Valentino, B&B near ski slopes Polsa, family mountain holidays Trentino, kids activities Brentonico, Prada di Brentonico families",
     },
     {
       property: "og:title",
-      content: "Family Activities in Brentonico | B&B Cuore di Bosco",
+      content: "Explore the Surroundings of Brentonico | B&B Cuore di Bosco",
     },
     {
       property: "og:description",
       content:
-        "Discover things to do with children near B&B Cuore di Bosco: hiking, snow, nature and fun for the whole family in Trentino.",
+        "Explore the surroundings of B&B Cuore di Bosco: Monte Baldo trekking, alpine huts, skiing at Polsa and Lake Garda. Family mountain holidays in Trentino.",
     },
     {
       property: "og:type",
@@ -267,12 +299,12 @@ useHead({
     },
     {
       name: "twitter:title",
-      content: "Family Activities in Brentonico | B&B Cuore di Bosco",
+      content: "Explore the Surroundings of Brentonico | B&B Cuore di Bosco",
     },
     {
       name: "twitter:description",
       content:
-        "Things to do with kids in Brentonico: hiking, snow and nature for the whole family near B&B Cuore di Bosco.",
+        "Explore the surroundings of B&B Cuore di Bosco: trekking, alpine huts, skiing at Polsa and Lake Garda for families in Trentino.",
     },
   ],
   link: [{ rel: "canonical", href: "https://www.cuoredibosco.it/en/explore" }],
@@ -292,6 +324,10 @@ section {
 
 a {
   font-weight: bold;
+}
+
+.spaced {
+  margin-top: 1.2em;
 }
 
 .welcome {

@@ -1,7 +1,7 @@
 <template>
   <div class="carousel">
     <div class="carousel-image">
-      <img :src="images[currentIndex]" alt="Carousel image" />
+      <img :src="images[currentIndex]" :alt="alts?.[currentIndex] || 'Carousel image'" />
     </div>
     <div class="controls">
       <button @click="prev">‹</button>
@@ -21,6 +21,10 @@ const props = defineProps({
   images: {
     type: Array,
     required: true
+  },
+  alts: {
+    type: Array,
+    default: () => []
   }
 })
 

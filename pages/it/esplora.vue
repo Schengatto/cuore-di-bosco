@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="welcome">
-      <img decoding="async" width="1400" height="800" class="landing-image" alt="bosco" :src="bosco"
+      <img decoding="async" width="1400" height="800" class="landing-image" alt="Sentiero nel bosco sull'Altopiano di Brentonico - Parco Naturale Monte Baldo" :src="bosco"
         data-object-fit="cover" sizes="(max-width: 1200px) 100vw, 1200px" /><span aria-hidden="true"
         style="background-color: #526a71"></span>
       <div class="landing-text">
@@ -15,10 +15,22 @@
         frazione di montagna nel cuore del
         <strong>Parco Naturale del Monte Baldo</strong>, un luogo tranquillo ma
         facile da raggiungere, ottimo punto per escursioni e attività di ogni
-        genere. Ideale per le famiglie in cerca di natura, silenzio e libertà.
-        Qui i bambini di ogni età (anche quelli cresciuti!) possono correre tra
-        i prati, osservare gli animali al pascolo, ascoltare il canto degli
-        uccelli e vivere l’esperienza della montagna in tranquillità.
+        genere.
+      </p>
+      <p class="spaced">
+        Situato a Prada di Brentonico, il <strong>B&B Cuore di Bosco</strong>
+         è il punto di partenza ideale per famiglie e appassionati di natura.
+      </p>
+      <p class="spaced">
+         Dai sentieri facili per passeggiate con bambini ai percorsi panoramici per trekking,
+          ogni camminata offre scenari mozzafiato immersi nella natura del Monte Baldo e dei boschi circostanti.
+      </p>
+      <p class="spaced">
+        L’<strong>Altopiano di Brentonico</strong> è ideale per le famiglie in cerca di natura, silenzio e libertà.
+      </p>
+      <p>
+        Qui i bambini di ogni età (anche quelli cresciuti!) possono correre tra i prati,
+        osservare gli animali, ascoltare il canto degli uccelli e vivere l’esperienza della montagna in tranquillità.
       </p>
 
       <p>
@@ -26,11 +38,16 @@
         <strong>sentieri adatti anche ai più piccoli</strong>, malghe da
         raggiungere con facili passeggiate, e boschi che cambiano volto a ogni
         stagione: dal verde brillante della primavera ai colori caldi
-        dell’autunno. In <string>estate</string> si possono scoprire le malghe
+        dell’autunno. In <strong>estate</strong> si possono scoprire le malghe
         del Parco Naturale del Monte Baldo, assaggiare i prodotti locali e
-        godersi l’aria fresca d’altura. Sul sito del Parco qui sotto puoi
+        godersi l’aria fresca d’altura. </p>
+        <p>Non perdere il magnifico <strong>Canyon della Sorna</strong> , una meraviglia naturale con gole scavate dall’acqua,
+        cascate e punti panoramici unici per passeggiate e fotografie.</p>
+<p>
+  
+        Sul sito del Parco qui sotto puoi
         trovare i percorsi e le tante attività in programma!
-      </p>
+        </p>
 
       <figure class="image-wrapper aligncenter size-large is-resized">
         <a href="https://www.parcomontebaldo.tn.it/it" target="_blank" rel="noopener noreferrer nofollow"><img
@@ -45,7 +62,10 @@
         (20 minuti), con piste per ogni età e parchi per bambini, ideali per le
         prime discese sulla neve, imparare a sciare con scuole sci riconosciute
         o per divertirsi con lo slittino in famiglia, o partecipare alle tante
-        attività di giorno e di notte. Per tutte gli eventi aggiornati e le
+        attività di giorno e di notte.
+      </p>
+      <p>
+        Per tutti gli eventi aggiornati e le
         informazioni puoi visitare
         <a href="https://www.brentonicoski.com" target="_blank">www.brentonicoski.com</a>.
       </p>
@@ -54,18 +74,20 @@
         Anche <strong>Rovereto</strong> è vicina a 25 minuti, con i suoi musei,
         il centro storico e le attività culturali per tutte le età con i suoi
         rinomati musei tra arte, storia e scienza come il MART e l’innovativo
-        museo di scienza ed archeologia. Per scoprire nel dettaglio
+        museo di scienza ed archeologia, oltre alla sua famosa Campana dei Caduti
+         ed il centro storico con il castello e lo storico teatro Zandonai. Per scoprire nel dettaglio
         <a href="https://www.visitrovereto.it/scopri/territorio/rovereto-citta-di-culture/" target="_blank">Cosa vedere
           a Rovereto</a>.
       </p>
 
       <p>
-        E se volete completare la vostra vacanza con una giornata sul
-        <strong>Lago di Garda</strong>, in circa 30 minuti si può raggiungere la
-        cima del Lago di Garda con Torbole e Riva del Garda, con acqua pulita e
-        panorami unici.
+        Nei dintorni si possono visitare anche il <strong>Castello di Ala</strong>, un importante esempio di storia e architettura locale,
+         e il <strong>Lago di Loppio</strong>, perfetto per passeggiate naturalistiche e birdwatching.
+         Per completare la vacanza, in circa 30 minuti si raggiunge il <strong>Lago di Garda</strong>, 
+         con Torbole e Riva del Garda, per escursioni, sport acquatici, acqua pulita e panorami unici.
         <a href="https://www.gardatrentino.it/it" target="_blank">Per saperne di più</a>.
       </p>
+
 
       <p>
         Siamo all’interno della <strong>Vallagarina</strong>: dove natura,
@@ -80,6 +102,9 @@
         <strong>Piazza Cesare Battisti</strong>, dove si svolgono eventi e feste
         tutto l’anno.
       </p>
+
+
+
     </section>
 
     <section class="text-center rovereto-inview">
@@ -106,7 +131,7 @@
     </section>
 
     <section class="text-center">
-      <h1>Brentonico, il fiore del Baldo</h1>
+      <h2>Brentonico, il fiore del Baldo</h2>
 
       <Carousel :images="[
         'https://www.visitrovereto.it/wp-content/uploads/2019/11/paesaggio-inverno-monte-baldo-foto-valentino-azzolini-1.jpg',
@@ -114,6 +139,12 @@
         'https://www.visitrovereto.it/wp-content/uploads/2023/06/Giardino-Botanico-ph-lucamatassoni-web.png',
         'https://www.visitrovereto.it/wp-content/uploads/2019/10/paesaggio-inverno-monte-baldo-foto-tommaso-prugnola-3.jpg',
         'https://www.visitrovereto.it/wp-content/uploads/2024/10/Brentonico-il-fiore-del-Baldo-Graziano-Galvagni.jpg',
+      ]" :alts="[
+        'Monte Baldo in inverno - paesaggio innevato Altopiano di Brentonico',
+        'Giardino botanico di Palazzo Eccheli-Baisi a Brentonico',
+        'Giardino Botanico del Parco Naturale Monte Baldo',
+        'Paesaggio invernale Monte Baldo - Trentino',
+        'Brentonico il fiore del Baldo - panorama montano',
       ]" />
     </section>
 
@@ -157,7 +188,7 @@
     </section>
 
     <section>
-      <h3>In Primavera</h3>
+      <h3>Cosa fare in primavera sull'Altopiano di Brentonico</h3>
       <p>
         Il periodo delle fioriture è perfetto per incontrare e conoscere le
         piante e i fiori rari che ravvivano l’Altopiano di Brentonico. Percorri
@@ -174,19 +205,19 @@
     </section>
 
     <section>
-      <h3>In Estate</h3>
+      <h3>Estate sul Monte Baldo: trekking, malghe e Cammino di San Rocco</h3>
       <p>
-        L’estate sul Monte Baldo significa&nbsp;<strong>attività all’aria aperta</strong>!
-      </p>
-      <p>
-        Sei un escursionista, un biker o un amante delle passeggiate a cavallo?
-        Esplora l’estesa rete di strade forestali e sentieri, alcuni a picco sul
-        Lago di Garda da cui potrai godere di una vista mozzafiato, altri sul
-        Sentiero della Pace attraverso i luoghi della Grande Guerra come
-        trincee, gallerie e fortificazioni! Di tanto in tanto fai una sosta in
-        una delle molte&nbsp;<strong>malghe</strong>, da dove potrai ammirare il
-        sorgere del sole assaporando del latte appena munto e deliziosi
-        formaggi.
+       L’estate sul Monte Baldo significa attività all’aria aperta: escursionismo, mountain bike, passeggiate a cavallo
+        e visite ai rifugi e malghe per assaporare latte e formaggi locali. Sentieri panoramici offrono viste sul Lago di Garda,
+         e il Sentiero della Pace attraversa luoghi della Grande Guerra come trincee, gallerie e fortificazioni.</p>
+<p>
+Il <strong>Cammino di San Rocco</strong> passa proprio davanti alla nostra struttura ed è un suggestivo percorso
+ ad anello di circa 70 km, strutturato in 5 tappe, che unisce storia, 
+natura e cultura tra la Val di Gresta, Mori, Ronzo-Chienis e l’altopiano di Brentonico. 
+Attraversa boschi, borghi storici e trincee della Grande Guerra, ed è percorribile tutto l’anno. 
+È possibile ritirare il “passaporto del pellegrino” a Mori e seguire le tracce GPX segnalate dai cartelli SAT.
+Per maggiori informazioni e per scaricare la mappa 
+<a href="https://camminosanrocco.it/" target="_blank">vai sul sito ufficiale</a>
       </p>
       <p>
         L’altopiano di Brentonico è inoltre sede di&nbsp;<a
@@ -205,7 +236,7 @@
     </section>
 
     <section>
-      <h3>In Autunno</h3>
+      <h3>Autunno in Trentino: castagne e sapori tipici a Brentonico</h3>
       <p>
         Passeggia fra i maestosi alberi dell’altopiano e scopri i caldi colori e
         i deliziosi sapori dell’autunno. In questa stagione le
@@ -224,7 +255,7 @@
     </section>
 
     <section>
-      <h3>In Inverno</h3>
+      <h3>Inverno a Polsa e San Valentino: sci e neve per famiglie</h3>
       <p>
         A&nbsp;<a href="https://www.visitrovereto.it/vivi/outdoor/neve/sci/sci-alpino/" target="_blank"
           rel="noopener noreferrer nofollow">Polsa e a San Valentino</a>&nbsp;le piste del Trentino più vicine alla
@@ -240,8 +271,7 @@
         Se vieni a trovarci per le festività natalizie, non perderti il&nbsp;<a
           href="https://www.visitrovereto.it/vivi/eventi/natale-dell-albero-brentonico/" target="_blank"
           rel="noopener noreferrer nofollow">Natale dell’Albero</a>: da dicembre all’epifania tante attività per grandi
-        e piccini e
-        l’imperdibile Simposio di scultura nel centro storico del paese.
+        e piccini e il simposio di scultura nel centro storico del paese.
       </p>
     </section>
 
@@ -265,26 +295,26 @@
 import bosco from "~/assets/images/bosco.webp";
 
 useHead({
-  title: "Cosa fare con bambini a Brentonico | Cuore di Bosco - Attività famiglie",
+  title: "Esplora i dintorni di Brentonico | B&B Cuore di Bosco - Trekking, malghe e attività famiglie",
   meta: [
     {
       name: "description",
       content:
-        "Attività per famiglie e bambini vicino al B&B Cuore di Bosco: escursioni, parchi giochi sulla neve, sentieri facili e natura nel Trentino.",
+        "Esplora i dintorni del B&B Cuore di Bosco a Brentonico: trekking Monte Baldo, malghe, Canyon della Sorna, sci a Polsa, Lago di Garda e attività per famiglie con bambini in Trentino.",
     },
     {
       name: "keywords",
       content:
-        "cosa fare con bambini Brentonico, escursioni famiglie Trentino, attività bambini montagna, parco giochi neve, sentieri facili famiglie, Monte Baldo bambini, Prada di Brentonico famiglie",
+        "cosa fare con bambini Brentonico, escursioni famiglie Trentino, trekking Brentonico, escursioni Monte Baldo, malghe Trentino, Canyon della Sorna, Cammino di San Rocco Brentonico, Parco Naturale Monte Baldo, Lago di Loppio, Lago di Garda, Rovereto musei, Castello di Ala, B&B vicino piste Polsa, sci famiglie Polsa San Valentino, vacanze montagna famiglie Trentino",
     },
     {
       property: "og:title",
-      content: "Attività per famiglie a Brentonico | B&B Cuore di Bosco",
+      content: "Esplora i dintorni di Brentonico | B&B Cuore di Bosco",
     },
     {
       property: "og:description",
       content:
-        "Scopri cosa fare con bambini vicino al B&B Cuore di Bosco: escursioni, neve, natura e divertimento per tutta la famiglia in Trentino.",
+        "Esplora i dintorni del B&B Cuore di Bosco: trekking Monte Baldo, malghe, Canyon della Sorna, sci a Polsa e Lago di Garda. Vacanze in montagna per famiglie in Trentino.",
     },
     {
       property: "og:type",
@@ -304,12 +334,12 @@ useHead({
     },
     {
       name: "twitter:title",
-      content: "Attività per famiglie a Brentonico | B&B Cuore di Bosco",
+      content: "Esplora i dintorni di Brentonico | B&B Cuore di Bosco",
     },
     {
       name: "twitter:description",
       content:
-        "Cosa fare con bambini a Brentonico: escursioni, neve e natura per tutta la famiglia vicino al B&B Cuore di Bosco.",
+        "Esplora i dintorni del B&B Cuore di Bosco: trekking, malghe, Canyon della Sorna, sci a Polsa e Lago di Garda per famiglie in Trentino.",
     },
   ],
   link: [{ rel: "canonical", href: "https://www.cuoredibosco.it/it/esplora" }],
@@ -329,6 +359,10 @@ section {
 
 a {
   font-weight: bold;
+}
+
+.spaced {
+  margin-top: 1.2em;
 }
 
 .welcome {
