@@ -98,6 +98,8 @@
                 </div>
             </div>
         </footer>
+
+        <MobileBottomBar lang="it" />
     </div>
 </template>
 
@@ -252,6 +254,11 @@ header {
 @media (max-width: 1024px) {
     #page {
         margin-top: 50px;
+        padding-bottom: 70px;
+    }
+
+    .whatsapp {
+        display: none;
     }
 
     p {

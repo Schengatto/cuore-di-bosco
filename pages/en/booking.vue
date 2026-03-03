@@ -9,11 +9,12 @@
       </div>
     </div>
 
-    <div :key="widgetKey" id="tosc5widget" data-tag="7d3d1c22-b352-46f7-ac62-d6299321b8ce"
-      data-fid="f30f64bf-5f80-424a-92a9-f1d667b83815" data-lang="en" data-theme="h" data-gallery="false"
-      data-inpage="false"></div>
+    <div class="booking-widget js-booking-engine-container" data-idstruttura="68002" data-tipostruttura="bbit"
+      data-tipo="widget" data-lingua="en"
+      data-action="https://www.bed-and-breakfast.it/en/trentino-alto-adige/bb-cuore-di-bosco-brentonico/68002"
+      data-colore="green" data-wl="true"></div>
 
-    <section class="text-center">
+    <section class="text-center intro-section">
       <p>Welcome to <strong>B&amp;B <em>Cuore di Bosco</em></strong>,<br>a haven immersed in the nature of the
         <strong>Vallagarina</strong>,<br>on the <strong>Brentonico Plateau</strong>, <strong>Europe’s Garden</strong>.
         <br>Surrounded by lush mountains, time slows down<br>and tranquility reigns supreme.
@@ -331,12 +332,35 @@ useHead({
     },
   ],
   script: [
-    { src: "https://s3-eu-west-1.amazonaws.com/s3.suggesto.eu/hooks/vtn-hook/docroot/js/widget-tosc5-min.js?v=1.12",  fetchpriority: "high"},
-    // { async: true, src: "https://web5.deskline.net/start/ACCOWEB/7d3d1c22-b352-46f7-ac62-d6299321b8ce/index.js" }
+    {
+      innerHTML: 'var wdgBeConf = { autoInit: false };',
+    },
+    {
+      src: "https://d117yjdt0789wg.cloudfront.net/CDN-widget/grunt/wdg-booking-engine.min.js",
+      defer: true,
+    },
   ]
 });
 
-const widgetKey = ref(Date.now());
+onMounted(() => {
+  const w = window as any;
+  const initWidget = () => {
+    if (w.WdgBe && typeof w.WdgBe.wdgInitAll === 'function') {
+      w.WdgBe.wdgInitAll();
+    }
+  };
+  if (w.WdgBe) {
+    initWidget();
+  } else {
+    const interval = setInterval(() => {
+      if (w.WdgBe) {
+        clearInterval(interval);
+        initWidget();
+      }
+    }, 200);
+    setTimeout(() => clearInterval(interval), 10000);
+  }
+});
 </script>
 
 <style>
@@ -344,6 +368,14 @@ section {
   margin: 1em auto;
   max-width: 1200px;
   padding: 2rem;
+}
+
+.booking-widget {
+  margin-top: 1.5em;
+}
+
+.intro-section {
+  margin-top: 0.5em;
 }
 
 .bg-red {
@@ -748,30 +780,4 @@ figcaption {
   }
 }
 
-.tosc5form {
-  border-radius: 0px;
-  background-color: #f5f1e8 !important;
-  color: #000000 !important;
-  gap: 16px;
-}
-
-.tosc5formInput {
-  border-radius: 4px !important
-}
-
-.tosc5formButton {
-  background-color: #4caf50 !important;
-  color: rgb(0, 0, 0) !important;
-  border-radius: 4px !important
-}
-
-.tosc5link {
-  color: #000000 !important;
-  /* font-family: var(--font-base); */
-}
-
-.tosc5cal {
-  min-height: auto !important;
-  height: 20px !important;
-}
 </style>

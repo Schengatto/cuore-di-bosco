@@ -9,11 +9,12 @@
       </div>
     </div>
 
-    <div :key="widgetKey" id="tosc5widget" data-tag="7d3d1c22-b352-46f7-ac62-d6299321b8ce"
-      data-fid="f30f64bf-5f80-424a-92a9-f1d667b83815" data-lang="it" data-theme="h" data-gallery="false"
-      data-inpage="false"></div>
+    <div class="booking-widget js-booking-engine-container" data-idstruttura="68002" data-tipostruttura="bbit"
+      data-tipo="widget" data-lingua="it"
+      data-action="https://www.bed-and-breakfast.it/it/trentino-alto-adige/bb-cuore-di-bosco-brentonico/68002"
+      data-colore="green" data-wl="true"></div>
 
-    <section class="text-center">
+    <section class="text-center intro-section">
       <p>Benvenuti al&nbsp;<strong>B&amp;B&nbsp;<em>Cuore di Bosco</em></strong>,<br>un rifugio immerso nella natura
         della&nbsp;<strong>Vallagarina</strong>,<br>sull’A<strong>ltopiano di Brentonico</strong>,&nbsp;<strong>il
           giardino d’Europa</strong>.<br>Circondati da rigogliose montagne, il tempo rallenta<br>e la tranquillità regna
@@ -37,8 +38,12 @@
       <blockquote class="intro-text">
         <p>B&amp;B Cuore di Bosco è la nostra e la vostra casa in
           montagna, un rifugio di pace e quiete dove riposare mente e cuore</p>
-        <p>A richiesta kit bimbo con lettino con materasso, lenzuola e coperte, fasciatoio e scalda biberon. A
-          disposizione anche spondine per letto, vasino e scalini per il bagno per tutte le età.</p>
+        <p>Le camere sono spaziose e luminose, ideali sia per coppie sia per famiglie.
+           Offrono comfort moderni, bagno privato, biancheria e prodotti igiene inclusi e un’atmosfera
+           che invita al riposo.</p><p>Su richiesta sono disponibili dotazioni dedicate ai più piccoli:
+            lettino con materasso, lenzuola e coperte, fasciatoio e scalda biberon, spondine per letto,
+             vasino e scalini per il bagno per tutte le età. 
+             E poi libri, colori e giochi! Per un soggiorno sereno anche a chi viaggia con bambini.</p>
       </blockquote>
     </section>
 
@@ -203,7 +208,7 @@
         libreria ed angolo giochi attrezzato (in realizzazione).</p>
       <p>SCRIVICI! A colazione preferiscono qualcosa di particolare? Informateci e ci attrezziamo! <br> Giornata grigia?
         Organizziamo la merenda insieme! Merenda per i piccoli e aperitivo relax per i grandi!</p>
-      <p>NOLEGGIO BICI: le nostre bici per grandi e piccoli (con casco!) sono a vostra disposizione (con cauzione)</p>
+      <p>NOLEGGIO BICI: le nostre bici per grandi e piccoli sono a vostra disposizione (con cauzione)</p>
       <p>PIC NIC DAY: Gita nel bosco? Prepariamo noi il cestino, preavvisateci 1-2 giorni prima con le vostre preferenze
         e l’orario e provvediamo al cesto pronto da portare via. (servizio a pagamento)</p>
       <p></p>
@@ -342,15 +347,34 @@ useHead({
   ],
   script: [
     {
-      src: "https://s3-eu-west-1.amazonaws.com/s3.suggesto.eu/hooks/vtn-hook/docroot/js/widget-tosc5-min.js?v=1.12",
-      fetchpriority: "high",
-      defer: "true",
-      async: "true",
+      innerHTML: 'var wdgBeConf = { autoInit: false };',
+    },
+    {
+      src: "https://d117yjdt0789wg.cloudfront.net/CDN-widget/grunt/wdg-booking-engine.min.js",
+      defer: true,
     },
   ]
 });
 
-const widgetKey = ref(Date.now());
+onMounted(() => {
+  const w = window as any;
+  const initWidget = () => {
+    if (w.WdgBe && typeof w.WdgBe.wdgInitAll === 'function') {
+      w.WdgBe.wdgInitAll();
+    }
+  };
+  if (w.WdgBe) {
+    initWidget();
+  } else {
+    const interval = setInterval(() => {
+      if (w.WdgBe) {
+        clearInterval(interval);
+        initWidget();
+      }
+    }, 200);
+    setTimeout(() => clearInterval(interval), 10000);
+  }
+});
 
 </script>
 
@@ -359,6 +383,14 @@ section {
   margin: 1em auto;
   max-width: 1200px;
   padding: 2rem;
+}
+
+.booking-widget {
+  margin-top: 1.5em;
+}
+
+.intro-section {
+  margin-top: 0.5em;
 }
 
 .bg-red {
@@ -763,30 +795,4 @@ figcaption {
   }
 }
 
-.tosc5form {
-  border-radius: 0px;
-  background-color: #f5f1e8 !important;
-  color: #000000 !important;
-  gap: 16px;
-}
-
-.tosc5formInput {
-  border-radius: 4px !important
-}
-
-.tosc5formButton {
-  background-color: #4caf50 !important;
-  color: rgb(0, 0, 0) !important;
-  border-radius: 4px !important
-}
-
-.tosc5link {
-  color: #000000 !important;
-  /* font-family: var(--font-base); */
-}
-
-.tosc5cal {
-  min-height: auto !important;
-  height: 20px !important;
-}
 </style>
