@@ -22,3 +22,10 @@ logs
 .env
 .env.*
 !.env.example
+
+# Secrets / certificati SSL — non committare MAI
+*.key
+*.pem
+*.crt
+*.cer
+*.pfx
