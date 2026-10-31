@@ -2,7 +2,7 @@
   <div class="page-container">
     <div class="welcome">
       <img decoding="async" width="1400" height="800" class="landing-image" alt="bosco"
-        src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/07/regole-scaled.jpg" data-object-fit="cover"
+        src="/images/altervista/regole-scaled.jpg" data-object-fit="cover"
         sizes="(max-width: 1200px) 100vw, 1200px" /><span aria-hidden="true" style="background-color: #526a71"></span>
       <div class="landing-text">
         <h1 class="page-title text-white">Regolamento</h1>

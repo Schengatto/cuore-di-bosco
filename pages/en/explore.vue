@@ -93,11 +93,11 @@
         <figure class="image-wrapper">
           <a href="https://www.visitrovereto.it/" target="_blank" rel="noopener noreferrer nofollow">
             <img decoding="async" width="850" height="371" data-id="601"
-              src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/apt_brentonico.jpg" alt="Brentonico Plateau panorama"
+              src="/images/altervista/apt_brentonico.jpg" alt="Brentonico Plateau panorama"
               class="wp-image-601" srcset="
-            https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/apt_brentonico.jpg         850w,
-            https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/apt_brentonico-320x140.jpg 320w,
-            https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/apt_brentonico-768x335.jpg 768w
+            /images/altervista/apt_brentonico.jpg         850w,
+            /images/altervista/apt_brentonico-320x140.jpg 320w,
+            /images/altervista/apt_brentonico-768x335.jpg 768w
           " sizes="(max-width: 850px) 100vw, 850px" /></a>
         </figure>
       </figure>

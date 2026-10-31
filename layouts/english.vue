@@ -30,7 +30,7 @@
                 <div class="footer-cards">
                     <a href="https://maps.app.goo.gl/eWviFC8GAjJaqzSU6" target="_blank" class="card link">
                         <h3>How to reach us</h3>
-                        <img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/localization.png"
+                        <img src="/images/altervista/localization.png"
                             alt="point" width="64" />
                         <p>Set this address on Google Maps: it will bring you straight to us!</p>
                         <p><strong>B&B Cuore di Bosco</strong><br />
@@ -39,7 +39,7 @@
                     </a>
                     <div class="card">
                         <h3>Opening Hours</h3>
-                        <img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/home.png" alt="home"
+                        <img src="/images/altervista/home.png" alt="home"
                             width="64" />
                         <p>Check-in 3:00 PM – 6:00 PM<br />
                             Check-out 9:00 AM – 10:30 AM</p>
@@ -49,7 +49,7 @@
                     </div>
                     <div class="card">
                         <h3>Contacts</h3>
-                        <img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/phone-call.png"
+                        <img src="/images/altervista/phone-call.png"
                             alt="phone" width="64" />
                         <p>You can write to us at <a href="tel:+393494960228">+39 3494960228</a><br />
                             or email us at <a href="mailto:info@cuoredibosco.it">info@cuoredibosco.it</a></p>
@@ -59,7 +59,7 @@
                                 rel="noopener"
                                 aria-label="Facebook"
                                 >
-                                <img src="https://cuoredibosco.altervista.org/wp-content/uploads/2026/01/facebook-2.png" alt="Facebook" width="50" />
+                                <img src="/images/altervista/facebook-2.png" alt="Facebook" width="50" />
                             </a>
                         &nbsp;
                              <a href="https://www.instagram.com/bbcuoredibosco/"
@@ -67,7 +67,7 @@
                                 rel="noopener"
                                 aria-label="Instagram"
                                 >
-                                <img src="https://cuoredibosco.altervista.org/wp-content/uploads/2026/01/instagram-1.png" alt="Instagram" width="50" />
+                                <img src="/images/altervista/instagram-1.png" alt="Instagram" width="50" />
                             </a>
                         </p></div>
                     <div>

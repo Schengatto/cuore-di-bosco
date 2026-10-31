@@ -27,4 +27,21 @@ export default defineNuxtConfig({
     lazy: true,
     strategy: 'no_prefix' // puoi anche usare 'prefix' se vuoi sempre il prefisso /en /it
   },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: [
+        '/it',
+        '/it/prenota',
+        '/it/esplora',
+        '/it/regolamento',
+        '/it/privacy-policy',
+        '/en',
+        '/en/booking',
+        '/en/explore',
+        '/en/rules',
+        '/en/privacy-policy',
+      ],
+    },
+  },
 });
