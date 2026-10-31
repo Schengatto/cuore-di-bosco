@@ -76,11 +76,11 @@
         <div class="overlay-social">
           <a href="https://www.facebook.com/profile.php?id=61583661897314" target="_blank" rel="noopener"
             aria-label="Facebook">
-            <img src="https://cuoredibosco.altervista.org/wp-content/uploads/2026/01/facebook-2.png" alt="Facebook"
+            <img src="/images/altervista/facebook-2.png" alt="Facebook"
               width="40" />
           </a>
           <a href="https://www.instagram.com/bbcuoredibosco/" target="_blank" rel="noopener" aria-label="Instagram">
-            <img src="https://cuoredibosco.altervista.org/wp-content/uploads/2026/01/instagram-1.png" alt="Instagram"
+            <img src="/images/altervista/instagram-1.png" alt="Instagram"
               width="40" />
           </a>
         </div>

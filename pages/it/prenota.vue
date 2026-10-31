@@ -53,7 +53,7 @@
         <div class="card text-center">
           <figure>
             <img decoding="async" width="128" height="128"
-              src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/raspberry.png" alt="lampone">
+              src="/images/altervista/raspberry.png" alt="lampone">
           </figure>
           <div class="room-info">
             <h2>LAMPONE</h2>
@@ -83,7 +83,7 @@
         <div class="card text-center">
           <figure>
             <img decoding="async" width="128" height="128"
-              src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/04/blueberry.png" alt="mirtillo">
+              src="/images/altervista/blueberry.png" alt="mirtillo">
           </figure>
           <div class="room-info">
             <h2>MIRTILLO</h2>
@@ -131,64 +131,64 @@
 
     <section>
       <div class="wp-block-group">
-        <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/wifi.png"
+        <figure class="icon"><img src="/images/altervista/wifi.png"
             alt="FREE WIFI" />
           <figcaption>FREE WIFI</figcaption>
         </figure>
-        <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/towels-1.png"
+        <figure class="icon"><img src="/images/altervista/towels-1.png"
             alt="ASCIUGAMANI E BIANCHERIA INCLUSI" />
           <figcaption>ASCIUGAMANI E BIANCHERIA INCLUSI</figcaption>
         </figure>
-        <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/products.png"
+        <figure class="icon"><img src="/images/altervista/products.png"
             alt="DOTAZIONI DI CORTESIA PER GLI OSPITI" />
           <figcaption>DOTAZIONI DI CORTESIA PER GLI OSPITI</figcaption>
         </figure>
-        <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/shower.png"
+        <figure class="icon"><img src="/images/altervista/shower.png"
             alt="DOCCIA E BAGNO PRIVATI" />
           <figcaption>DOCCIA E BAGNO PRIVATI</figcaption>
         </figure>
-        <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/breakfast.png"
+        <figure class="icon"><img src="/images/altervista/breakfast.png"
             alt="COLAZIONE DOLCE E SALATA" />
           <figcaption>COLAZIONE DOLCE E SALATA</figcaption>
         </figure>
-        <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/kettle.png"
+        <figure class="icon"><img src="/images/altervista/kettle.png"
             alt="SET BOLLITORE" />
           <figcaption>SET BOLLITORE</figcaption>
         </figure>
         <figure class="icon"><img
-            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/laundry-machine.png"
+            src="/images/altervista/laundry-machine.png"
             alt="SERVIZIO LAVANDERIA" />
           <figcaption>SERVIZIO LAVANDERIA</figcaption>
         </figure>
-        <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/bicycle.png"
+        <figure class="icon"><img src="/images/altervista/bicycle.png"
             alt="BICICLETTE A DISPOSIZIONE" />
           <figcaption>BICICLETTE A DISPOSIZIONE</figcaption>
         </figure>
-        <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/toys.png"
+        <figure class="icon"><img src="/images/altervista/toys.png"
             alt="GIOCHI PER BAMBINI" />
           <figcaption>GIOCHI PER BAMBINI</figcaption>
         </figure>
-        <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/pencils.png"
+        <figure class="icon"><img src="/images/altervista/pencils.png"
             alt="DOTAZIONI PER BAMBINI" />
           <figcaption>DOTAZIONI PER BAMBINI</figcaption>
         </figure>
-        <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/crib.png"
+        <figure class="icon"><img src="/images/altervista/crib.png"
             alt="CULLA PER BAMBINI" />
           <figcaption>CULLA PER BAMBINI</figcaption>
         </figure>
-        <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/coloring.png"
+        <figure class="icon"><img src="/images/altervista/coloring.png"
             alt="MATERIALI PER BAMBINI" />
           <figcaption>MATERIALI PER BAMBINI</figcaption>
         </figure>
-        <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/baby-carrier.png"
+        <figure class="icon"><img src="/images/altervista/baby-carrier.png"
             alt="SUPPORTI PER PORTARE" />
           <figcaption>SUPPORTI PER PORTARE</figcaption>
         </figure>
-        <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/bookshelf.png"
+        <figure class="icon"><img src="/images/altervista/bookshelf.png"
             alt="LIBRERIA PER ADULTI E BAMBINI" />
           <figcaption>LIBRERIA PER ADULTI E BAMBINI</figcaption>
         </figure>
-        <figure class="icon"><img src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/picnic-basket.png"
+        <figure class="icon"><img src="/images/altervista/picnic-basket.png"
             alt="SERVIZIO PIC-NIC" />
           <figcaption>SERVIZIO PIC-NIC</figcaption>
         </figure>

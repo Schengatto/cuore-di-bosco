@@ -122,7 +122,7 @@
         </p>
         <figure class="separator-wrapper">
           <img decoding="async" class="image"
-            src="https://cuoredibosco.altervista.org/wp-content/uploads/2025/06/breakfast.png" alt="breakfast" />
+            src="/images/altervista/breakfast.png" alt="breakfast" />
         </figure>
         <p>
           Preferisci il dolce o il salato? Hai intolleranze o preferenze
