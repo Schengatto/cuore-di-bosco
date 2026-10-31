@@ -20,7 +20,7 @@ const route = useRoute();
 const currentLocale = computed(() => route?.path?.split('/')[1]);
 
 const consentGiven = ref(true);
-const policyPage = `/${currentLocale.value}/privacy-policy`;
+const policyPage = computed(() => `/${currentLocale.value || 'it'}/privacy-policy`);
 
 onMounted(() => {
     const cookie = useCookie('cookie_consent')
